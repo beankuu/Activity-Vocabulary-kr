@@ -1,22 +1,38 @@
 [목차로 돌아가기](ActivityVocabularyContents.md)
 
-## 3. Extended Types
+## 3. 확장 타입 (Extended Types)
 
-Base URI: `https://www.w3.org/ns/activitystreams#`.
+~~Base URI: `https://www.w3.org/ns/activitystreams#`.~~
 
-The Activity Streams 2.0 Extended Types include Activity and Object subtypes that are common to many social Web applications. They are divided into three sets:
+기반 URI: `https://www.w3.org/ns/activitystreams#`.
 
-- [Activity Types](https://www.w3.org/TR/activitystreams-vocabulary/#activity-types)
-- [Actor Types](https://www.w3.org/TR/activitystreams-vocabulary/#actor-types)
-- [Object Types](https://www.w3.org/TR/activitystreams-vocabulary/#object-types)
+~~The Activity Streams 2.0 Extended Types include Activity and Object subtypes that are common to many social Web applications. They are divided into three sets:~~
 
-Support for specific extended vocabulary types is expected to vary, with implementations only selecting the extended types and properties that make sense within the specific context and requirements of those applications. However, to avoid possible interoperability issues, implementations *MUST* avoid using extension types or properties that unduly overlap with or duplicate the extended vocabulary defined here.
+Activity Streams 2.0 확장 타입에는 많은 소셜 웹 어플리케이션에게 공통적인 액티비티와 Object의 하위 타입들이 포함됩니다. 이들은 다음과 같이 세가지 유형으로 나뉩니다:
 
-### 3.1 Activity Types
+~~Activity Types~~
 
-All Activity Types inherit the properties of the base [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) type. Some specific Activity Types are subtypes or specializations of more generalized Activity Types (for instance, the [Invite](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-invite) Activity Type is a more specific form of the [Offer](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-offer) Activity Type).
+~~Actor Types~~
 
-The Activity Types include:
+~~Object Types~~
+
+- [액티비티 타입](https://www.w3.org/TR/activitystreams-vocabulary/#activity-types)
+- [액터 타입](https://www.w3.org/TR/activitystreams-vocabulary/#actor-types)
+- [객체 타입](https://www.w3.org/TR/activitystreams-vocabulary/#object-types)
+
+~~Support for specific extended vocabulary types is expected to vary, with implementations only selecting the extended types and properties that make sense within the specific context and requirements of those applications. However, to avoid possible interoperability issues, implementations *MUST* avoid using extension types or properties that unduly overlap with or duplicate the extended vocabulary defined here.~~
+
+특정한 확장 어휘 타입에 대한 지원은 다양할것으로 예상되며, 구현시에는 해당 응용프로그램의 특정 컨텍스트와 요구사항에 적합한 확장유형과 특성만 선택하면 됩니다. 하지만 상호 운용성(interoperability) 문제를 피하기 위해서는 구현시 이 문서에 정의된 확장 어휘와 중복되거나 중복되는 확장 타입 또는 속성을 사용하지 않아야 합니다.
+
+### 3.1 액티비티 타입 (Activity Types)
+
+~~All Activity Types inherit the properties of the base [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) type. Some specific Activity Types are subtypes or specializations of more generalized Activity Types (for instance, the [Invite](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-invite) Activity Type is a more specific form of the [Offer](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-offer) Activity Type).~~
+
+모든 액티비티 타입은 기본 [액티비티(Activity)](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) 타입의 특성을 상속합니다. 일부 특정한 액티비티 타입들은 더욱더 일반화된 액티비티 타입의 하위 타입이나 특수화된 경우입니다 (예를 들어, [Invite](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-invite) 액티비티 타입은 [Offer](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-offer) 액티비티 타입이 특수화된 경우입니다).
+
+~~The Activity Types include:~~
+
+액티비티 타입은 다음과 같은 타입들을 포함합니다:
 
 - [Accept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accept)
 - [Add](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-add)
@@ -48,7 +64,7 @@ The Activity Types include:
 - [View](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-view)
 
 
-**[Class] Accept**
+#### [Class] Accept
 
 Description| |
 --|--
@@ -57,12 +73,25 @@ Notes: | Indicates that the `actor` accepts the `object`. The `target` property 
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 9
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Accept`
+비고: | `actor`가 `object`를 수락(accept)함을 나타냅니다. `target` 속성은 특정 상황에서 `object`가 받아들여진 컨텍스트를 나타내기 위해 사용될 수 있습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 9~~
+>
+>  ~~"summary": "Sally accepted an invitation to a party",~~
+>
+>    ~~"name": "Going-Away Party for Jim"~~
+
+>예시 9
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally accepted an invitation to a party",
+>  "summary": "Sally는 파티 초대를 수락했습니다",
 >  "type": "Accept",
 >  "actor": {
 >    "type": "Person",
@@ -73,18 +102,24 @@ Properties: | Inherits all properties from Activity.
 >    "actor": "http://john.example.org",
 >    "object": {
 >      "type": "Event",
->      "name": "Going-Away Party for Jim"
+>      "name": "Jim을 위한 송별회"
 >    }
 >  }
 >}
 >```
+
+>~~Example 10~~
 >
->Example 10
+>  ~~"summary": "Sally accepted Joe into the club",~~
+>
+>    ~~"name": "The Club"~~
+
+>예시 10
 >
 >```json
 >{
 >    "@context": "https://www.w3.org/ns/activitystreams",
->    "summary": "Sally accepted Joe into the club",
+>    "summary": "Sally가 Joe를 클럽으로 받아들였습니다",
 >    "type": "Accept",
 >    "actor": {
 >      "type": "Person",
@@ -96,12 +131,12 @@ Properties: | Inherits all properties from Activity.
 >    },
 >    "target": {
 >      "type": "Group",
->      "name": "The Club"
+>      "name": "그 클럽"
 >    }
 >}
 >```
 
-**[Class] TentativeAccept**
+#### [Class] TentativeAccept
 
 Description| |
 --|--
@@ -110,12 +145,25 @@ Notes: | A specialization of Accept indicating that the acceptance is tentative.
 Extends: | Accept
 Properties: | Inherits all properties from Accept.
 
->Example 11
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#TentativeAccept`
+비고: | 수락(acceptance)이 잠정적임을 나타내는, Accept의 특화된 경우입니다.
+상속함: | Accept
+속성: | Accept로부터 모든 속성을 상속받습니다.
+
+>~~Example 11~~
+>
+>  ~~"summary": "Sally tentatively accepted an invitation to a party",~~
+>
+>    ~~"name": "Going-Away Party for Jim"~~
+
+>예시 11
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally tentatively accepted an invitation to a party",
+>  "summary": "Sally는 파티 초대를 잠정적으로 수락하였습니다.",
 >  "type": "TentativeAccept",
 >  "actor": {
 >    "type": "Person",
@@ -126,14 +174,14 @@ Properties: | Inherits all properties from Accept.
 >    "actor": "http://john.example.org",
 >    "object": {
 >      "type": "Event",
->      "name": "Going-Away Party for Jim"
+>      "name": "Jim을 위한 송별회"
 >    }
 >  }
 >}
 >```
 
 
-**[Class] Add**
+#### [Class] Add
 
 Description| |
 --|--
@@ -142,12 +190,23 @@ Notes: | Indicates that the `actor` has added the `object` to the `target`. If t
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 12
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Add`
+비고: | `actor`가 `object`를 `target`에 추가하였음을 나타냅니다. `target` 속성이 명시적으로 지정되어 있지 않으면, 대상(target)은 컨텍스트에 의해 암시적으로 결정되어야 합니다. `origin`은 `object`가 시작된 컨텍스트를 식별하는데 사용할 수도 있습니다.`
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 12~~
+>
+>  ~~"summary": "Sally added an object",~~
+
+>예시 12
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally added an object",
+>  "summary": "Sally는 객체를 추가하였습니다",
 >  "type": "Add",
 >  "actor": {
 >    "type": "Person",
@@ -156,13 +215,23 @@ Properties: | Inherits all properties from Activity.
 >  "object": "http://example.org/abc"
 >}
 >```
+
+>~~Example 13~~
 >
->Example 13
+>  ~~"summary": "Sally added a picture of her cat to her cat picture collection",~~
+>
+>    ~~"name": "A picture of my cat",~~
+>
+>    ~~"name": "Camera Roll"~~
+>
+>    ~~"name": "My Cat Pictures"~~
+
+>예시 13
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally added a picture of her cat to her cat picture collection",
+>  "summary": "Sally는 고양이 사진 모음집에 그녀의 고양이 사진을 추가하였습니다",
 >  "type": "Add",
 >  "actor": {
 >    "type": "Person",
@@ -170,22 +239,22 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "Image",
->    "name": "A picture of my cat",
+>    "name": "내 고양이의 사진",
 >    "url": "http://example.org/img/cat.png"
 >  },
 >  "origin": {
 >    "type": "Collection",
->    "name": "Camera Roll"
+>    "name": "카메라 롤"
 >  },
 >  "target": {
 >    "type": "Collection",
->    "name": "My Cat Pictures"
+>    "name": "내 고양이 사진들"
 >  }
 >}
 >```
 
 
-**[Class] Arrive**
+#### [Class] Arrive
 
 Description| |
 --|--
@@ -194,12 +263,27 @@ Notes: | An IntransitiveActivity that indicates that the `actor` has arrived at 
 Extends: | IntransitiveActivity
 Properties: | Inherits all properties fom IntransitiveActivity.
 
->Example 14
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Arrive`
+비고: | `actor`가 `location`에 도착했음을 나타내는 IntransitiveActivity입니다. `origin`은 `actor`가 시작된 컨텍스트를 식별하는데 사용할 수도 있습니다. 이 클래스의 경우, `target`은 일반적으로 정의된 의미가 없습니다.
+상속함: | IntransitiveActivity
+속성: | IntransitiveActivity로부터 모든 속성을 상속받습니다.
+
+>~~Example 14~~
+>
+>  ~~"summary": "Sally arrived at work",~~
+>
+>    ~~"name": "Work"~~
+>
+>    ~~"name": "Home"~~
+
+>예시 14
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally arrived at work",
+>  "summary": "Sally는 직장에 도착했습니다",
 >  "type": "Arrive",
 >  "actor": {
 >    "type": "Person",
@@ -207,16 +291,16 @@ Properties: | Inherits all properties fom IntransitiveActivity.
 >  },
 >  "location": {
 >    "type": "Place",
->    "name": "Work"
+>    "name": "직장"
 >  },
 >  "origin": {
 >    "type": "Place",
->    "name": "Home"
+>    "name": "집"
 >  }
 >}
 >```
 
-**[Class] Create**
+#### [Class] Create
 
 Description| |
 --|--
@@ -225,12 +309,27 @@ Notes: | Indicates that the `actor` has created the `object`.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 15
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Create`
+비고: | `actor`가 `object`를 생성했음을 나타냅니다
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 15~~
+>
+>  ~~"summary": "Sally created a note",~~
+>
+>    ~~"name": "A Simple Note",~~
+>
+>    ~~"content": "This is a simple note"~~
+
+>예시 15
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally created a note",
+>  "summary": "Sally는 노트를 생성했습니다",
 >  "type": "Create",
 >  "actor": {
 >    "type": "Person",
@@ -238,13 +337,13 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "Note",
->    "name": "A Simple Note",
->    "content": "This is a simple note"
+>    "name": "간단한 노트",
+>    "content": "이것은 간단한 노트입니다"
 >  }
 >}
 >```
 
-**[Class] Delete**
+#### [Class] Delete
 
 Description| |
 --|--
@@ -253,13 +352,27 @@ Notes: | Indicates that the `actor` has deleted the `object`. If specified, the 
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Delete`
+비고: | `actor`가 `object`를 삭제했음을 나타냅니다. 특별히 지정된 경우, `origin`은 `object`가 삭제된 컨텍스트를 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
 
->Example 16
+[//Comment]: # "If specified? 특별히 지정된 경우?"
+
+>~~Example 16~~
+>
+>  ~~"summary": "Sally deleted a note",~~
+>
+>    ~~"name": "Sally's Notes"~~
+
+>예시 16
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally deleted a note",
+>  "summary": "Sally는 노트를 삭제했습니다",
 >  "type": "Delete",
 >  "actor": {
 >    "type": "Person",
@@ -268,12 +381,12 @@ Properties: | Inherits all properties from Activity.
 >  "object": "http://example.org/notes/1",
 >  "origin": {
 >    "type": "Collection",
->    "name": "Sally's Notes"
+>    "name": "Sally의 노트들"
 >  }
 >}
 >```
 
-**[Class] Follow**
+#### [Class] Follow
 
 Description| |
 --|--
@@ -282,12 +395,23 @@ Notes: |  Indicates that the `actor` is "following" the `object`. Following is d
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 17
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Follow`
+비고: | `actor`가 `object`를 "따르고(following)" 있음을 나타냅니다. 팔로잉(Following)은 일반적으로 소셜 시스템 내에서 액터가 주어진 객체에 의해 또는 주어진 객체가 수행하는 모든 액티비티에 관심이 있다 라는 의미로 정의됩니다. 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 17~~
+>
+>  ~~"summary": "Sally followed John",~~
+
+>예시 17
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally followed John",
+>  "summary": "Sally는 John을 팔로우 했습니다",
 >  "type": "Follow",
 >  "actor": {
 >    "type": "Person",
@@ -300,7 +424,7 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] Ignore**
+#### [Class] Ignore
 
 Description| |
 --|--
@@ -309,12 +433,23 @@ Notes: | Indicates that the `actor` is ignoring the `object`. The `target` and `
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 18
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Ignore`
+비고: | `actor`가 `object`를 무시하고(ignoring) 있음을 나타냅니다. 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 18~~
+>
+>  ~~"summary": "Sally ignored a note",~~
+
+>예시 18
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally ignored a note",
+>  "summary": "Sally는 노트를 무시했습니다",
 >  "type": "Ignore",
 >  "actor": {
 >    "type": "Person",
@@ -325,7 +460,7 @@ Properties: | Inherits all properties from Activity.
 >```
 
 
-**[Class] Join**
+#### [Class] Join
 
 Description| |
 --|--
@@ -334,12 +469,25 @@ Notes: | Indicates that the `actor` has joined the `object`. The `target` and `o
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 19
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Join`
+비고: | `actor`가 `object`에 합류(join)했음을 나타냅니다. 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 19~~
+>
+>  ~~"summary": "Sally joined a group",~~
+> 
+>    ~~"name": "A Simple Group"~~
+
+>예시 19
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally joined a group",
+>  "summary": "Sally는 그룹에 참가했습니다",
 >  "type": "Join",
 >  "actor": {
 >    "type": "Person",
@@ -347,12 +495,12 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "Group",
->    "name": "A Simple Group"
+>    "name": "간단한 그룹"
 >  }
 >}
 >```
 
-**[Class] Leave**
+#### [Class] Leave
 
 Description| |
 --|--
@@ -361,12 +509,25 @@ Notes: | Indicates that the `actor` has left the `object`. The `target` and `ori
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 20
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Leave`
+비고: | `actor`가 `object`를 떠났음(left)을 나타냅니다. 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 20~~
+>
+>  ~~"summary": "Sally left work",~~
+> 
+>    ~~"name": "Work"~~
+
+>예시 20
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally left work",
+>  "summary": "Sally는 직장을 떠났습니다",
 >  "type": "Leave",
 >  "actor": {
 >    "type": "Person",
@@ -374,17 +535,23 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "Place",
->    "name": "Work"
+>    "name": "직장"
 >  }
 >}
 >```
 
->Example 21
+>~~Example 21~~
+>
+>  ~~"summary": "Sally left a group",~~
+> 
+>    ~~"name": "A Simple Group"~~
+
+>예시 21
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally left a group",
+>  "summary": "Sally는 그룹을 떠났습니다",
 >  "type": "Leave",
 >  "actor": {
 >    "type": "Person",
@@ -392,12 +559,12 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "Group",
->    "name": "A Simple Group"
+>    "name": "간단한 그룹"
 >  }
 >}
 >```
 
-**[Class] Like**
+#### [Class] Like
 
 Description| |
 --|--
@@ -406,12 +573,23 @@ Notes: | Indicates that the `actor` likes, recommends or endorses the `object`. 
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 22
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Like`
+비고: | `actor`가 `object`를 좋아(likes)하거나, 추천(recommends)하거나 또는 지지(endorses)함을 나타냅니다. 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 22~~
+>
+>  ~~"summary": "Sally liked a note",~~
+
+>예시 22
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally liked a note",
+>  "summary": "Sally는 노트를 좋아합니다",
 >  "type": "Like",
 >  "actor": {
 >    "type": "Person",
@@ -421,7 +599,7 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] Offer**
+#### [Class] Offer
 
 Description| |
 --|--
@@ -430,12 +608,25 @@ Notes: | Indicates that the `actor` is offering the `object`. If specified, the 
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 23
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Offer`
+비고: | `actor`가 `object`를 제공(offering)하고 있음을 나타냅니다. 특별히 지정된 경우, `origin`은 `object`가 제공하는 개체(entity)를 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 23~~
+>
+>  ~~"summary": "Sally offered 50% off to Lewis",~~
+>
+>    ~~"name": "50% Off!"~~
+
+>예시 23
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally offered 50% off to Lewis",
+>  "summary": "Sally는 Leweis에게 50% 할인을 제시했습니다",
 >  "type": "Offer",
 >  "actor": {
 >    "type": "Person",
@@ -443,7 +634,7 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "http://www.types.example/ProductOffer",
->    "name": "50% Off!"
+>    "name": "50% 할인!"
 >  },
 >  "target": {
 >    "type": "Person",
@@ -453,7 +644,7 @@ Properties: | Inherits all properties from Activity.
 >```
 
 
-**[Class] Invite**
+#### [Class] Invite
 
 Description| |
 --|--
@@ -462,12 +653,25 @@ Notes: | A specialization of Offer in which the `actor` is extending an invitati
 Extends: | Offer
 Properties: | Inherits all properties from Offer.
 
->Example 24
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Invite`
+비고: | `actor`가 `object`에 대한 초대(Offer)를 `target`으로 확장하는, Offer의 특화된 경우입니다.
+상속함: | Offer
+속성: | Offer로부터 모든 속성을 상속받습니다.
+
+>~~Example 24~~
+>
+>  ~~"summary": "Sally invited John and Lisa to a party",~~
+>
+>    ~~"name": "A Party"~~
+
+>예시 24
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally invited John and Lisa to a party",
+>  "summary": "Sally는 John과 Lisa를 파티에 초대했습니다",
 >  "type": "Invite",
 >  "actor": {
 >    "type": "Person",
@@ -475,7 +679,7 @@ Properties: | Inherits all properties from Offer.
 >  },
 >  "object": {
 >    "type": "Event",
->    "name": "A Party"
+>    "name": "파티"
 >  },
 >  "target": [
 >    {
@@ -490,7 +694,7 @@ Properties: | Inherits all properties from Offer.
 >}
 >```
 
-**[Class] Reject**
+#### [Class] Reject
 
 Description| |
 --|--
@@ -499,12 +703,25 @@ Notes: | Indicates that the `actor` is rejecting the `object`. The `target` and 
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 25
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Reject`
+비고: | `actor`가 `object`를 거부(rejecting)함을 나타냅니다. 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 25~~
+>
+>  ~~"summary": "Sally rejected an invitation to a party",~~
+>
+>    ~~"name": "Going-Away Party for Jim"~~
+
+>예시 25
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally rejected an invitation to a party",
+>  "summary": "Sally는 파티 초대를 거부했습니다",
 >  "type": "Reject",
 >  "actor": {
 >    "type": "Person",
@@ -515,13 +732,13 @@ Properties: | Inherits all properties from Activity.
 >    "actor": "http://john.example.org",
 >    "object": {
 >      "type": "Event",
->      "name": "Going-Away Party for Jim"
+>      "name": "Jim을 위한 송별회"
 >    }
 >  }
 >}
 >```
 
-**[Class] TentativeReject**
+#### [Class] TentativeReject
 
 Description| |
 --|--
@@ -530,12 +747,25 @@ Notes: | A specialization of Reject in which the rejection is considered tentati
 Extends: | Reject
 Properties: | Inherits all properties from Reject.
 
->Example 26
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#TentativeReject`
+비고: | 거부함(rejection)이 잠정적임을 나타내는, Reject의 특화된 경우입니다.
+상속함: | Reject
+속성: | Reject로부터 모든 속성을 상속받습니다.
+
+>~~Example 26~~
+>
+>  ~~"summary": "Sally tentatively rejected an invitation to a party",~~
+>
+>     ~~ "name": "Going-Away Party for Jim"~~
+
+>예시 26
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally tentatively rejected an invitation to a party",
+>  "summary": "Sally는 잠정적으로 파티 초대를 거부했습니다",
 >  "type": "TentativeReject",
 >  "actor": {
 >    "type": "Person",
@@ -546,13 +776,13 @@ Properties: | Inherits all properties from Reject.
 >    "actor": "http://john.example.org",
 >    "object": {
 >      "type": "Event",
->      "name": "Going-Away Party for Jim"
+>      "name": "Jim을 위한 송별회"
 >    }
 >  }
 >}
 >```
 
-**[Class] Remove**
+#### [Class] Remove
 
 Description| |
 --|--
@@ -561,12 +791,25 @@ Notes: | Indicates that the `actor` is removing the `object`. If specified, the 
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 27
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Remove`
+비고: | `actor`가 `object`를 제거(removing)하고 있음을 나타냅니다. 특별히 지정된 경우, `origin`은 `object`가 제거되는 컨텍스트를 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 27~~
+>
+>  ~~"summary": "Sally removed a note from her notes folder",~~
+>
+>    ~~"name": "Notes Folder"~~
+
+>예시 27
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally removed a note from her notes folder",
+>  "summary": "Sally는 노트 폴더에서 노트를 제거했습니다",
 >  "type": "Remove",
 >  "actor": {
 >    "type": "Person",
@@ -575,21 +818,29 @@ Properties: | Inherits all properties from Activity.
 >  "object": "http://example.org/notes/1",
 >  "target": {
 >    "type": "Collection",
->    "name": "Notes Folder"
+>    "name": "노트 폴더"
 >  }
 >}
 >```
 
->Example 28
+>~~Example 28~~
+>
+>  ~~"summary": "The moderator removed Sally from a group",~~
+>
+>    ~~"name": "The Moderator"~~
+>
+>    ~~"name": "A Simple Group"~~
+
+>예시 28
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "The moderator removed Sally from a group",
+>  "summary": "게시판 관리자는 샐리를 그룹에서 제거했습니다",
 >  "type": "Remove",
 >  "actor": {
 >    "type": "http://example.org/Role",
->    "name": "The Moderator"
+>    "name": "게시판 관리자"
 >  },
 >  "object": {
 >    "type": "Person",
@@ -597,26 +848,39 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "origin": {
 >    "type": "Group",
->    "name": "A Simple Group"
+>    "name": "간단한 그룹"
 >  }
 >}
 >```
 
-**[Class] Undo**
+[//Comment]: # "Moderator -> 게시판 관리자 로 번역하였습니다. 관리자 는 'admin'의 번역으로 적합한것 같고, 중재자/사회자/조정자는 적절하지 못한 번역으로 생각됩니다."
+
+#### [Class] Undo
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Undo`
-Notes: | Indicates that the `actor` is undoing the `object`. In most cases, the `object` will be an Activity describing some previously performed action (for instance, a person may have previously "liked" an article but, for whatever reason, might choose to undo that like at some later point in time). </br></br> The `target` and `origin` typically have no defined meaning.
+Notes: | Indicates that the `actor` is undoing the `object`. In most cases, the `object` will be an Activity describing some previously performed action (for instance, a person may have previously "liked" an article but, for whatever reason, might choose to undo that like at some later point in time). </br> The `target` and `origin` typically have no defined meaning.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 29
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Undo`
+비고: | `actor`가 `object`를 실행취소(undoing)하고 있음을 나타냅니다. 대부분의 경우, `object`는 이전에 수행된 일부 작업을 설명하는 액티비티입니다 (예를 들어, 어떤 사람이 특정 기사를 "좋아했을수도(liked)" 있지만, 어떠한 이유에서인지 차후에 그 행동을 실행취소 할 수도 있습니다). </br> 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 29~~
+>
+>  ~~"summary": "Sally retracted her offer to John",~~
+
+>예시 29
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally retracted her offer to John",
+>  "summary": "Sally는 John에게 보낸 제안을 철회하였습니다",
 >  "type": "Undo",
 >  "actor": "http://sally.example.org",
 >  "object": {
@@ -628,21 +892,32 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] Update**
+#### [Class] Update
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Update`
-Notes: | Indicates that the `actor` has updated the `object`. Note, however, that this vocabulary does not define a mechanism for describing the actual set of modifications made to `object`. </br></br> The `target` and `origin` typically have no defined meaning.
+Notes: | Indicates that the `actor` has updated the `object`. Note, however, that this vocabulary does not define a mechanism for describing the actual set of modifications made to `object`. </br> The `target` and `origin` typically have no defined meaning.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 30
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Update`
+비고: | `actor`가 `object`를 업데이트(updated) 했음을 나타냅니다. 그러나 이 어휘에서는 `object`에 대한 수정 방법들을 설명하기 위한 메커니즘을 정의하지 않습니다. </br> 이 클래스의 경우, `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 30~~
+>
+>  ~~"summary": "Sally updated her note",~~
+
+>예시 30
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally updated her note",
+>  "summary": "Sally는 그녀의 노트를 업데이트했습니다",
 >  "type": "Update",
 >  "actor": {
 >    "type": "Person",
@@ -652,7 +927,9 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] View**
+[//Comment]: # "'Sally는 그녀의 노트를 새로 갱신했습니다'로도 번역이 가능하나, '갱신'이라는 단어를 적어도 Chapter3 번역본에서는 적어도 아직까지는 사용하지 않았기 때문에 일관성을 위해 '업데이트'로 적었습니다."
+
+#### [Class] View
 
 Description| |
 --|--
@@ -661,12 +938,27 @@ Notes: | Indicates that the `actor` has viewed the object.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 31
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#View`
+비고: | `actor`가 객체를 보았음(viewed)을 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+[//Comment]: # "원문에서도 object가 <code></code>로 둘러싸이지 않았으므로 `백틱`으로 둘러싸지 않았습니다"
+
+>~~Example 31~~
+>
+>  ~~"summary": "Sally read an article",~~
+>
+>    ~~"name": "What You Should Know About Activity Streams"~~
+
+>예시 31
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally read an article",
+>  "summary": "Sally는 기사(article)를 읽었습니다",
 >  "type": "View",
 >  "actor": {
 >    "type": "Person",
@@ -674,13 +966,12 @@ Properties: | Inherits all properties from Activity.
 >  },
 >  "object": {
 >    "type": "Article",
->    "name": "What You Should Know About Activity Streams"
+>    "name": "당신이 Activity Streams에 대해 알아야 할 것들"
 >  }
 >}
 >```
 
-
-**[Class] Listen**
+#### [Class] Listen
 
 Description| |
 --|--
@@ -689,12 +980,23 @@ Notes: | Indicates that the `actor` has listened to the `object`.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 32
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Listen`
+비고: | `actor`가 `object`를 청취했음(listened)을 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 32~~
+>
+>  ~~"summary": "Sally listened to a piece of music",~~
+
+>예시 32
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally listened to a piece of music",
+>  "summary": "Sally는 음악을 들었습니다",
 >  "type": "Listen",
 >  "actor": {
 >    "type": "Person",
@@ -704,7 +1006,7 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] Read**
+#### [Class] Read
 
 Description| |
 --|--
@@ -713,12 +1015,23 @@ Notes: | Indicates that the `actor` has read the `object`.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 33
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Read`
+비고: | `actor`가 `object`를 읽었음(read)을 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 33~~
+>
+>  ~~"summary": "Sally read a blog post",~~
+
+>예시 33
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally read a blog post",
+>  "summary": "Sally는 블로그 게시물을 읽었습니다",
 >  "type": "Read",
 >  "actor": {
 >    "type": "Person",
@@ -728,7 +1041,7 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] Move**
+#### [Class] Move
 
 Description| |
 --|--
@@ -737,12 +1050,27 @@ Notes: | Indicates that the `actor` has moved `object` from `origin` to `target`
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 34
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Move`
+비고: | `actor`가 `object`를 `origin`에서 `target`으로 옮겼음(moved)을 나타냅니다. `origin`이나 `target`이 지정되지 않았을 경우, 이들의 값은 컨텍스트에 따라 결정될 수 있습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 34~~
+>
+>  ~~"summary": "Sally moved a post from List A to List B",~~
+>
+>    ~~"name": "List B"~~
+>
+>    ~~"name": "List A"~~
+
+>예시 34
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally moved a post from List A to List B",
+>  "summary": "Sally는 리스트 A에서 리스트 B로 게시물을 옮겼습니다.",
 >  "type": "Move",
 >  "actor": {
 >    "type": "Person",
@@ -751,16 +1079,16 @@ Properties: | Inherits all properties from Activity.
 >  "object": "http://example.org/posts/1",
 >  "target": {
 >    "type": "Collection",
->    "name": "List B"
+>    "name": "리스트 B"
 >  },
 >  "origin": {
 >    "type": "Collection",
->    "name": "List A"
+>    "name": "리스트 A"
 >  }
 >}
 >```
 
-**[Class] Travel**
+#### [Class] Travel
 
 Description| |
 --|--
@@ -769,12 +1097,27 @@ Notes: | Indicates that the `actor` is traveling to `target` from `origin`. `Tra
 Extends: | IntransitiveActivity
 Properties: | Inherits all properties from IntransitiveActivity.
 
->Example 35
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Travel`
+비고: | `actor`가 `object`를 `origin`에서 `target`으로 이동중(traveling)임을 나타냅니다. `Travel`은 `actor`가 직접적인 객체(direct object)를 지정하는 `IntransitiveObject` 입니다. `origin`이나 `target`이 지정되지 않았을 경우, 이들의 값은 컨텍스트에 따라 결정될 수 있습니다.
+상속함: | IntransitiveActivity
+속성: | IntransitiveActivity로부터 모든 속성을 상속받습니다.
+
+>~~Example 35~~
+>
+>  ~~"summary": "Sally went home from work",~~
+>
+>    ~~"name": "Home"~~
+>
+>    ~~"name": "Work"~~
+
+>예시 35
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally went home from work",
+>  "summary": "Sally는 직장에서 집으로 갔습니다.",
 >  "type": "Travel",
 >  "actor": {
 >    "type": "Person",
@@ -782,30 +1125,45 @@ Properties: | Inherits all properties from IntransitiveActivity.
 >  },
 >  "target": {
 >    "type": "Place",
->    "name": "Home"
+>    "name": "집"
 >  },
 >  "origin": {
 >    "type": "Place",
->    "name": "Work"
+>    "name": "직장"
 >  }
 >}
 >```
 
-**[Class] Announce**
+#### [Class] Announce
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Announce`
-Notes: | Indicates that the `actor` is calling the `target`'s attention the `object`. </br></br> The `origin` typically has no defined meaning.
+Notes: | Indicates that the `actor` is calling the `target`'s attention the `object`. </br> The `origin` typically has no defined meaning.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 36
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Announce`
+비고: | `actor`가 `target`의 주의를 `object`에 두고 있음을 나타냅니다. </br> 이 클래스의 경우, `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+[//TODO]: # "번역이 올바른건지 확실하지 않습니다. '`actor`가 `target`의 관심을 `object`이라고 부르고 있음을 나타냅니다.' 같은 번역도 가능할 수도 있기는 합니다."
+
+>~~Example 36~~
+>
+>  ~~"summary": "Sally announced that she had arrived at work",~~
+>
+>    ~~"name": "Work"~~
+
+>예시 36
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally announced that she had arrived at work",
+>  "summary": "Sally는 직장에 도착했다고 발표(announced)했습니다",
 >  "type": "Announce",
 >  "actor": {
 >    "type": "Person",
@@ -817,13 +1175,13 @@ Properties: | Inherits all properties from Activity.
 >    "actor": "http://sally.example.org",
 >    "location": {
 >      "type": "Place",
->      "name": "Work"
+>      "name": "직장"
 >    }
 >  }
 >}
 >```
 
-**[Class] Block**
+#### [Class] Block
 
 Description| |
 --|--
@@ -832,19 +1190,30 @@ Notes: | Indicates that the `actor` is blocking the `object`. Blocking is a stro
 Extends: | Ignore
 Properties: | Inherits all properties from Ignore.
 
->Example 37
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Block`
+비고: | `actor`가 `object`를 차단중(blocking)임을 나타냅니다. 차단(Blocking)은 더 강력한 형태의 무시(Ignore)입니다. 이 클래스의 일반적인 용도는, 소셜 시스템에서 한 사용자가 다른 사용자의 액티비티나 콘텐츠를 차단할 수 있는 방법을 지원하는 것입니다. `target`과 `origin`은 일반적으로 정의된 의미가 없습니다.
+상속함: | Ignore
+속성: | Ignore로부터 모든 속성을 상속받습니다.
+
+>~~Example 37~~
+>
+>  ~~"summary": "Sally blocked Joe",~~
+
+>예시 37
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally blocked Joe",
+>  "summary": "Sally는 Joe를 차단했습니다",
 >  "type": "Block",
 >  "actor": "http://sally.example.org",
 >  "object": "http://joe.example.org"
 >}
 >```
 
-**[Class] Flag**
+#### [Class] Flag
 
 Description| |
 --|--
@@ -853,12 +1222,27 @@ Notes: | Indicates that the `actor` is "flagging" the `object`. Flagging is defi
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 38
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Flag`
+비고: | `actor`가 `object`를 "신고(flagging)" 하고 있음을 나타냅니다. 신고는 일반적으로 여러 소셜 플랫폼에서 콘텐츠를 여러가지 이유로 부적절하다고 보고하는 것 으로 정의됩니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+[//Comment]: # "'flagging'을 '신고'로 번역하였습니다"
+
+>~~Example 38~~
+>
+>  ~~"summary": "Sally flagged an inappropriate note",~~
+>
+>    ~~"content": "An inappropriate note"~~
+
+>예시 38
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally flagged an inappropriate note",
+>  "summary": "Sally는 부적절한 노트를 신고했습니다",
 >  "type": "Flag",
 >  "actor": "http://sally.example.org",
 >  "object": {
@@ -868,7 +1252,7 @@ Properties: | Inherits all properties from Activity.
 >}
 >```
 
-**[Class] Dislike**
+#### [Class] Dislike
 
 Description| |
 --|--
@@ -877,64 +1261,99 @@ Notes: | Indicates that the `actor` dislikes the `object`.
 Extends: | Activity
 Properties: | Inherits all properties from Activity.
 
->Example 39
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Dislike`
+비고: | `actor`가 `object`를 싫어함(dislikes)을 나타냅니다.
+상속함: | Activity
+속성: | Activity로부터 모든 속성을 상속받습니다.
+
+>~~Example 39~~
+>
+>  ~~"summary": "Sally disliked a post",~~
+
+>예시 39
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally disliked a post",
+>  "summary": "Sally는 게시물을 싫어했습니다",
 >  "type": "Dislike",
 >  "actor": "http://sally.example.org",
 >  "object": "http://example.org/posts/1"
 >}
 >```
 
-**[Class] Question**
+[//TODO]: # "dislike가 '싫어함'으로 번역할수도 있으나, 좋아요(like)의 반대어로도 사용될 수 있습니다. 일단은 '싫어함'으로 번역하였으나 차후에 검토해보아야 할것 같습니다."
+
+#### [Class] Question
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Question`
-Notes: | Represents a question being asked. Question objects are an extension of IntransitiveActivity. That is, the Question object is an Activity, but the direct object is the question itself and therefore it would not contain an object property. </br></br> Either of the anyOf and oneOf properties *MAY* be used to express possible answers, but a Question object *MUST NOT* have both properties.
+Notes: | Represents a question being asked. Question objects are an extension of IntransitiveActivity. That is, the Question object is an Activity, but the direct object is the question itself and therefore it would not contain an object property. </br> Either of the anyOf and oneOf properties *MAY* be used to express possible answers, but a Question object *MUST NOT* have both properties.
 Extends: | IntransitiveActivity.
-Properties: | oneOf | anyOf | closed
-Inherits all properties from IntransitiveActivity. 
+Properties: | oneOf | anyOf | closed </br> Inherits all properties from IntransitiveActivity.
 
->Example 40
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Question`
+비고: | 묻는 질문(question)을 나타냅니다. Question 객체들은 IntransitiveActivity의 확장입니다. 즉 Question 객체는 Activity지만 직접적인 객체(direct object)는 질문 그 자체이므로 객체 속성을 포함하지 않습니다. </br> anyOf 또는 oneOf 속성중 하나를 사용하여 가능한 답변을 표현 *할 수도* 있지만, Question 객체에는 두 객체 모두 보유하는것을 *절대로 하지 말아야* 합니다.
+상속함: | IntransitiveActivity
+속성: | oneOf | anyOf | closed </br> IntransitiveActivity로부터 모든 속성을 상속받습니다.
+
+>~~Example 40~~
+>
+>  ~~"name": "What is the answer?",
+>
+>    ~~"name": "Option A"~~
+>
+>    ~~"name": "Option B"~~
+
+>예시 40
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Question",
->  "name": "What is the answer?",
+>  "name": "어느게 정답일까요?",
 >  "oneOf": [
 >    {
 >      "type": "Note",
->      "name": "Option A"
+>      "name": "선택지 A"
 >    },
 >    {
 >      "type": "Note",
->      "name": "Option B"
+>      "name": "선택지 B"
 >    }
 >  ]
 >}
 >```
 
->Example 41
+>~~Example 41~~
+>
+>  ~~"name": "What is the answer?",~~
+
+>예시 41
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Question",
->  "name": "What is the answer?",
+>  "name": "어느게 정답일까요?",
 >  "closed": "2016-05-10T00:00:00Z"
 >}
 >```
 
-### 3.2 Actor Types
+### 3.2 액터 타입 (Actor Types)
 
 Actor types are [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) types that are capable of performing activities.
 
-The core Actor Types include:
+액터 타입은 액티비티를 수행할 수 있는 [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) 타입입니다.
+
+~~The core Actor Types include:~~
+
+핵심 액터 타입은 다음과 같은 타입들을 포함합니다:
 
 - [Application](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-application)
 - [Group](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-group)
@@ -942,8 +1361,7 @@ The core Actor Types include:
 - [Person](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-person)
 - [Service](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-service)
 
-
-**[Class] Application**
+#### [Class] Application
 
 Description| |
 --|--
@@ -952,17 +1370,30 @@ Notes: | Describes a software application.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 42
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Application`
+비고: | 소프트웨어 어플리케이션(application)을 표현합니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 42~~
+>
+>  ~~"name": "Exampletron 3000"~~
+
+>예시 42
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Application",
->  "name": "Exampletron 3000"
+>  "name": "예시제조기 3000"
 >}
 >```
 
-**[Class] Group**
+[//Comment]: # "더 좋은 번역은 언제나 환영입니다"
+
+#### [Class] Group
 
 Description| |
 --|--
@@ -971,17 +1402,28 @@ Notes: | Represents a formal or informal collective of Actors.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 43
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Group`
+비고: | 액터들의 공식 또는 비공식 집단을 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 43~~
+>
+>  ~~"name": "Big Beards of Austin"~~
+
+>예시 43
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Group",
->  "name": "Big Beards of Austin"
+>  "name": "Austin의 큰수염"
 >}
 >```
 
-**[Class] Organization**
+#### [Class] Organization
 
 Description| |
 --|--
@@ -990,17 +1432,28 @@ Notes: | Represents an organization.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 44
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Organization`
+비고: | 조직(organization)을 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 44~~
+>
+>  ~~"name": "Example Co."~~
+
+>예시 44
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Organization",
->  "name": "Example Co."
+>  "name": "예시 (주)"
 >}
 >```
 
-**[Class] Person**
+#### [Class] Person
 
 Description| |
 --|--
@@ -1009,7 +1462,16 @@ Notes: | Represents an individual person.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 45
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Person`
+비고: | 독립적인 사람(person)을 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 45~~
+
+>예시 45
 >
 >```json
 >{
@@ -1019,7 +1481,7 @@ Properties: | Inherits all properties from Object.
 >}
 >```
 
-**[Class] Service**
+#### [Class] Service
 
 Description| |
 --|--
@@ -1028,21 +1490,36 @@ Notes: | Represents a service of any kind.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 46
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Service`
+비고: | 모든 종류의 서비스(service)를 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 46~~
+>
+>  ~~"name": "Acme Web Service"~~
+
+>예시 46
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Service",
->  "name": "Acme Web Service"
+>  "name": "Acme 웹 서비스"
 >}
 >```
 
-### 3.3 Object and Link Types
+### 3.3 객체와 링크 타입 (Object and Link Types)
 
 All Object Types inherit the properties of the base [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) type. Link Types inherit the properties of the base [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link) type. Some specific Object Types are subtypes or specializations of more generalized Object Types (for instance, the [Like](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-like) Type is a more specific form of the [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) type).
 
-The Object Types include:
+모든 객체 타입들은 기본 [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) 타입을 상속합니다. 링크 타입들은 기본 [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link) 타입을 상속합니다. 일부 특정한 객체 타입들은 일반화된 객체 타입의 하위 타입이나 특수화된 경우입니다. (예를 들어, [Like](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-like) 유형은 [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) 유형보다 구체적인 경우입니다).
+
+~~The Object Types include:~~
+
+객체 타입은 다음과 같은 타입들을 포함합니다:
 
 - [Article](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-article)
 - [Audio](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-audio)
@@ -1057,25 +1534,38 @@ The Object Types include:
 - [Tombstone](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tombstone)
 - [Video](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-video)
 
-The Link Types include:
+~~The Link Types include:~~
+
+링크 타입은 다음과 같은 타입들을 포함합니다:
 
 - [Mention](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mention)
 
-**[Class] Relationship**
+#### [Class] Relationship
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Relationship`
-Notes: | Describes a relationship between two individuals. The subject and object properties are used to identify the connected individuals.</br></br> See 5.2 Representing Relationships Between Entities for additional information.
+Notes: | Describes a relationship between two individuals. The subject and object properties are used to identify the connected individuals.</br> See 5.2 Representing Relationships Between Entities for additional information.
 Extends: | Object
-Properties: | subject \| object \| relationship </br></br> Inherits all properties from Object.
+Properties: | subject \| object \| relationship </br> Inherits all properties from Object.
 
->Example 47
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Relationship`
+비고: | 두 개개인 사이의 관계(relationship)을 나타냅니다. 주제 및 객체 속성은 연결된 개인을 식별하는데 사용됩니다. </br> 추가적인 정보는 5.2 엔티티 간의 관계 표현 을 참고하시길 바랍니다.
+상속함: | Object
+속성: | subject \| object \| relationship </br> Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 47~~
+>
+>  ~~"summary": "Sally is an acquaintance of John",~~
+
+>예시 47
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Sally is an acquaintance of John",
+>  "summary": "Sally는 John의 지인입니다",
 >  "type": "Relationship",
 >  "subject": {
 >    "type": "Person",
@@ -1089,7 +1579,7 @@ Properties: | subject \| object \| relationship </br></br> Inherits all properti
 >}
 >```
 
-**[Class] Article**
+#### [Class] Article
 
 Description| |
 --|--
@@ -1098,19 +1588,32 @@ Notes: | Represents any kind of multi-paragraph written work.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 48
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Article`
+비고: | 모든 종류의 다중-문단으로 쓰여진 작업을 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 48~~
+>
+>  ~~"name": "What a Crazy Day I Had",~~
+>
+>  ~~"content": "<div>... you will never believe ...</div>",~~
+
+>예시 48
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Article",
->  "name": "What a Crazy Day I Had",
->  "content": "<div>... you will never believe ...</div>",
+>  "name": "정말 대단한 하루였어",
+>  "content": "<div>... 나한테 일어난 일을 넌 절대 못믿을거야 ...</div>",
 >  "attributedTo": "http://sally.example.org"
 >}
 >```
 
-**[Class] Document**
+#### [Class] Document
 
 Description| |
 --|--
@@ -1119,18 +1622,29 @@ Notes: | Represents a document of any kind.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 49
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Document`
+비고: | 모든 종류의 문서(document)를 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 49~~
+>
+>  ~~"name": "4Q Sales Forecast",~~
+
+>예시 49
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Document",
->  "name": "4Q Sales Forecast",
+>  "name": "4분기 판매 동향",
 >  "url": "http://example.org/4q-sales-forecast.pdf"
 >}
 >```
 
-**[Class] Audio**
+#### [Class] Audio
 
 Description| |
 --|--
@@ -1139,13 +1653,24 @@ Notes: | Represents an audio document of any kind.
 Extends: | Document
 Properties: | Inherits all properties from Document.
 
->Example 50
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Audio`
+비고: | 모든 종류의 청각(audio) 문서를 나타냅니다.
+상속함: | Document
+속성: | Document로부터 모든 속성을 상속받습니다.
+
+>~~Example 50~~
+>
+>  ~~"name": "Interview With A Famous Technologist",~~
+
+>예시 50
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Audio",
->  "name": "Interview With A Famous Technologist",
+>  "name": "유명한 기술자와의 인터뷰",
 >  "url": {
 >    "type": "Link",
 >    "href": "http://example.org/podcast.mp3",
@@ -1154,7 +1679,7 @@ Properties: | Inherits all properties from Document.
 >}
 >```
 
-**[Class] Image**
+#### [Class] Image
 
 Description| |
 --|--
@@ -1163,13 +1688,24 @@ Notes: | An image document of any kind
 Extends: | Document
 Properties: | Inherits all properties from Document.
 
->Example 51
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Image`
+비고: | 모든 종류의 시각(image) 문서를 나타냅니다.
+상속함: | Document
+속성: | Document로부터 모든 속성을 상속받습니다.
+
+>~~Example 51~~
+>
+>  ~~"name": "Cat Jumping on Wagon",~~
+
+>예시 51
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Image",
->  "name": "Cat Jumping on Wagon",
+>  "name": "수레위로 뛰어든 고양이",
 >  "url": [
 >    {
 >      "type": "Link",
@@ -1185,7 +1721,9 @@ Properties: | Inherits all properties from Document.
 >}
 >```
 
-**[Class] Video**
+[//Comment]: # "의역"
+
+#### [Class] Video
 
 Description| |
 --|--
@@ -1194,19 +1732,30 @@ Notes: | Represents a video document of any kind.
 Extends: | Document
 Properties: | Inherits all properties from Document.
 
->Example 52
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Video`
+비고: | 모든 종류의 영상(video) 문서를 나타냅니다.
+상속함: | Document
+속성: | Document로부터 모든 속성을 상속받습니다.
+
+>~~Example 52~~
+>
+>  ~~"name": "Puppy Plays With Ball",~~
+
+>예시 52
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Video",
->  "name": "Puppy Plays With Ball",
+>  "name": "공놀이 하는 강아지",
 >  "url": "http://example.org/video.mkv",
 >  "duration": "PT2H"
 >}
 >```
 
-**[Class] Note**
+#### [Class] Note
 
 Description| |
 --|--
@@ -1215,18 +1764,31 @@ Notes: | Represents a short written work typically less than a single paragraph 
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 53
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Note`
+비고: | 일반적으로 한 문단 이하로 짧게 쓰여진 작업을 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 53~~
+>
+>  ~~"name": "A Word of Warning",~~
+>
+>  ~~"content": "Looks like it is going to rain today. Bring an umbrella!"~~
+
+>예시 53
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Note",
->  "name": "A Word of Warning",
->  "content": "Looks like it is going to rain today. Bring an umbrella!"
+>  "name": "경고문",
+>  "content": "오늘은 비가 내릴것 같네요. 우산을 챙기세요!"
 >}
 >```
 
-**[Class] Page**
+#### [Class] Page
 
 Description| |
 --|--
@@ -1235,18 +1797,29 @@ Notes: | Represents a Web Page.
 Extends: | Document
 Properties: | Inherits all properties from Document.
 
->Example 54
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Page`
+비고: | 웹 페이지(Page)를 나타냅니다.
+상속함: | Document
+속성: | Document로부터 모든 속성을 상속받습니다.
+
+>~~Example 54~~
+>
+>  ~~"name": "Omaha Weather Report",~~
+
+>예시 54
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Page",
->  "name": "Omaha Weather Report",
+>  "name": "Omaha 기상 보고서",
 >  "url": "http://example.org/weather-in-omaha.html"
 >}
 >```
 
-**[Class] Event**
+#### [Class] Event
 
 Description| |
 --|--
@@ -1255,44 +1828,70 @@ Notes: | Represents any kind of event.
 Extends: | Object
 Properties: | Inherits all properties from Object.
 
->Example 55
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Event`
+비고: | 모든 종류의 이벤트(event)를 나타냅니다.
+상속함: | Object
+속성: | Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 55~~
+>
+>  ~~"name": "Going-Away Party for Jim",~~
+
+>예시 55
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Event",
->  "name": "Going-Away Party for Jim",
+>  "name": "Jim을 위한 송별회",
 >  "startTime": "2014-12-31T23:00:00-08:00",
 >  "endTime": "2015-01-01T06:00:00-08:00"
 >}
 >```
 
-**[Class] Place**
+#### [Class] Place
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Place`
 Notes: | Represents a logical or physical location. See 5.3 Representing Places for additional information.
 Extends: | Object
-Properties: | accuracy \| altitude \| latitude \| longitude \| radius \| units </br></br> Inherits all properties from Object.
+Properties: | accuracy \| altitude \| latitude \| longitude \| radius \| units </br> Inherits all properties from Object.
 
->Example 56
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Place`
+비고: | 논리적 또는 물리적 위치를 나타냅니다. 추가적인 정보는 5.3 장소 표시 를 참고하시길 바랍니다.
+상속함: | Object
+속성: | accuracy \| altitude \| latitude \| longitude \| radius \| units </br> Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 56~~
+>
+>  ~~"name": "Work"~~
+
+>예시 56
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Place",
->  "name": "Work"
+>  "name": "직장"
 >}
 >```
 
->Example 57
+>~~Example 57~~
+>
+>  ~~"name": "Fresno Area",~~
+
+>예시 57
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Place",
->  "name": "Fresno Area",
+>  "name": "Fresno 지역",
 >  "latitude": 36.75,
 >  "longitude": 119.7667,
 >  "radius": 15,
@@ -1300,7 +1899,7 @@ Properties: | accuracy \| altitude \| latitude \| longitude \| radius \| units <
 >}
 >```
 
-**[Class] Mention**
+#### [Class] Mention
 
 Description| |
 --|--
@@ -1309,34 +1908,56 @@ Notes: | A specialized Link that represents an @mention.
 Extends: | Link
 Properties: | Inherits all properties from Link.
 
->Example 58
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Mention`
+비고: | @mention을 나타내는 특수한 링크입니다.
+상속함: | Link
+속성: | Link로부터 모든 속성을 상속받습니다.
+
+>~~Example 58~~
+>
+>  ~~"summary": "Mention of Joe by Carrie in her note",~~
+
+>예시 58
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
->  "summary": "Mention of Joe by Carrie in her note",
+>  "summary": "Carrie의 노트에 있는 Joe에 대한 언급(mention)",
 >  "type": "Mention",
 >  "href": "http://example.org/joe",
 >  "name": "Joe"
 >}
 >```
 
-**[Class] Profile**
+#### [Class] Profile
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Profile`
 Notes: | A Profile is a content object that describes another Object, typically used to describe Actor Type objects. The describes property is used to reference the object being described by the profile.
 Extends: | Object
-Properties: | describes </br></br> Inherits all properties from Object.
+Properties: | describes </br> Inherits all properties from Object.
 
->Example 59
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Profile`
+비고: | 프로필(Profile)은 일반적으로 액터 타입 객체를 설명하는데 사용되는, 다른 객체를 설명하는 컨텐츠 객체입니다. describes 속성은 프로필에서 설명하는 객체를 참조하는데 사용됩니다.
+상속함: | Object
+속성: | describes </br> Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 59~~
+>
+>  ~~"summary": "Sally's Profile",~~
+
+>예시 59
 >
 >```json
 >{
 >  "@context": "https://www.w3.org/ns/activitystreams",
 >  "type": "Profile",
->  "summary": "Sally's Profile",
+>  "summary": "Sally의 프로필",
 >  "describes": {
 >    "type": "Person",
 >    "name": "Sally Smith"
@@ -1344,7 +1965,7 @@ Properties: | describes </br></br> Inherits all properties from Object.
 >}
 >```
 
-**[Class] Tombstone**
+#### [Class] Tombstone
 
 Description| |
 --|--
@@ -1352,15 +1973,27 @@ URI: | `https://www.w3.org/ns/activitystreams#Tombstone`
 Notes: | A Tombstone represents a content object that has been deleted. It can be used in Collections to signify that there used to be an object at this position, but it has been deleted.
 Extends: | Object
 Properties: | 
-formerType | deleted </br></br> Inherits all properties from Object.
+formerType | deleted </br> Inherits all properties from Object.
 
->Example 60
+설명| |
+--|--
+URI: | `https://www.w3.org/ns/activitystreams#Tombstone`
+비고: | 프로필(Profile)은 일반적으로 액터 타입 객체를 설명하는데 사용되는, 다른 객체를 설명하는 컨텐츠 객체입니다. describes 속성은 프로필에서 설명하는 객체를 참조하는데 사용됩니다.
+상속함: | Object
+속성: | 묘지(Tombstone)는 삭제된 컨텐츠 객체를 나타냅니다. Collections에서 이 위치에 객체가 있었지만, 지금은 삭제된 것을 나타내기 위해 사용할 수 있습니다.
+이전타입 | deleted </br> Object로부터 모든 속성을 상속받습니다.
+
+>~~Example 60~~
+>
+>  ~~"name": "Vacation photos 2016",~~
+
+>예시 60
 >
 >```json
 >{
 >  "type": "OrderedCollection",
 >  "totalItems": 3,
->  "name": "Vacation photos 2016",
+>  "name": "휴가 사진들 2016",
 >  "orderedItems": [
 >    {
 >      "type": "Image",

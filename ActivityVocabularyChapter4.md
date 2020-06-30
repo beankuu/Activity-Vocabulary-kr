@@ -75,7 +75,7 @@ The "Domain" indicates the type of Object the property term applies to. The "Ran
 
 "도메인(Domain)"은 속성 용어가 적용되는 객체의 타입을 나타냅니다. "범위(Range)"는 속성 용어가 가질수 있는 값의 타입을 나타냅니다. 특정 속성은 다른 용어의 "하위속성(Subproperty)"으로 표시됩니다. 즉, 해당 용어는 참조된 용어의 특수화된 경우입니다. 예를 들어 [actor](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor)는 [attributedTo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attributedto)의 하위 속성입니다. "기능적(Functional)"으로 표시되어 있는 속성은 하나의 값만 가질수도 있습니다. "기능적(Functional)"으로 표시되지 않은 항목은 여러개의 값을 가질 수 있습니다.
 
-**[Class] id**
+#### [Class] id
 
 Description| |
 --|--
@@ -105,7 +105,7 @@ URI: | `@id`
 >}
 >```
 
-**[Class] type**
+#### [Class] type
 
 Description| |
 --|--
@@ -135,7 +135,7 @@ URI: | `@type`
 >}
 >```
 
-**[Class] actor**
+#### [Class] actor
 
 Description| |
 --|--
@@ -155,7 +155,11 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 
 >Example 63
 >
+>```json
+>{
 >  "summary": "Sally offered the Foo object",
+>}
+>```
 
 >예시 63
 >
@@ -171,7 +175,11 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 
 >Example 64
 >
+>```json
+>{
 >  "summary": "Sally offered the Foo object",
+>}
+>```
 
 >예시 64
 >
@@ -191,7 +199,11 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 
 >Example 65
 >
+>```json
+>{
 >  "summary": "Sally and Joe offered the Foo object",
+>}
+>```
 
 >예시 65
 >
@@ -212,7 +224,7 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 >}
 >```
 
-**[Class] attachment**
+#### [Class] attachment
 
 Description| |
 --|--
@@ -230,9 +242,12 @@ URI: | `https://www.w3.org/ns/activitystreams#attachment`
 
 >Example 66
 >
+>```json
+>{
 >  "name": "Have you seen my cat?",
-> 
 >      "content": "This is what he looks like.",
+>}
+>```
 
 >예시 66
 >
@@ -251,7 +266,7 @@ URI: | `https://www.w3.org/ns/activitystreams#attachment`
 >}
 >```
 
-**[Class] attributedTo**
+#### [Class] attributedTo
 
 Description| |
 --|--
@@ -271,7 +286,11 @@ URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 
 >Example 67
 >
+>```json
+>{
 >  "name": "My cat taking a nap",
+>}
+>```
 
 >예시 67
 >
@@ -292,7 +311,11 @@ URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 
 >Example 68
 >
+>```json
+>{
 >  "name": "My cat taking a nap",
+>}
+>```
 
 >예시 68
 >
@@ -312,7 +335,7 @@ URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 >}
 >```
 
-**[Class] audience**
+#### [Class] audience
 
 Description| |
 --|--
@@ -330,11 +353,13 @@ URI: | `https://www.w3.org/ns/activitystreams#audience`
 
 >Example 69
 >
+>```json
+>{
 >  "name": "Holiday announcement",
->
 >  "content": "Thursday will be a company-wide holiday. Enjoy your day off!",
->
 >    "name": "ExampleCo LLC"
+>}
+>```
 
 >예시 69
 >
@@ -351,7 +376,7 @@ URI: | `https://www.w3.org/ns/activitystreams#audience`
 >}
 >```
 
-**[Class] bcc**
+#### [Class] bcc
 
 Description| |
 --|--
@@ -369,7 +394,11 @@ URI: | `https://www.w3.org/ns/activitystreams#bcc`
 
 >Example 70
 >
+>```json
+>{
 >  "summary": "Sally offered a post to John",
+>}
+>```
 
 >예시 70
 >
@@ -385,7 +414,7 @@ URI: | `https://www.w3.org/ns/activitystreams#bcc`
 >}
 >```
 
-**[Class] bto**
+#### [Class] bto
 
 Description| |
 --|--
@@ -403,7 +432,11 @@ URI: | `https://www.w3.org/ns/activitystreams#bto`
 
 >Example 71
 >
+>```json
+>{
 >  "summary": "Sally offered a post to John",
+>}
+>```
 
 >예시 71
 >
@@ -419,7 +452,7 @@ URI: | `https://www.w3.org/ns/activitystreams#bto`
 >}
 >```
 
-**[Class] cc**
+#### [Class] cc
 
 Description| |
 --|--
@@ -437,7 +470,11 @@ URI: | `https://www.w3.org/ns/activitystreams#cc`
 
 >Example 72
 >
+>```json
+>{
 >  "summary": "Sally offered a post to John",
+>}
+>```
 
 >예시 72
 >
@@ -453,7 +490,7 @@ URI: | `https://www.w3.org/ns/activitystreams#cc`
 >}
 >```
 
-**[Class] context**
+#### [Class] context
 
 Description| |
 --|--
@@ -471,7 +508,11 @@ URI: | `https://www.w3.org/ns/activitystreams#context`
 
 >Example 73
 >
+>```json
+>{
 >  "summary": "Activities in context 1",
+>}
+>```
 
 >예시 73
 >
@@ -498,7 +539,7 @@ URI: | `https://www.w3.org/ns/activitystreams#context`
 >}
 >```
 
-**[Class] current**
+#### [Class] current
 
 Description| |
 --|--
@@ -518,7 +559,11 @@ URI: | `https://www.w3.org/ns/activitystreams#current`
 
 >Example 74
 >
+>```json
+>{
 >  "summary": "Sally's blog posts",
+>}
+>```
 
 >예시 74
 >
@@ -539,9 +584,12 @@ URI: | `https://www.w3.org/ns/activitystreams#current`
 
 >Example 75
 >
+>```json
+>{
 >  "summary": "Sally's blog posts",
->
 >    "summary": "Most Recent Items",
+>}
+>```
 
 >예시 75
 >
@@ -564,7 +612,7 @@ URI: | `https://www.w3.org/ns/activitystreams#current`
 >}
 >```
 
-**[Class] first**
+#### [Class] first
 
 Description| |
 --|--
@@ -584,7 +632,11 @@ URI: | `https://www.w3.org/ns/activitystreams#first`
 
 >Example 76
 >
+>```json
+>{
 >  "summary": "Sally's blog posts",
+>}
+>```
 
 >예시 76
 >
@@ -600,9 +652,12 @@ URI: | `https://www.w3.org/ns/activitystreams#first`
 
 >Example 77
 >
+>```json
+>{
 >  "summary": "Sally's blog posts",
->
 >    "summary": "First Page",
+>}
+>```
 
 >예시 77
 >
@@ -620,7 +675,7 @@ URI: | `https://www.w3.org/ns/activitystreams#first`
 >}
 >```
 
-**[Class] generator**
+#### [Class] generator
 
 Description| |
 --|--
@@ -638,11 +693,13 @@ URI: | `https://www.w3.org/ns/activitystreams#generator`
 
 >Example 78
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "This is all there is.",
->
 >    "name": "Exampletron 3000"
+>}
+>```
 
 >예시 78
 >
@@ -659,7 +716,7 @@ URI: | `https://www.w3.org/ns/activitystreams#generator`
 >}
 >```
 
-**[Class] icon**
+#### [Class] icon
 
 Description| |
 --|--
@@ -677,11 +734,13 @@ URI: | `https://www.w3.org/ns/activitystreams#icon`
 
 >Example 79
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "This is all there is.",
->
 >    "name": "Note icon",
+>}
+>```
 
 >예시 79
 >
@@ -703,13 +762,14 @@ URI: | `https://www.w3.org/ns/activitystreams#icon`
 
 >Example 80
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "A simple note",
->
 >      "summary": "Note (16x16)",
->
 >      "summary": "Note (32x32)",
+>}
+>```
 
 >예시 80
 >
@@ -738,7 +798,7 @@ URI: | `https://www.w3.org/ns/activitystreams#icon`
 >}
 >```
 
-**[Class] image**
+#### [Class] image
 
 Description| |
 --|--
@@ -756,11 +816,13 @@ URI: | `https://www.w3.org/ns/activitystreams#image`
 
 >Example 81
 >
+>```json
+>{
 >  "name": "A simple note",
->
 >  "content": "This is all there is.",
->
 >    "name": "A Cat",
+>}
+>```
 
 >예시 81
 >
@@ -780,13 +842,14 @@ URI: | `https://www.w3.org/ns/activitystreams#image`
 
 >Example 82
 >
+>```json
+>{
 >  "name": "A simple note",
->
 >  "content": "This is all there is.",
->
 >      "name": "Cat 1",
->
 >      "name": "Cat 2",
+>}
+>```
 
 >예시 82
 >
@@ -811,7 +874,7 @@ URI: | `https://www.w3.org/ns/activitystreams#image`
 >}
 >```
 
-**[Class] inReplyTo**
+#### [Class] inReplyTo
 
 Description| |
 --|--
@@ -829,13 +892,14 @@ URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 
 >Example 83
 >
+>```json
+>{
 >  "name": "A simple note",
->
 >  "content": "This is all there is.",
->
 >    "summary": "Previous note",
->
 >    "content": "What else is there?"
+>}
+>```
 
 >예시 83
 >
@@ -855,9 +919,12 @@ URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 
 >Example 84
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "This is all there is.",
+>}
+>```
 
 >예시 84
 >
@@ -871,7 +938,7 @@ URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 >}
 >```
 
-**[Class] instrument**
+#### [Class] instrument
 
 Description| |
 --|--
@@ -889,9 +956,12 @@ URI: | `https://www.w3.org/ns/activitystreams#instrument`
 
 >Example 85
 >
+>```json
+>{
 >  "summary": "Sally listened to a piece of music on the Acme Music Service",
->
 >    "name": "Acme Music Service"
+>}
+>```
 
 >예시 85
 >
@@ -912,7 +982,7 @@ URI: | `https://www.w3.org/ns/activitystreams#instrument`
 >}
 >```
 
-**[Class] last**
+#### [Class] last
 
 Description| |
 --|--
@@ -925,14 +995,18 @@ Functional: | True
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#last`
-비고: | 페이징 된 컬렉션에서 컬렉션의 가장 뒤에있는 페이지를 나타냅니다.
+비고: | 페이징 된 컬렉션에서 컬렉션의 뒷방향으로 가장 멀리있는 페이지를 나타냅니다.
 도메인: | Collection
 범위: | CollectionPage \| Link
 기능적: | True
 
 >Example 86
 >
+>```json
+>{
 >  "summary": "A collection",
+>}
+>```
 
 >예시 86
 >
@@ -948,9 +1022,12 @@ URI: | `https://www.w3.org/ns/activitystreams#last`
 
 >Example 87
 >
+>```json
+>{
 >  "summary": "A collection",
->
 >    "summary": "Last Page",
+>}
+>```
 
 >예시 87
 >
@@ -968,7 +1045,7 @@ URI: | `https://www.w3.org/ns/activitystreams#last`
 >}
 >```
 
-**[Class] location**
+#### [Class] location
 
 Description| |
 --|--
@@ -986,7 +1063,11 @@ URI: | `https://www.w3.org/ns/activitystreams#location`
 
 >Example 88
 >
+>```json
+>{
 >    "name": "Over the Arabian Sea, east of Socotra Island Nature Sanctuary",
+>}
+>```
 
 >예시 88
 >
@@ -1006,7 +1087,7 @@ URI: | `https://www.w3.org/ns/activitystreams#location`
 >}
 >```
 
-**[Class] items**
+#### [Class] items
 
 Description| |
 --|--
@@ -1024,11 +1105,13 @@ URI: | `https://www.w3.org/ns/activitystreams#items`
 
 >Example 89
 >
+>```json
+>{
 >  "summary": "Sally's notes",
->
 >      "name": "Reminder for Going-Away Party"
->
 >      "name": "Meeting 2016-11-17"
+>}
+>```
 
 >예시 89
 >
@@ -1053,11 +1136,13 @@ URI: | `https://www.w3.org/ns/activitystreams#items`
 
 >Example 90
 >
+>```json
+>{
 >  "summary": "Sally's notes",
->
 >      "name": "Meeting 2016-11-17"
->
 >      "name": "Reminder for Going-Away Party"
+>}
+>```
 
 >예시 90
 >
@@ -1080,7 +1165,7 @@ URI: | `https://www.w3.org/ns/activitystreams#items`
 >}
 >```
 
-**[Class] oneOf**
+#### [Class] oneOf
 
 Description| |
 --|--
@@ -1098,11 +1183,13 @@ URI: | `https://www.w3.org/ns/activitystreams#oneOf`
 
 >Example 91
 >
+>```json
+>{
 >  "name": "What is the answer?",
->
 >      "name": "Option A"
->
 >      "name": "Option B"
+>}
+>```
 
 >예시 91
 >
@@ -1124,7 +1211,7 @@ URI: | `https://www.w3.org/ns/activitystreams#oneOf`
 >}
 >```
 
-**[Class] anyOf**
+#### [Class] anyOf
 
 Description| |
 --|--
@@ -1142,11 +1229,13 @@ URI: | `https://www.w3.org/ns/activitystreams#anyOf`
 
 >Example 92
 >
+>```json
+>{
 >  "name": "What is the answer?",
->
 >      "name": "Option A"
->
 >      "name": "Option B"
+>}
+>```
 
 >예시 92
 >
@@ -1168,7 +1257,7 @@ URI: | `https://www.w3.org/ns/activitystreams#anyOf`
 >}
 >```
 
-**[Class] closed**
+#### [Class] closed
 
 Description| |
 --|--
@@ -1186,7 +1275,11 @@ URI: | `https://www.w3.org/ns/activitystreams#closed`
 
 >Example 93
 >
+>```json
+>{
 >  "name": "What is the answer?",
+>}
+>```
 
 >예시 93
 >
@@ -1199,7 +1292,7 @@ URI: | `https://www.w3.org/ns/activitystreams#closed`
 >}
 >```
 
-**[Class] origin**
+#### [Class] origin
 
 Description| |
 --|--
@@ -1219,11 +1312,13 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 
 >Example 94
 >
+>```json
+>{
 >  "summary": "Sally moved a post from List A to List B",
->
 >    "name": "List B"
->
 >    "name": "List A"
+>}
+>```
 
 >예시 94
 >
@@ -1245,7 +1340,7 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 >}
 >```
 
-**[Class] next**
+#### [Class] next
 
 Description| |
 --|--
@@ -1257,7 +1352,7 @@ Functional: | True
 
 설명| |
 --|--
-URI: | `https://www.w3.org/ns/activitystreams#origin`
+URI: | `https://www.w3.org/ns/activitystreams#next`
 비고: | 페이징 된 컬렉션에서 항목들의 다음(next) 페이지를 나타냅니다.
 도메인: | CollectionPage
 범위: | CollectionPage \| Link
@@ -1265,7 +1360,11 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 
 >Example 95
 >
+>```json
+>{
 >  "summary": "Page 2 of Sally's blog posts",
+>}
+>```
 
 >예시 95
 >
@@ -1285,9 +1384,12 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 
 >Example 96
 >
+>```json
+>{
 >  "summary": "Page 2 of Sally's blog posts",
->
 >    "name": "Next Page",
+>}
+>```
 
 >예시 96
 >
@@ -1309,7 +1411,7 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 >}
 >```
 
-**[Class] object**
+#### [Class] object
 
 Description| |
 --|--
@@ -1327,7 +1429,11 @@ URI: | `https://www.w3.org/ns/activitystreams#object`
 
 >Example 97
 >
+>```json
+>{
 >  "summary": "Sally liked a post",
+>}
+>```
 
 >예시 97
 >
@@ -1345,7 +1451,11 @@ URI: | `https://www.w3.org/ns/activitystreams#object`
 
 >Example 98
 >
+>```json
+>{
 >    "content": "A simple note"
+>}
+>```
 
 >예시 98
 >
@@ -1363,11 +1473,13 @@ URI: | `https://www.w3.org/ns/activitystreams#object`
 
 >Example 99
 >
+>```json
+>{
 >  "summary": "Sally liked a note",
->
 >      "summary": "A simple note",
->
 >      "content": "That is a tree."
+>}
+>```
 
 >예시 99
 >
@@ -1388,7 +1500,7 @@ URI: | `https://www.w3.org/ns/activitystreams#object`
 >}
 >```
 
-**[Class] prev**
+#### [Class] prev
 
 Description| |
 --|--
@@ -1408,7 +1520,11 @@ URI: | `https://www.w3.org/ns/activitystreams#prev`
 
 >Example 100
 >
+>```json
+>{
 >  "summary": "Page 1 of Sally's blog posts",
+>}
+>```
 
 >예시 100
 >
@@ -1428,9 +1544,12 @@ URI: | `https://www.w3.org/ns/activitystreams#prev`
 
 >Example 101
 >
+>```json
+>{
 >  "summary": "Page 1 of Sally's blog posts",
->
 >    "name": "Previous Page",
+>}
+>```
 
 >예시 101
 >
@@ -1452,7 +1571,7 @@ URI: | `https://www.w3.org/ns/activitystreams#prev`
 >}
 >```
 
-**[Class] preview**
+#### [Class] preview
 
 Description| |
 --|--
@@ -1464,15 +1583,18 @@ Range: | Link \| Object
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#preview`
-비고: | 이 객체의 미리보기를 제공하는 개체를 식별합니다.
+비고: | 이 객체의 미리보기(preview)를 제공하는 개체를 식별합니다.
 도메인: | Link \| Object
 범위: | Link \| Object
 
 >Example 102
 >
+>```json
+>{
 >  "name": "Cool New Movie",
->
 >    "name": "Trailer",
+>}
+>```
 
 >예시 102
 >
@@ -1494,7 +1616,7 @@ URI: | `https://www.w3.org/ns/activitystreams#preview`
 >}
 >```
 
-**[Class] result**
+#### [Class] result
 
 Description| |
 --|--
@@ -1512,9 +1634,12 @@ URI: | `https://www.w3.org/ns/activitystreams#result`
 
 >Example 103
 >
+>```json
+>{
 >  "summary": "Sally checked that her flight was on time",
->
 >    "name": "On Time"
+>}
+>```
 
 >예시 103
 >
@@ -1532,7 +1657,7 @@ URI: | `https://www.w3.org/ns/activitystreams#result`
 >}
 >```
 
-**[Class] replies**
+#### [Class] replies
 
 Description| |
 --|--
@@ -1552,13 +1677,14 @@ URI: | `https://www.w3.org/ns/activitystreams#replies`
 
 >Example 104
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "I am fine.",
->
 >        "summary": "A response to the note",
->
 >        "content": "I am glad to hear it.",
+>}
+>```
 
 >예시 104
 >
@@ -1584,7 +1710,7 @@ URI: | `https://www.w3.org/ns/activitystreams#replies`
 >}
 >```
 
-**[Class] tag**
+#### [Class] tag
 
 Description| |
 --|--
@@ -1602,7 +1728,11 @@ URI: | `https://www.w3.org/ns/activitystreams#tag`
 
 >Example 105
 >
+>```json
+>{
 >  "summary": "Picture of Sally",
+>}
+>```
 
 >예시 105
 >
@@ -1622,7 +1752,7 @@ URI: | `https://www.w3.org/ns/activitystreams#tag`
 >}
 >```
 
-**[Class] target**
+#### [Class] target
 
 Description| |
 --|--
@@ -1640,7 +1770,11 @@ URI: | `https://www.w3.org/ns/activitystreams#target`
 
 >Example 106
 >
+>```json
+>{
 >  "summary": "Sally offered the post to John",
+>}
+>```
 
 
 >예시 106
@@ -1658,7 +1792,11 @@ URI: | `https://www.w3.org/ns/activitystreams#target`
 
 >Example 107
 >
+>```json
+>{
 >  "summary": "Sally offered the post to John",
+>}
+>```
 
 >예시 107
 >
@@ -1676,7 +1814,7 @@ URI: | `https://www.w3.org/ns/activitystreams#target`
 >}
 >```
 
-**[Class] to**
+#### [Class] to
 
 Description| |
 --|--
@@ -1694,7 +1832,11 @@ URI: | `https://www.w3.org/ns/activitystreams#to`
 
 >Example 108
 >
+>```json
+>{
 >  "summary": "Sally offered the post to John",
+>}
+>```
 
 >예시 108
 >
@@ -1710,7 +1852,7 @@ URI: | `https://www.w3.org/ns/activitystreams#to`
 >}
 >```
 
-**[Class] url**
+#### [Class] url
 
 Description| |
 --|--
@@ -1728,7 +1870,11 @@ URI: | `https://www.w3.org/ns/activitystreams#url`
 
 >Example 109
 >
+>```json
+>{
 >  "name": "4Q Sales Forecast",
+>}
+>```
 
 >예시 109
 >
@@ -1743,7 +1889,11 @@ URI: | `https://www.w3.org/ns/activitystreams#url`
 
 >Example 110
 >
+>```json
+>{
 >  "name": "4Q Sales Forecast",
+>}
+>```
 
 >예시 110
 >
@@ -1761,7 +1911,11 @@ URI: | `https://www.w3.org/ns/activitystreams#url`
 
 >Example 111
 >
+>```json
+>{
 >  "name": "4Q Sales Forecast",
+>}
+>```
 
 >예시 111
 >
@@ -1785,7 +1939,7 @@ URI: | `https://www.w3.org/ns/activitystreams#url`
 >}
 >```
 
-**[Class] accuracy**
+#### [Class] accuracy
 
 Description| |
 --|--
@@ -1805,7 +1959,11 @@ URI: | `https://www.w3.org/ns/activitystreams#accuracy`
 
 >Example 112
 >
+>```json
+>{
 >  "name": "Liu Gu Lu Cun, Pingdu, Qingdao, Shandong, China",
+>}
+>```
 
 >예시 112
 >
@@ -1820,7 +1978,7 @@ URI: | `https://www.w3.org/ns/activitystreams#accuracy`
 >}
 >```
 
-**[Class] altitude**
+#### [Class] altitude
 
 Description| |
 --|--
@@ -1840,7 +1998,11 @@ URI: | `https://www.w3.org/ns/activitystreams#altitude`
 
 >Example 113
 >
+>```json
+>{
 >  "name": "Fresno Area",
+>}
+>```
 
 >예시 113
 >
@@ -1856,7 +2018,7 @@ URI: | `https://www.w3.org/ns/activitystreams#altitude`
 >}
 >```
 
-**[Class] content**
+#### [Class] content
 
 Description| |
 --|--
@@ -1874,9 +2036,12 @@ URI: | `https://www.w3.org/ns/activitystreams#content`
 
 >Example 114
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "A <em>simple</em> note"
+>}
+>```
 
 >예시 114
 >
@@ -1891,7 +2056,11 @@ URI: | `https://www.w3.org/ns/activitystreams#content`
 
 >Example 115
 >
+>```json
+>{
 >  "summary": "A simple note",
+>}
+>```
 
 >예시 115
 >
@@ -1910,9 +2079,12 @@ URI: | `https://www.w3.org/ns/activitystreams#content`
 
 >Example 116
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "## A simple note\nA simple markdown `note`"
+>}
+>```
 
 >예시 116
 >
@@ -1926,7 +2098,7 @@ URI: | `https://www.w3.org/ns/activitystreams#content`
 >}
 >```
 
-**[Class] name**
+#### [Class] name
 
 Description| |
 --|--
@@ -1944,7 +2116,11 @@ URI: | `https://www.w3.org/ns/activitystreams#name`
 
 >Example 117
 >
+>```json
+>{
 >  "name": "A simple note"
+>}
+>```
 
 >예시 117
 >
@@ -1972,7 +2148,7 @@ URI: | `https://www.w3.org/ns/activitystreams#name`
 >}
 >```
 
-**[Class] duration**
+#### [Class] duration
 
 Description| |
 --|--
@@ -1992,7 +2168,11 @@ URI: | `https://www.w3.org/ns/activitystreams#duration`
 
 >Example 119
 >
+>```json
+>{
 >  "name": "Birds Flying",
+>}
+>```
 
 >예시 119
 >
@@ -2006,7 +2186,7 @@ URI: | `https://www.w3.org/ns/activitystreams#duration`
 >}
 >```
 
-**[Class] height**
+#### [Class] height
 
 Description| |
 --|--
@@ -2038,7 +2218,7 @@ URI: | `https://www.w3.org/ns/activitystreams#height`
 >}
 >```
 
-**[Class] href**
+#### [Class] href
 
 Description| |
 --|--
@@ -2058,7 +2238,11 @@ URI: | `https://www.w3.org/ns/activitystreams#href`
 
 >Example 121
 >
+>```json
+>{
 >  "name": "Previous"
+>}
+>```
 
 >예시 121
 >
@@ -2072,7 +2256,7 @@ URI: | `https://www.w3.org/ns/activitystreams#href`
 >}
 >```
 
-**[Class] hreflang**
+#### [Class] hreflang
 
 Description| |
 --|--
@@ -2092,7 +2276,11 @@ URI: | `https://www.w3.org/ns/activitystreams#hreflang`
 
 >Example 122
 >
+>```json
+>{
 >  "name": "Previous"
+>}
+>```
 
 >예시 122
 >
@@ -2107,7 +2295,7 @@ URI: | `https://www.w3.org/ns/activitystreams#hreflang`
 >}
 >```
 
-**[Class] partOf**
+#### [Class] partOf
 
 Description| |
 --|--
@@ -2127,11 +2315,13 @@ URI: | `https://www.w3.org/ns/activitystreams#partOf`
 
 >Example 123
 >
+>```json
+>{
 >  "summary": "Page 1 of Sally's notes",
->
 >      "name": "Pizza Toppings to Try"
->
 >      "name": "Thought about California"
+>}
+>```
 
 >예시 123
 >
@@ -2155,7 +2345,7 @@ URI: | `https://www.w3.org/ns/activitystreams#partOf`
 >}
 >```
 
-**[Class] latitude**
+#### [Class] latitude
 
 Description| |
 --|--
@@ -2175,7 +2365,11 @@ URI: | `https://www.w3.org/ns/activitystreams#latitude`
 
 >Example 124
 >
+>```json
+>{
 >  "name": "Fresno Area",
+>}
+>```
 
 >예시 124
 >
@@ -2191,7 +2385,7 @@ URI: | `https://www.w3.org/ns/activitystreams#latitude`
 >}
 >```
 
-**[Class] longitude**
+#### [Class] longitude
 
 Description| |
 --|--
@@ -2211,7 +2405,11 @@ URI: | `https://www.w3.org/ns/activitystreams#longitude`
 
 >Example 125
 >
+>```json
+>{
 >  "name": "Fresno Area",
+>}
+>```
 
 >예시 125
 >
@@ -2227,7 +2425,7 @@ URI: | `https://www.w3.org/ns/activitystreams#longitude`
 >}
 >```
 
-**[Class] mediaType**
+#### [Class] mediaType
 
 Description| |
 --|--
@@ -2247,7 +2445,11 @@ URI: | `https://www.w3.org/ns/activitystreams#mediaType`
 
 >Example 126
 >
+>```json
+>{
 >  "name": "Next"
+>}
+>```
 
 >예시 126
 >
@@ -2262,7 +2464,7 @@ URI: | `https://www.w3.org/ns/activitystreams#mediaType`
 >}
 >```
 
-**[Class] endTime**
+#### [Class] endTime
 
 Description| |
 --|--
@@ -2282,7 +2484,11 @@ URI: | `https://www.w3.org/ns/activitystreams#endTime`
 
 >Example 127
 >
+>```json
+>{
 >  "name": "Going-Away Party for Jim",
+>}
+>```
 
 >예시 127
 >
@@ -2296,7 +2502,7 @@ URI: | `https://www.w3.org/ns/activitystreams#endTime`
 >}
 >```
 
-**[Class] published**
+#### [Class] published
 
 Description| |
 --|--
@@ -2316,9 +2522,12 @@ URI: | `https://www.w3.org/ns/activitystreams#published`
 
 >Example 128
 >
+>```json
+>{
 >  "summary": "A simple note",
->
 >  "content": "Fish swim.",
+>}
+>```
 
 >예시 128
 >
@@ -2332,7 +2541,7 @@ URI: | `https://www.w3.org/ns/activitystreams#published`
 >}
 >```
 
-**[Class] startTime**
+#### [Class] startTime
 
 Description| |
 --|--
@@ -2345,14 +2554,18 @@ Functional: | True
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#startTime`
-비고: | 객체의 실제 또는 예상 시작 시간을 설명하는 날짜 및 시간입니다. 예를 들어, 액티비티 객체와 함께 사용되는 경우 startTime 속성은 액티비티가 시작되거나 예정된 순간을 지정합니다.
+비고: | 객체의 실제 또는 예상 시작 시간(starting time)을 설명하는 날짜 및 시간입니다. 예를 들어, 액티비티 객체와 함께 사용되는 경우 startTime 속성은 액티비티가 시작되거나 예정된 순간을 지정합니다.
 도메인: | Object
 범위: | `xsd:dateTime`
 기능적: | True
 
 >Example 129
 >
+>```json
+>{
 >  "name": "Going-Away Party for Jim",
+>}
+>```
 
 >예시 129
 >
@@ -2366,7 +2579,7 @@ URI: | `https://www.w3.org/ns/activitystreams#startTime`
 >}
 >```
 
-**[Class] radius**
+#### [Class] radius
 
 Description| |
 --|--
@@ -2386,7 +2599,11 @@ URI: | `https://www.w3.org/ns/activitystreams#radius`
 
 >Example 130
 >
+>```json
+>{
 >  "name": "Fresno Area",
+>}
+>```
 
 >예시 130
 >
@@ -2402,7 +2619,7 @@ URI: | `https://www.w3.org/ns/activitystreams#radius`
 >}
 >```
 
-**[Class] rel**
+#### [Class] rel
 
 Description| |
 --|--
@@ -2420,7 +2637,11 @@ URI: | `https://www.w3.org/ns/activitystreams#rel`
 
 >Example 131
 >
+>```json
+>{
 >  "name": "Preview",
+>}
+>```
 
 >예시 131
 >
@@ -2436,7 +2657,7 @@ URI: | `https://www.w3.org/ns/activitystreams#rel`
 >}
 >```
 
-**[Class] startIndex**
+#### [Class] startIndex
 
 Description| |
 --|--
@@ -2456,11 +2677,13 @@ URI: | `https://www.w3.org/ns/activitystreams#startIndex`
 
 >Example 132
 >
+>```json
+>{
 >  "summary": "Page 1 of Sally's notes",
->
 >      "name": "Density of Water"
->
 >      "name": "Air Mattress Idea"
+>}
+>```
 
 >예시 132
 >
@@ -2483,7 +2706,7 @@ URI: | `https://www.w3.org/ns/activitystreams#startIndex`
 >}
 >```
 
-**[Class] summary**
+#### [Class] summary
 
 Description| |
 --|--
@@ -2501,9 +2724,12 @@ URI: | `https://www.w3.org/ns/activitystreams#summary`
 
 >Example 133
 >
+>```json
+>{
 >  "name": "Cane Sugar Processing",
->
 >  "summary": "A simple <em>note</em>"
+>}
+>```
 
 >예시 133
 >
@@ -2518,7 +2744,11 @@ URI: | `https://www.w3.org/ns/activitystreams#summary`
 
 >Example 134
 >
+>```json
+>{
 >  "name": "Cane Sugar Processing",
+>}
+>```
 
 >예시 134
 >
@@ -2535,7 +2765,7 @@ URI: | `https://www.w3.org/ns/activitystreams#summary`
 >}
 >```
 
-**[Class] totalItems**
+#### [Class] totalItems
 
 Description| |
 --|--
@@ -2555,11 +2785,13 @@ URI: | `https://www.w3.org/ns/activitystreams#totalItems`
 
 >Example 135
 >
+>```json
+>{
 >  "summary": "Sally's notes",
->
 >      "name": "Which Staircase Should I Use"
->
 >      "name": "Something to Remember"
+>}
+>```
 
 >예시 135
 >
@@ -2582,7 +2814,7 @@ URI: | `https://www.w3.org/ns/activitystreams#totalItems`
 >}
 >```
 
-**[Class] units**
+#### [Class] units
 
 Description| |
 --|--
@@ -2602,7 +2834,11 @@ URI: | `https://www.w3.org/ns/activitystreams#units`
 
 >Example 136
 >
+>```json
+>{
 >  "name": "Fresno Area",
+>}
+>```
 
 >예시 136
 >
@@ -2618,7 +2854,7 @@ URI: | `https://www.w3.org/ns/activitystreams#units`
 >}
 >```
 
-**[Class] updated**
+#### [Class] updated
 
 Description| |
 --|--
@@ -2638,9 +2874,12 @@ URI: | `https://www.w3.org/ns/activitystreams#updated`
 
 >Example 137
 >
+>```json
+>{
 >  "name": "Cranberry Sauce Idea",
->
 >  "content": "Mush it up so it does not have the same shape as the can.",
+>}
+>```
 
 >예시 137
 >
@@ -2654,7 +2893,7 @@ URI: | `https://www.w3.org/ns/activitystreams#updated`
 >}
 >```
 
-**[Class] width**
+#### [Class] width
 
 Description| |
 --|--
@@ -2686,7 +2925,7 @@ URI: | `https://www.w3.org/ns/activitystreams#width`
 >}
 >```
 
-**[Class] subject**
+#### [Class] subject
 
 Description| |
 --|--
@@ -2706,7 +2945,11 @@ URI: | `https://www.w3.org/ns/activitystreams#subject`
 
 >Example 139
 >
+>```json
+>{
 >  "summary": "Sally is an acquaintance of John's",
+>}
+>```
 
 >예시 139
 >
@@ -2727,7 +2970,7 @@ URI: | `https://www.w3.org/ns/activitystreams#subject`
 >}
 >```
 
-**[Class] relationship**
+#### [Class] relationship
 
 Description| |
 --|--
@@ -2745,7 +2988,11 @@ URI: | `https://www.w3.org/ns/activitystreams#relationship`
 
 >Example 140
 >
+>```json
+>{
 >  "summary": "Sally is an acquaintance of John's",
+>}
+>```
 
 >예시 140
 >
@@ -2766,7 +3013,7 @@ URI: | `https://www.w3.org/ns/activitystreams#relationship`
 >}
 >```
 
-**[Class] describes**
+#### [Class] describes
 
 Description| |
 --|--
@@ -2786,7 +3033,11 @@ URI: | `https://www.w3.org/ns/activitystreams#describes`
 
 >Example 141
 >
+>```json
+>{
 >  "summary": "Sally's profile",
+>}
+>```
 
 >예시 141
 >
@@ -2803,7 +3054,7 @@ URI: | `https://www.w3.org/ns/activitystreams#describes`
 >}
 >```
 
-**[Class] formerType**
+#### [Class] formerType
 
 Description| |
 --|--
@@ -2823,7 +3074,11 @@ URI: | `https://www.w3.org/ns/activitystreams#formerType`
 
 >Example 142
 >
+>```json
+>{
 >"summary": "This image has been deleted",
+>}
+>```
 
 >예시 142
 >```json
@@ -2836,7 +3091,7 @@ URI: | `https://www.w3.org/ns/activitystreams#formerType`
 >}
 >```
 
-**[Class] deleted**
+#### [Class] deleted
 
 Description| |
 --|--
@@ -2848,7 +3103,7 @@ Functional: | True
 
 설명| |
 --|--
-URI: | `https://www.w3.org/ns/activitystreams#formerType`
+URI: | `https://www.w3.org/ns/activitystreams#deleted`
 비고: | Tombstone 객체에서 `deleted` 속성은 객체가 삭제(deleted)된 타임스탬프를 나타냅니다.
 도메인: | Tombstone
 범위: | `xsd:dateTime`
@@ -2856,7 +3111,11 @@ URI: | `https://www.w3.org/ns/activitystreams#formerType`
 
 >Example 143
 >
+>```json
+>{
 >"summary": "This image has been deleted",
+>}
+>```
 
 >예시 143
 >

@@ -3,34 +3,34 @@
 [Activity Vocabulary](https://www.w3.org/TR/activitystreams-vocabulary/)
 <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation 23 May 2017
 
-**This version:
+**This version:**
 - https://www.w3.org/TR/2017/REC-activitystreams-vocabulary-20170523/
 
-**Latest published version:
+**Latest published version:**
 - https://www.w3.org/TR/activitystreams-vocabulary/
 
-**Latest editor's draft:
+**Latest editor's draft:**
 - http://w3c.github.io/activitystreams/vocabulary/
 
-**Test suite:
+**Test suite:**
 - https://github.com/w3c/activitystreams/tree/master/test
 
-**Implementation report:
+**Implementation report:**
 - https://github.com/w3c/activitystreams/tree/master/implementation-reports
 
-**Previous version:
+**Previous version:**
 - https://www.w3.org/TR/2017/PR-activitystreams-vocabulary-20170413/
 
-**Editors:
+**Editors:**
 - [James M Snell](http://jasnell.me/), IBM
 - [Evan Prodromou](https://fuzzy.ai/about), Fuzzy.ai
 
-**Repository:
+**Repository:**
 - [Github](https://github.com/w3c/activitystreams)
 - [Issues](https://github.com/w3c/activitystreams/issues)
 - [Commits](https://github.com/w3c/activitystreams/commits/master)
 
-**Test:
+**Test:**
 - [Validator](https://as2.rocks/)
 
 Please check the [**errata**](https://github.com/w3c/activitystreams/blob/master/ERRATA.md) for any errors or issues reported since publication.
@@ -67,39 +67,39 @@ This document is governed by the [1 March 2017 <abbr title="World Wide Web Conso
 
 ## Table of Contents
 
-1 Introduction
+1\. [Introduction](#1-introduction)
 
-- 1.1 Conventions
+- 1.1 [Conventions](#1.1-conventions)
 
-2 Core Types
+2\. [Core Types](#2-core-types)
 
-3 Extended Types
+3\. [Extended Types](#3-extended-types)
 
-- 3.1 Activity Types
-- 3.2 Actor Types
-- 3.3 Object and Link Types
+- 3.1 [Activity Types](#3.1-activity-types)
+- 3.2 [Actor Types](#3.2-actor-types)
+- 3.3 [Object and Link Types](#3.3-object-and-link-types)
 
-4 Properties
+4\. [Properties](#4-properties)
 
-5 Implementation Notes
+5\. [Implementation Notes](#5-implementation-notes)
 
-- 5.1 Audience Targeting
-- 5.2 Representing Relationships Between Entities
-- 5.3 Representing Places
-- 5.4 Representing Questions
-- 5.5 Inverse Activities and "Undo"
-- 5.6 Mentions, Tags and Other Common Social Microsyntaxes
-- 5.7 Origin and Target
-- 5.8 Activity Type Motivating Use Cases
+- 5.1 [Audience Targeting](#5.1-audience-targeting)
+- 5.2 [Representing Relationships Between Entities](#5.2-representing-relationships-between-entities)
+- 5.3 [Representing Places](#5.3-representing-places)
+- 5.4 [Representing Questions](#5.4-representing-questions)
+- 5.5 [Inverse Activities and "Undo"](#5.5-inverse-activities-and-undo)
+- 5.6 [Mentions, Tags and Other Common Social Microsyntaxes](#5.6-mentions-tags-and-other-common-social-microsyntaxes)
+- 5.7 [Origin and Target](#5.7-origin-and-target)
+- 5.8 [Activity Type Motivating Use Cases](#5.8-activity-type-motivating-use-cases)
 
-A Non-normative Ontology Definition
+A\. [Non-normative Ontology Definition](#a-non-normative-ontology-definition)
 
-B Changelog
+B\. [Changelog](#b-changelog)
 
-C References
+C\. [References](#c-references)
 
-- C.1 Normative references
-- C.2 Informative references
+- C.1 [Normative references](#c.1-normative-references)
+- C.2 [Informative references](#c.2-informative-references)
 
 ## 1. Introduction
 
@@ -325,7 +325,7 @@ Properties: | partOf \| next \| prev </br>Inherits all properties from Collectio
 >}
 >```
 
-#### [Class] OrderedCollectionPage** 
+#### [Class] OrderedCollectionPage
 
 Description| |
 --|--

@@ -3,34 +3,34 @@
 [Activity Vocabulary](https://www.w3.org/TR/activitystreams-vocabulary/)
 <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation 23 May 2017
 
-**This version:
+**This version:**
 - https://www.w3.org/TR/2017/REC-activitystreams-vocabulary-20170523/
 
-**Latest published version:
+**Latest published version:**
 - https://www.w3.org/TR/activitystreams-vocabulary/
 
-**Latest editor's draft:
+**Latest editor's draft:**
 - http://w3c.github.io/activitystreams/vocabulary/
 
-**Test suite:
+**Test suite:**
 - https://github.com/w3c/activitystreams/tree/master/test
 
-**Implementation report:
+**Implementation report:**
 - https://github.com/w3c/activitystreams/tree/master/implementation-reports
 
-**Previous version:
+**Previous version:**
 - https://www.w3.org/TR/2017/PR-activitystreams-vocabulary-20170413/
 
-**Editors:
+**Editors:**
 - [James M Snell](http://jasnell.me/), IBM
 - [Evan Prodromou](https://fuzzy.ai/about), Fuzzy.ai
 
-**Repository:
+**Repository:**
 - [Github](https://github.com/w3c/activitystreams)
 - [Issues](https://github.com/w3c/activitystreams/issues)
 - [Commits](https://github.com/w3c/activitystreams/commits/master)
 
-**Test:
+**Test:**
 - [Validator](https://as2.rocks/)
 
 Please check the [**errata**](https://github.com/w3c/activitystreams/blob/master/ERRATA.md) for any errors or issues reported since publication.
@@ -67,39 +67,39 @@ This document is governed by the [1 March 2017 <abbr title="World Wide Web Conso
 
 ## Table of Contents
 
-1 Introduction
+1\. [Introduction](#1-introduction)
 
-- 1.1 Conventions
+- 1.1 [Conventions](#1.1-conventions)
 
-2 Core Types
+2\. [Core Types](#2-core-types)
 
-3 Extended Types
+3\. [Extended Types](#3-extended-types)
 
-- 3.1 Activity Types
-- 3.2 Actor Types
-- 3.3 Object and Link Types
+- 3.1 [Activity Types](#3.1-activity-types)
+- 3.2 [Actor Types](#3.2-actor-types)
+- 3.3 [Object and Link Types](#3.3-object-and-link-types)
 
-4 Properties
+4\. [Properties](#4-properties)
 
-5 Implementation Notes
+5\. [Implementation Notes](#5-implementation-notes)
 
-- 5.1 Audience Targeting
-- 5.2 Representing Relationships Between Entities
-- 5.3 Representing Places
-- 5.4 Representing Questions
-- 5.5 Inverse Activities and "Undo"
-- 5.6 Mentions, Tags and Other Common Social Microsyntaxes
-- 5.7 Origin and Target
-- 5.8 Activity Type Motivating Use Cases
+- 5.1 [Audience Targeting](#5.1-audience-targeting)
+- 5.2 [Representing Relationships Between Entities](#5.2-representing-relationships-between-entities)
+- 5.3 [Representing Places](#5.3-representing-places)
+- 5.4 [Representing Questions](#5.4-representing-questions)
+- 5.5 [Inverse Activities and "Undo"](#5.5-inverse-activities-and-undo)
+- 5.6 [Mentions, Tags and Other Common Social Microsyntaxes](#5.6-mentions-tags-and-other-common-social-microsyntaxes)
+- 5.7 [Origin and Target](#5.7-origin-and-target)
+- 5.8 [Activity Type Motivating Use Cases](#5.8-activity-type-motivating-use-cases)
 
-A Non-normative Ontology Definition
+A\. [Non-normative Ontology Definition](#a-non-normative-ontology-definition)
 
-B Changelog
+B\. [Changelog](#b-changelog)
 
-C References
+C\. [References](#c-references)
 
-- C.1 Normative references
-- C.2 Informative references
+- C.1 [Normative references](#c.1-normative-references)
+- C.2 [Informative references](#c.2-informative-references)
 
 ## 1. Introduction
 
@@ -325,7 +325,7 @@ Properties: | partOf \| next \| prev </br>Inherits all properties from Collectio
 >}
 >```
 
-#### [Class] OrderedCollectionPage** 
+#### [Class] OrderedCollectionPage
 
 Description| |
 --|--
@@ -1249,7 +1249,7 @@ Description| |
 URI: | `https://www.w3.org/ns/activitystreams#Question`
 Notes: | Represents a question being asked. Question objects are an extension of IntransitiveActivity. That is, the Question object is an Activity, but the direct object is the question itself and therefore it would not contain an object property. </br></br> Either of the anyOf and oneOf properties *MAY* be used to express possible answers, but a Question object *MUST NOT* have both properties.
 Extends: | IntransitiveActivity.
-Properties: | oneOf | anyOf | closed
+Properties: | oneOf \| anyOf \| closed
 Inherits all properties from IntransitiveActivity. 
 
 >Example 40
@@ -4179,7 +4179,7 @@ _This section is non-normative._
 
 Many social software systems use special text-based microsyntaxes that allow users to define special addressing for notifications, linking, or categorization within objects. For example, including text such as "`@username`" within an object's content will often route the object to a special "mentions" or "inbox" stream for a particular user. Likewise, including text such as " `#topic`" within the object's content will often mark the object as being related to the topic "`topic`". Such mechanisms are commonly referred to as "mentions" and "hashtags", respectively.
 
-While such microsyntaxes *MAY* be used within the values of the [content](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content), [name](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name), and [summary](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary) properties on an Activity Streams [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object), implementations *SHOULD NOT* be required to parse the values of those properties in order to determine the appropriate routing of notifications, categorization or linking between objects. Instead, publishers SHOULD make appropriate use of the vocabulary terms provided specifically for these purposes.
+While such microsyntaxes *MAY* be used within the values of the [content](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content), [name](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name), and [summary](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary) properties on an Activity Streams [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object), implementations *SHOULD NOT* be required to parse the values of those properties in order to determine the appropriate routing of notifications, categorization or linking between objects. Instead, publishers *SHOULD* make appropriate use of the vocabulary terms provided specifically for these purposes.
 
 For example, suppose that an author wishes to send a note of thanks to another user named "@sally" with a hashtag of "#givingthanks". A typical way this message would appear within the content of a note is shown below:
 
@@ -4443,4 +4443,4 @@ The following notable changes have been made to this document since the previous
 ### C.2 Informative references
 
 [HTML5]
-    HTML5. Ian Hickson; Robin Berjon; Steve Faulkner; Travis Leithead; Erika Doyle Navara; Theresa O'Connor; Silvia Pfeiffer. W3C. 28 October 2014. W3C Recommendation. URL: https://www.w3.org/TR/html5/
+- HTML5. Ian Hickson; Robin Berjon; Steve Faulkner; Travis Leithead; Erika Doyle Navara; Theresa O'Connor; Silvia Pfeiffer. W3C. 28 October 2014. W3C Recommendation. URL: https://www.w3.org/TR/html5/

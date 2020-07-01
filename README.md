@@ -20,6 +20,10 @@ W3C [액티비티 어휘(Activity Vocabulary)](https://www.w3.org/TR/activitystr
 - [Activity Vocabulary(챕터별 번역)](ActivityVocabularyContents.md)
 - [번역 가이드라인](translation-guideline-ko.md)
 
+## 비고
+
+- (Github) Markdown에서는 nested table이 native하게 지원되지 않아서 원문의 table을 나누어 풀어서 적었습니다.
+
 ## 번역에 도움을 주신 분들
 
 - [@riemannulus](https://github.com/riemannulus)

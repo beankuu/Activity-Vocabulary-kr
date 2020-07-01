@@ -1,4 +1,6 @@
-## 4. 속성 (Properties)
+[목차로 돌아가기](ActivityVocabularyContents.md)
+
+## 4. [속성 (Properties)](ActivityVocabularyContents.md)
 
 Base URI: `https://www.w3.org/ns/activitystreams#`.
 
@@ -8,88 +10,88 @@ The common properties include:
 
 일반적인 속성들은 다음과 같습니다:
 
- [actor](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor) |
- [attachment](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attachment) |
- [attributedTo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attributedto) |
- [audience](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-audience) |
- [bcc](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bcc) |
- [bto](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bto) |
- [cc](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-cc) |
- [context](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) |
- [current](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current) |
- [first](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first) |
- [generator](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-generator) |
- [icon](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-icon) |
- [id](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id) |
- [image](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-image) |
- [inReplyTo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-inreplyto) |
- [instrument](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-instrument) |
- [last](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-last) |
- [location](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-location) |
- [items](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-items) |
- [oneOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-oneof) |
- [anyOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-anyof) |
- [closed](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-closed) |
- [origin](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) |
- [next](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next) |
- [object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) |
- [prev](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev) |
- [preview](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview) |
- [result](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result) |
- [replies](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-replies) |
- [tag](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) |
- [target](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) |
- [to](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-to) |
- [type](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-type) |
- [url](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-url) |
- [accuracy](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accuracy) |
- [altitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-altitude) |
- [content](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content) |
- [name](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name) |
- [duration](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-duration) |
- [height](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height) |
- [href](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href) |
- [hreflang](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang) |
- [partOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof) |
- [latitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-latitude) |
- [longitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-longitude) |
- [mediaType](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype) |
- [endTime](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-endtime) |
- [published](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-published) |
- [startTime](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-starttime) |
- [radius](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-radius) |
- [rel](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-rel) |
- [startIndex](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-startindex) |
- [summary](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary) |
- [totalItems](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-totalitems) |
- [units](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-units) |
- [updated](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-updated) |
- [width](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-width) |
- [subject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-subject) |
- [relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) |
- [describes](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-describes) |
- [formerType](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-formertype) |
- [deleted](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-deleted)
+ [actor](#class-actor) \|
+ [attachment](#class-attachment) \|
+ [attributedTo](#class-attributedto) \|
+ [audience](#class-audience) \|
+ [bcc](#class-bcc) \|
+ [bto](#class-bto) \|
+ [cc](#class-cc) \|
+ [context](#class-context) \|
+ [current](#class-current) \|
+ [first](#class-first) \|
+ [generator](#class-generator) \|
+ [icon](#class-icon) \|
+ [id](#class-id) \|
+ [image](#class-image) \|
+ [inReplyTo](#class-inreplyto) \|
+ [instrument](#class-instrument) \|
+ [last](#class-last) \|
+ [location](#class-location) \|
+ [items](#class-items) \|
+ [oneOf](#class-oneof) \|
+ [anyOf](#class-anyof) \|
+ [closed](#class-closed) \|
+ [origin](#class-origin) \|
+ [next](#class-next) \|
+ [object](ActivityVocabularyChapter2.md#class-object) \|
+ [prev](#class-prev) \|
+ [preview](#class-preview) \|
+ [result](#class-result) \|
+ [replies](#class-replies) \|
+ [tag](#class-tag) \|
+ [target](#class-target) \|
+ [to](#class-to) \|
+ [type](#class-type) \|
+ [url](#class-url) \|
+ [accuracy](#class-accuracy) \|
+ [altitude](#class-altitude) \|
+ [content](#class-content) \|
+ [name](#class-name) \|
+ [duration](#class-duration) \|
+ [height](#class-height) \|
+ [href](#class-href) \|
+ [hreflang](#class-hreflang) \|
+ [partOf](#class-partof) \|
+ [latitude](#class-latitude) \|
+ [longitude](#class-longitude) \|
+ [mediaType](#class-mediatype) \|
+ [endTime](#class-endtime) \|
+ [published](#class-published) \|
+ [startTime](#class-starttime) \|
+ [radius](#class-radius) \|
+ [rel](#class-rel) \|
+ [startIndex](#class-startindex) \|
+ [summary](#class-summary) \|
+ [totalItems](#class-totalitems) \|
+ [units](#class-units) \|
+ [updated](#class-updated) \|
+ [width](#class-width) \|
+ [subject](#class-subject) \|
+ [relationship](#class-relationship) \|
+ [describes](#class-describes) \|
+ [formerType](#class-formertype) \|
+ [deleted](#class-deleted)
 
-The "Domain" indicates the type of Object the property term applies to. The "Range" indicates the type of value the property term can have. Certain properties are marked as a "Subproperty Of" another term, meaning that the term is a specialization of the referenced term. For instance, [actor](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor) is a subproperty of [attributedTo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attributedto). Properties marked as being "Functional" can have only one value. Items not marked as "Functional" can have multiple values.
+The "Domain" indicates the type of Object the property term applies to. The "Range" indicates the type of value the property term can have. Certain properties are marked as a "Subproperty Of" another term, meaning that the term is a specialization of the referenced term. For instance, [actor](#class-actor) is a subproperty of [attributedTo](#class-attributedto). Properties marked as being "Functional" can have only one value. Items not marked as "Functional" can have multiple values.
 
-"도메인(Domain)"은 속성 용어가 적용되는 객체의 타입을 나타냅니다. "범위(Range)"는 속성 용어가 가질수 있는 값의 타입을 나타냅니다. 특정 속성은 다른 용어의 "하위속성(Subproperty)"으로 표시됩니다. 즉, 해당 용어는 참조된 용어의 특수화된 경우입니다. 예를 들어 [actor](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor)는 [attributedTo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attributedto)의 하위 속성입니다. "기능적(Functional)"으로 표시되어 있는 속성은 하나의 값만 가질수도 있습니다. "기능적(Functional)"으로 표시되지 않은 항목은 여러개의 값을 가질 수 있습니다.
+"도메인(Domain)"은 속성 용어가 적용되는 객체의 타입을 나타냅니다. "범위(Range)"는 속성 용어가 가질수 있는 값의 타입을 나타냅니다. 특정 속성은 다른 용어의 "하위속성(Subproperty)"으로 표시됩니다. 즉, 해당 용어는 참조된 용어의 특수화된 경우입니다. 예를 들어 [actor](#class-actor)는 [attributedTo](#class-attributedto)의 하위 속성입니다. "기능적(Functional)"으로 표시되어 있는 속성은 하나의 값만 가질수도 있습니다. "기능적(Functional)"으로 표시되지 않은 항목은 여러개의 값을 가질 수 있습니다.
 
-#### [Class] id
+#### [Class] [id](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `@id`
-Notes: | Provides the globally unique identifier for an Object or Link.
-Domain: | Object \| Link
+Notes: | Provides the globally unique identifier for an [Object](ActivityVocabularyChapter2.md#class-object) or [Link](ActivityVocabularyChapter2.md#class-link).
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Range: | `anyURI`
 Functional: | True
 
 설명| |
 --|--
 URI: | `@id`
-비고: | 객체(Object)나 링크(Link)에 대한 전역 고유 식별자를 제공합니다.
-도메인: | Object \| Link
+비고: | [Object](ActivityVocabularyChapter2.md#class-object)나 [Link](ActivityVocabularyChapter2.md#class-link)에 대한 전역 고유 식별자를 제공합니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 범위: | `anyURI`
 기능적: | True
 
@@ -105,20 +107,20 @@ URI: | `@id`
 >}
 >```
 
-#### [Class] type
+#### [Class] [type](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `@type`
-Notes: | Identifies the Object or Link type. Multiple values may be specified.
-Domain: | Object \| Link
+Notes: | Identifies the [Object](ActivityVocabularyChapter2.md#class-object) or [Link](ActivityVocabularyChapter2.md#class-link) type. Multiple values may be specified.
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Range: | `anyURI`
 
 설명| |
 --|--
 URI: | `@type`
-비고: | 객체(Object)나 링크(Link) 타입을 식별합니다. 다중 값을 지정 할 수도 있습니다.
-도메인: | Object \| Link
+비고: | [Object](ActivityVocabularyChapter2.md#class-object)나 [Link](ActivityVocabularyChapter2.md#class-link) 타입을 식별합니다. 다중 값을 지정 할 수도 있습니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 범위: | `anyURI`
 
 [//Comment]: # "Object과 Link가 대문자로 시작되었고, 차후 문장에서 사용하지 않았음으로 원문으로 냅두었습니다."
@@ -135,23 +137,23 @@ URI: | `@type`
 >}
 >```
 
-#### [Class] actor
+#### [Class] [actor](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#actor`
-Notes: | Describes one or more entities that either performed or are expected to perform the activity. Any single activity can have multiple `actor`s. The `actor` *MAY* be specified using an indirect Link.
-Domain: | Activity
-Range: | Object \| Link
-Subproperty Of: | attributedTo
+Notes: | Describes one or more entities that either performed or are expected to perform the activity. Any single activity can have multiple `actor`s. The `actor` *MAY* be specified using an indirect [Link](ActivityVocabularyChapter2.md#class-link).
+Domain: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
+Subproperty Of: | [attributedTo](#class-attributedto)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#actor`
-비고: | 액티비티를 수행했거나 수행할 것으로 예상되는 하나 이상의 개체들을 표현합니다. 단일 액티비티에는 여러 `actor`가 있을 수 있습니다. `actor`는 간접 링크(Link)를 사용하여 지정 *할 수도* 있습니다.
-도메인: | Activity
-범위: | Object \| Link
-하위속성: | attributedTo
+비고: | 액티비티를 수행했거나 수행할 것으로 예상되는 하나 이상의 개체들을 표현합니다. 단일 액티비티에는 여러 `actor`가 있을 수 있습니다. `actor`는 간접 [Link](ActivityVocabularyChapter2.md#class-link)를 사용하여 지정 *할 수도* 있습니다.
+도메인: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
+하위속성: | [attributedTo](#class-attributedto)
 
 >Example 63
 >
@@ -224,21 +226,21 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 >}
 >```
 
-#### [Class] attachment
+#### [Class] [attachment](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#attachment`
 Notes: | Identifies a resource attached or related to an object that potentially requires special handling. The intent is to provide a model that is at least semantically similar to attachments in email.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#attachment`
 비고: | 특별한 처리가 필요할수도 있는 개체에 첨부(attached)되었거나 관련된 리소스를 식별합니다. 이메일의 첨부파일과 의미적으로 유사한 모델을 제공하는것 이 목적입니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 66
 >
@@ -266,23 +268,21 @@ URI: | `https://www.w3.org/ns/activitystreams#attachment`
 >}
 >```
 
-#### [Class] attributedTo
+#### [Class] [attributedTo](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 Notes: | Identifies one or more entities to which this object is attributed. The attributed entities might not be Actors. For instance, an object might be attributed to the completion of another activity.
-Domain: | Link \| Object
-Range: | Link \| Object
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 비고: | 이 객체가 속하는(attributed) 하나 이상의 개체들을 식별합니다. 속하는 개체들은 액터(Actor)가 아닐 수도 있습니다. 예를 들어, 어떤 객체는 '다른 액티비티가 완료되는것' 에 속할 수도 있습니다.
-도메인: | Link \| Object
-범위: | Link \| Object
-
-[//Comment]: # "'Actor'가 대문자로 시작되어서 일단 번역(원문)으로 적어두었습니다."
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 
 >Example 67
 >
@@ -335,21 +335,21 @@ URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 >}
 >```
 
-#### [Class] audience
+#### [Class] [audience](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#audience`
 Notes: | Identifies one or more entities that represent the total population of entities for which the object can considered to be relevant.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#audience`
 비고: | 해당 객체와 관련있는 것으로 간주되는, 총 개체수를 나타내는 하나 이상의 개체들을 식별합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 69
 >
@@ -376,21 +376,21 @@ URI: | `https://www.w3.org/ns/activitystreams#audience`
 >}
 >```
 
-#### [Class] bcc
+#### [Class] [bcc](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#bcc`
 Notes: | Identifies one or more Objects that are part of the private secondary audience of this Object.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#bcc`
 비고: | 이 객체(Object)의 2차적 비공개 청자에 속하는 하나 이상의 Objects를 식별합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 70
 >
@@ -414,21 +414,21 @@ URI: | `https://www.w3.org/ns/activitystreams#bcc`
 >}
 >```
 
-#### [Class] bto
+#### [Class] [bto](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#bto`
 Notes: | Identifies an Object that is part of the private primary audience of this Object.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#bto`
 비고: | 이 객체(Object)의 주요 비공개 청자의 일부인 Object를 식별합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 71
 >
@@ -452,21 +452,21 @@ URI: | `https://www.w3.org/ns/activitystreams#bto`
 >}
 >```
 
-#### [Class] cc
+#### [Class] [cc](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#cc`
 Notes: | Identifies an Object that is part of the public secondary audience of this Object.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#cc`
 비고: | 이 객체(Object)의 2차적 공개 청자의 일부인 Object를 식별합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 72
 >
@@ -490,21 +490,21 @@ URI: | `https://www.w3.org/ns/activitystreams#cc`
 >}
 >```
 
-#### [Class] context
+#### [Class] [context](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#context`
 Notes: | Identifies the context within which the object exists or an activity was performed.</br> The notion of "context" used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#context`
 비고: | 개체가 존재하거나 액티비티가 실행된 된 컨텍스트(context)를 식별합니다. </br> "컨텍스트"라는 개념은 의도적으로 모호하게 사용되었습니다. 의도되었던 기능은 공통적인 컨텍스트 또는 목적을 공유하는 객체와 액티비티를 그룹화하는 수단으로 사용하려는 것입니다. 예시로는 일반적인 프로젝트 또는 이벤트와 관련된 모든 액티비티들 입니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 73
 >
@@ -539,22 +539,22 @@ URI: | `https://www.w3.org/ns/activitystreams#context`
 >}
 >```
 
-#### [Class] current
+#### [Class] [current](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#current`
 Notes: | In a paged Collection, indicates the page that contains the most recently updated member items.
-Domain: | Collection
-Range: | CollectionPage \| Link
+Domain: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+Range: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#current`
 비고: | 페이징 된 컬렉션에서 가장 최근에 업데이트된 구성원의 항목이 포함된 페이지를 나타냅니다.
-도메인: | Collection
-범위: | CollectionPage \| Link
+도메인: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+범위: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 기능적: | True
 
 >Example 74
@@ -612,22 +612,22 @@ URI: | `https://www.w3.org/ns/activitystreams#current`
 >}
 >```
 
-#### [Class] first
+#### [Class] [first](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#first`
 Notes: | In a paged Collection, indicates the furthest preceeding page of items in the collection.
-Domain: | Collection
-Range: | CollectionPage \| Link
+Domain: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+Range: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#first`
 비고: | 페이징 된 컬렉션에서 컬렉션의 가장 앞에있는 페이지를 나타냅니다.
-도메인: | Collection
-범위: | CollectionPage \| Link
+도메인: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+범위: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 기능적: | True
 
 >Example 76
@@ -675,21 +675,21 @@ URI: | `https://www.w3.org/ns/activitystreams#first`
 >}
 >```
 
-#### [Class] generator
+#### [Class] [generator](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#generator`
 Notes: | Identifies the entity (e.g. an application) that generated the object.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#generator`
 비고: | 객체를 생성한(generated) 개체(예: 어플리케이션)을 식별합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 78
 >
@@ -716,21 +716,21 @@ URI: | `https://www.w3.org/ns/activitystreams#generator`
 >}
 >```
 
-#### [Class] icon
+#### [Class] [icon](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#icon`
 Notes: | Indicates an entity that describes an icon for this object. The image should have an aspect ratio of one (horizontal) to one (vertical) and should be suitable for presentation at a small size.
-Domain: | Object
-Range: | Image \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Image](#class-image) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#icon`
 비고: | 이 객체의 아이콘(icon)을 나타내는 개체를 나타냅니다. 이미지의 가로-세로 비율은 1(수평) 대 1(수직)이여야 하며 작은 크기로 보여주는것에 적합하여야 합니다.
-도메인: | Object
-범위: | Image \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Image](#class-image) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 79
 >
@@ -798,21 +798,21 @@ URI: | `https://www.w3.org/ns/activitystreams#icon`
 >}
 >```
 
-#### [Class] image
+#### [Class] [image](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#image`
 Notes: | Indicates an entity that describes an image for this object. Unlike the icon property, there are no aspect ratio or display size limitations assumed.
-Domain: | Object
-Range: | Image \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Image](#class-image) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#image`
 비고: | 이 객체의 이미지(image)를 기술하는 개체를 나타냅니다. icon속성과 달리 종횡비나 디스클레이에 대한 크기 제한은 없습니다.
-도메인: | Object
-범위: | Image \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Image](#class-image) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 81
 >
@@ -874,21 +874,21 @@ URI: | `https://www.w3.org/ns/activitystreams#image`
 >}
 >```
 
-#### [Class] inReplyTo
+#### [Class] [inReplyTo](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 Notes: | Indicates one or more entities for which this object is considered a response.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 비고: | 이 객체를 응답으로 간주하는 하나 이상의 개체를 나타냅니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 83
 >
@@ -938,21 +938,21 @@ URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 >}
 >```
 
-#### [Class] instrument
+#### [Class] [instrument](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#instrument`
-Notes: | Identifies one or more objects used (or to be used) in the completion of an Activity.
-Domain: | Activity
-Range: | Object \| Link
+Notes: | Identifies one or more objects used (or to be used) in the completion of an [Activity](ActivityVocabularyChapter2.md#class-activity).
+Domain: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#instrument`
-비고: | 액티비티 완료시 사용된 (또는 사용되는) 하나 이상의 객체들을 식별합니다.
-도메인: | Activity
-범위: | Object \| Link
+비고: | [Activity](ActivityVocabularyChapter2.md#class-activity)가 완료시 사용된 (또는 사용되는) 하나 이상의 객체들을 식별합니다.
+도메인: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 85
 >
@@ -982,22 +982,22 @@ URI: | `https://www.w3.org/ns/activitystreams#instrument`
 >}
 >```
 
-#### [Class] last
+#### [Class] [last](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#last`
-Notes: | In a paged Collection, indicates the furthest proceeding page of the collection.
-Domain: | Collection
-Range: | CollectionPage \| Link
+Notes: | In a paged [Collection](ActivityVocabularyChapter2.md#class-collection), indicates the furthest proceeding page of the collection.
+Domain: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+Range: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#last`
-비고: | 페이징 된 컬렉션에서 컬렉션의 뒷방향으로 가장 멀리있는 페이지를 나타냅니다.
-도메인: | Collection
-범위: | CollectionPage \| Link
+비고: | 페이징 된 [Collection](ActivityVocabularyChapter2.md#class-collection)에서 컬렉션의 뒷방향으로 가장 멀리있는 페이지를 나타냅니다.
+도메인: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+범위: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 기능적: | True
 
 >Example 86
@@ -1045,21 +1045,21 @@ URI: | `https://www.w3.org/ns/activitystreams#last`
 >}
 >```
 
-#### [Class] location
+#### [Class] [location](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#location`
 Notes: | Indicates one or more physical or logical locations associated with the object.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#location`
 비고: | 주어진 객체와 관련된 하나 이상의 물리적 또는 논리적인 위치(locations)를 나타냅니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 88
 >
@@ -1087,21 +1087,21 @@ URI: | `https://www.w3.org/ns/activitystreams#location`
 >}
 >```
 
-#### [Class] items
+#### [Class] [items](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#items`
 Notes: | Identifies the items contained in a collection. The items might be ordered or unordered.
-Domain: | Collection
-Range: | Object \| Link \| Ordered List of [Object \| Link ]
+Domain: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link) \| Ordered List of [ [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link) ]
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#items`
 비고: | 컬렉션에 포함된 항목(items)을 식별합니다. 항목은 정렬되었거나 정렬되지 않았을 수도 있습니다.
-도메인: | Collection
-범위: | Object \| Link \| [Object \| Link ]의 정렬된 리스트
+도메인: | [Collection](ActivityVocabularyChapter2.md#class-collection)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link) \| [ [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link) ]의 정렬된 리스트
 
 >Example 89
 >
@@ -1165,21 +1165,21 @@ URI: | `https://www.w3.org/ns/activitystreams#items`
 >}
 >```
 
-#### [Class] oneOf
+#### [Class] [oneOf](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#oneOf`
-Notes: | Identifies an exclusive option for a Question. Use of `oneOf` implies that the Question can have only a single answer. To indicate that a Question can have multiple answers, use anyOf.
-Domain: | Question
-Range: | Object \| Link
+Notes: | Identifies an exclusive option for a Question. Use of `oneOf` implies that the Question can have only a single answer. To indicate that a Question can have multiple answers, use [anyOf](#class-anyof).
+Domain: | [Question](ActivityVocabularyChapter3.md#class-question)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#oneOf`
-비고: | 질문(Question)에 대한 독점적인 선택지를 식별합니다. `oneOf`를 사용하는 Question에 대해서는 하나의 답변만 할수 있음을 의미합니다. Question에 여러개의 답변이 있을수 있음을 나타내려면 anyOf를 사용하시길 바랍니다.
-도메인: | Question
-범위: | Object \| Link
+비고: | 질문(Question)에 대한 독점적인 선택지를 식별합니다. `oneOf`를 사용하는 Question에 대해서는 하나의 답변만 할수 있음을 의미합니다. Question에 여러개의 답변이 있을수 있음을 나타내려면 [anyOf](#class-anyof)를 사용하시길 바랍니다.
+도메인: | [Question](ActivityVocabularyChapter3.md#class-question)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 91
 >
@@ -1211,21 +1211,21 @@ URI: | `https://www.w3.org/ns/activitystreams#oneOf`
 >}
 >```
 
-#### [Class] anyOf
+#### [Class] [anyOf](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#anyOf`
-Notes: | Identifies an inclusive option for a Question. Use of `anyOf` implies that the Question can have multiple answers. To indicate that a Question can have only one answer, use oneOf.
-Domain: | Question
-Range: | Object \| Link
+Notes: | Identifies an inclusive option for a Question. Use of `anyOf` implies that the Question can have multiple answers. To indicate that a Question can have only one answer, use [oneOf](#class-oneof).
+Domain: | [Question](ActivityVocabularyChapter3.md#class-question)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#anyOf`
-비고: | 질문(Question)에 대한 포괄적인 선택지를 식별합니다. `anyOf`를 사용하는 Question에 대해서는 여러개의 답변이 있을수 있음을 나타냅니다. Question에 대해 답변이 단 하나만 존재할수 있음을 나타내려면 oneOf를 사용하시길 바랍니다.
-도메인: | Question
-범위: | Object \| Link
+비고: | 질문(Question)에 대한 포괄적인 선택지를 식별합니다. `anyOf`를 사용하는 Question에 대해서는 여러개의 답변이 있을수 있음을 나타냅니다. Question에 대해 답변이 단 하나만 존재할수 있음을 나타내려면 [oneOf](#class-oneof)를 사용하시길 바랍니다.
+도메인: | [Question](ActivityVocabularyChapter3.md#class-question)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 92
 >
@@ -1257,21 +1257,21 @@ URI: | `https://www.w3.org/ns/activitystreams#anyOf`
 >}
 >```
 
-#### [Class] closed
+#### [Class] [closed](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#closed`
 Notes: | Indicates that a question has been closed, and answers are no longer accepted.
-Domain: | Question
-Range: | Object \| Link \| `xsd:dateTime` \| `xsd:boolean`
+Domain: | [Question](ActivityVocabularyChapter3.md#class-question)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link) \| `xsd:dateTime` \| `xsd:boolean`
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#closed`
 비고: | 질문이 마감(closed)되었으며, 더 이상 답변을 받지 않음을 나타냅니다.
-도메인: | Question
-범위: | Object \| Link \| `xsd:dateTime` \| `xsd:boolean`
+도메인: | [Question](ActivityVocabularyChapter3.md#class-question)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link) \| `xsd:dateTime` \| `xsd:boolean`
 
 >Example 93
 >
@@ -1292,21 +1292,21 @@ URI: | `https://www.w3.org/ns/activitystreams#closed`
 >}
 >```
 
-#### [Class] origin
+#### [Class] [origin](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#origin`
 Notes: | Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition "from". For instance, in the activity "John moved an item to List B from List A", the origin of the activity is "List A".
-Domain: | Activity
-Range: | Object \| Link
+Domain: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#origin`
 비고: | 액티비티가 지시하는 액티비티의 간접적인 객체를 표현합니다. 원산지(origin)의 정확한 의미는 영어 전치사 "from"의 목적 입니다. 예를 들어, "John이 품목을 리스트A 에서 리스트B로 옮겼습니다" 액티비티에서 액티비티의 원산지는 "리스트A" 입니다.
-도메인: | Activity
-범위: | Object \| Link
+도메인: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 [//Comment]: # "번역이 매끄럽지 않은것 같습니다"
 
@@ -1340,22 +1340,22 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 >}
 >```
 
-#### [Class] next
+#### [Class] [next](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#next`
-Notes: | In a paged Collection, indicates the next page of items.
-Domain: | CollectionPage
-Range: | CollectionPage \| Link
+Notes: | In a paged [Collection](ActivityVocabularyChapter2.md#class-collection), indicates the next page of items.
+Domain: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage)
+Range: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#next`
-비고: | 페이징 된 컬렉션에서 항목들의 다음(next) 페이지를 나타냅니다.
-도메인: | CollectionPage
-범위: | CollectionPage \| Link
+비고: | 페이징 된 [Collection](ActivityVocabularyChapter2.md#class-collection)에서 항목들의 다음(next) 페이지를 나타냅니다.
+도메인: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage)
+범위: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 기능적: | True
 
 >Example 95
@@ -1411,21 +1411,21 @@ URI: | `https://www.w3.org/ns/activitystreams#next`
 >}
 >```
 
-#### [Class] object
+#### [Class] [object](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#object`
-Notes: | When used within an Activity, describes the direct object of the activity. For instance, in the activity "John added a movie to his wishlist", the object of the activity is the movie added. </br> When used within a Relationship describes the entity to which the subject is related.
-Domain: | Activity \| Relationship
-Range: | Object \| Link
+Notes: | When used within an [Activity](ActivityVocabularyChapter2.md#class-activity), describes the direct object of the activity. For instance, in the activity "John added a movie to his wishlist", the object of the activity is the movie added.</br> When used within a [Relationship](#class-relationship) describes the entity to which the [subject](#class-subject) is related.
+Domain: | [Activity](ActivityVocabularyChapter2.md#class-activity) \| [Relationship](#class-relationship)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#object`
-비고: | 액티비티 내에서 사용될 경우, 액티비티의 직접적인 대상인 객체(object)를 설명합니다. 예를 들어 "John이 자신의 위시리스트에 영화를 추가했습니다" 액티비티에서 액티비티의 객체는 추가된 영화입니다. </br> 관계 내에서 사용될 경우 주제와 관련된 개체를 설명합니다.
-도메인: | Activity \| Relationship
-범위: | Object \| Link
+비고: | [Activity](ActivityVocabularyChapter2.md#class-activity) 내에서 사용될 경우, 액티비티의 직접적인 대상인 객체(object)를 설명합니다. 예를 들어 "John이 자신의 위시리스트에 영화를 추가했습니다" 액티비티에서 액티비티의 객체는 추가된 영화입니다. </br> [Relationship](#class-relationship) 내에서 사용될 경우 [subject](#class-subject)와 관련된 개체를 설명합니다.
+도메인: | [Activity](ActivityVocabularyChapter2.md#class-activity) \| [Relationship](#class-relationship)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 97
 >
@@ -1500,22 +1500,22 @@ URI: | `https://www.w3.org/ns/activitystreams#object`
 >}
 >```
 
-#### [Class] prev
+#### [Class] [prev](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#prev`
-Notes: | In a paged Collection, identifies the previous page of items.
-Domain: | CollectionPage
-Range: | CollectionPage \| Link
+Notes: | In a paged [Collection](ActivityVocabularyChapter2.md#class-collection), identifies the previous page of items.
+Domain: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage)
+Range: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#prev`
-비고: | 페이징 된 컬렉션에서 항목들의 이전(previous) 페이지를 식별합니다.
-도메인: | CollectionPage
-범위: | CollectionPage \| Link
+비고: | 페이징 된 [Collection](ActivityVocabularyChapter2.md#class-collection)에서 항목들의 이전(previous) 페이지를 식별합니다.
+도메인: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage)
+범위: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) \| [Link](ActivityVocabularyChapter2.md#class-link)
 기능적: | True
 
 >Example 100
@@ -1571,21 +1571,21 @@ URI: | `https://www.w3.org/ns/activitystreams#prev`
 >}
 >```
 
-#### [Class] preview
+#### [Class] [preview](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#preview`
 Notes: | Identifies an entity that provides a preview of this object.
-Domain: | Link \| Object
-Range: | Link \| Object
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#preview`
 비고: | 이 객체의 미리보기(preview)를 제공하는 개체를 식별합니다.
-도메인: | Link \| Object
-범위: | Link \| Object
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 
 >Example 102
 >
@@ -1616,21 +1616,21 @@ URI: | `https://www.w3.org/ns/activitystreams#preview`
 >}
 >```
 
-#### [Class] result
+#### [Class] [result](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#result`
 Notes: | Describes the result of the activity. For instance, if a particular action results in the creation of a new resource, the result property can be used to describe that new resource.
-Domain: | Activity
-Range: | Object \| Link
+Domain: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#result`
 비고: | 액티비티의 결과(result)를 표현합니다. 예를 들어, 특정 작업으로 인해 새 리소스가 생성되면 result 속성을 사용하여 해당 새 리소스를 표현할 수 있습니다.
-도메인: | Activity
-범위: | Object \| Link
+도메인: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 103
 >
@@ -1657,22 +1657,22 @@ URI: | `https://www.w3.org/ns/activitystreams#result`
 >}
 >```
 
-#### [Class] replies
+#### [Class] [replies](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#replies`
-Notes: | Identifies a Collection containing objects considered to be responses to this object.
-Domain: | Object
-Range: | Collection
+Notes: | Identifies a [Collection](ActivityVocabularyChapter2.md#class-collection) containing objects considered to be responses to this object.
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Collection](ActivityVocabularyChapter2.md#class-collection)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#replies`
-비고: | 이 객체에 대한 응답으로 간주되는 객체가 포함된 컬렉션을 식별합니다.
-도메인: | Object
-범위: | Collection
+비고: | 이 객체에 대한 응답으로 간주되는 객체가 포함된 [Collection](ActivityVocabularyChapter2.md#class-collection)을 식별합니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Collection](ActivityVocabularyChapter2.md#class-collection)
 기능적: | True
 
 >Example 104
@@ -1710,21 +1710,21 @@ URI: | `https://www.w3.org/ns/activitystreams#replies`
 >}
 >```
 
-#### [Class] tag
+#### [Class] [tag](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#tag`
 Notes: | One or more "tags" that have been associated with an objects. A tag can be any kind of Object. The key difference between `attachment` and `tag` is that the former implies association by inclusion, while the latter implies associated by reference.
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#tag`
 비고: | 개체와 관련된 하나 이상의 "태그들(tags)"입니다. 태그는 모든 종류의 Object일수 있습니다. `attachment`과 `tag`의 주요 차이점은 전자는 포함에 의한 연관을 의미하고, 후자는 참조에 의해 연관됨을 의미합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 105
 >
@@ -1752,21 +1752,21 @@ URI: | `https://www.w3.org/ns/activitystreams#tag`
 >}
 >```
 
-#### [Class] target
+#### [Class] [target](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#target`
 Notes: | Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition "to". For instance, in the activity "John added a movie to his wishlist", the target of the activity is John's wishlist. An activity can have more than one target.
-Domain: | Activity
-Range: | Object \| Link
+Domain: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#target`
 비고: | 액티비티의 간접 객체 또는 대상(target)을 설명합니다. target의 정확한 의미는 표현하고 있는 작업 유형에 따라 크게 달라지지만, 종종 영어 전치사 "to"의 대상이 됩니다. 예를 들어, "John이 자신의 위시리스트에 영화를 추가했습니다" 액티비티에서 이 액티비티의 target은 John의 위시리스트 입니다. 액티비티에는 둘 이상의 target이 있을수도 있습니다.
-도메인: | Activity
-범위: | Object \| Link
+도메인: | [Activity](ActivityVocabularyChapter2.md#class-activity)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 106
 >
@@ -1814,21 +1814,21 @@ URI: | `https://www.w3.org/ns/activitystreams#target`
 >}
 >```
 
-#### [Class] to
+#### [Class] [to](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#to`
 Notes: | Identifies an entity considered to be part of the public primary audience of an Object
-Domain: | Object
-Range: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#to`
 비고: | 객체의 공개 주요 대상의 일부로 간주되는 개체를 식별합니다.
-도메인: | Object
-범위: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 108
 >
@@ -1852,21 +1852,21 @@ URI: | `https://www.w3.org/ns/activitystreams#to`
 >}
 >```
 
-#### [Class] url
+#### [Class] [url](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#url`
 Notes: | Identifies one or more links to representations of the object
-Domain: | Object
-Range: | `xsd:anyURI` \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
+Range: | `xsd:anyURI` \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#url`
 비고: | 객체 표현에 대한 하나 이상의 링크를 식별합니다.
-도메인: | Object
-범위: | `xsd:anyURI` \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
+범위: | `xsd:anyURI` \| [Link](ActivityVocabularyChapter2.md#class-link)
 
 >Example 109
 >
@@ -1939,21 +1939,21 @@ URI: | `https://www.w3.org/ns/activitystreams#url`
 >}
 >```
 
-#### [Class] accuracy
+#### [Class] [accuracy](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#accuracy`
-Notes: | Indicates the accuracy of position coordinates on a Place objects. Expressed in properties of percentage. e.g. "94.0" means "94.0% accurate".
-Domain: | Place
+Notes: | Indicates the accuracy of position coordinates on a [Place](ActivityVocabularyChapter3.md#class-place) objects. Expressed in properties of percentage. e.g. "94.0" means "94.0% accurate".
+Domain: | [Place](ActivityVocabularyChapter3.md#class-place)
 Range: | `xsd:float` [>= 0.0f, <= 100.0f]
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#accuracy`
-비고: | 장소 객체에서 위치 좌표의 정확도(accuracy)를 나타냅니다. 백분율 속성으로 표현됩니다. 예: "94.0"은 "94.0% 정확도"를 의미합니다.
-도메인: | Place
+비고: | [Place](ActivityVocabularyChapter3.md#class-place) 객체에서 위치 좌표의 정확도(accuracy)를 나타냅니다. 백분율 속성으로 표현됩니다. 예: "94.0"은 "94.0% 정확도"를 의미합니다.
+도메인: | [Place](ActivityVocabularyChapter3.md#class-place)
 범위: | `xsd:float` [>= 0.0f, <= 100.0f]
 기능적: | True
 
@@ -1978,21 +1978,21 @@ URI: | `https://www.w3.org/ns/activitystreams#accuracy`
 >}
 >```
 
-#### [Class] altitude
+#### [Class] [altitude](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#altitude`
-Notes: | Indicates the altitude of a place. The measurement units is indicated using the units property. If units is not specified, the default is assumed to be "`m`" indicating meters.
-Domain: | Object
+Notes: | Indicates the altitude of a place. The measurement units is indicated using the [units](#class-units) property. If [units](#class-units) is not specified, the default is assumed to be "`m`" indicating meters.
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:float`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#altitude`
-비고: | 장소의 고도(altitude)를 나타냅니다. 측정 단위는 units 속성을 사용하여 표시됩니다. 단위가 지정되지 않은 경우, 기본값은 미터를 나타내는 "`m`"으로 가정됩니다.
-도메인: | Object
+비고: | 장소의 고도(altitude)를 나타냅니다. 측정 단위(units)는 [units](#class-units) 속성을 사용하여 표시됩니다. [units](#class-units)가 지정되지 않은 경우, 기본값은 미터를 나타내는 "`m`"으로 가정됩니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:float`
 기능적: | True
 
@@ -2018,20 +2018,20 @@ URI: | `https://www.w3.org/ns/activitystreams#altitude`
 >}
 >```
 
-#### [Class] content
+#### [Class] [content](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#content`
-Notes: | The content or textual representation of the Object encoded as a JSON string. By default, the value of `content` is HTML. The mediaType property can be used in the object to indicate a different content type. </br> The content *MAY* be expressed using multiple language-tagged values.
-Domain: | Object
+Notes: | The content or textual representation of the Object encoded as a JSON string. By default, the value of `content` is HTML. The [mediaType](#class-mediatype) property can be used in the object to indicate a different content type. </br> The content *MAY* be expressed using multiple language-tagged values.
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:string` \| `rdf:langString`
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#content`
-비고: | JSON 문자열로 인코딩된 객체(Object)의 컨텐츠(content) 또는 텍스트 표현입니다. 기본적으로 `content`의 값은 HTML입니다. mediaType속성을 객체에서 사용하여 다른 내용 유형을 나타낼 수 있습니다. </br> 컨텐츠는 여러 언어 태그값을 사용하여 표현될 수 있습니다.
-도메인: | Object
+비고: | JSON 문자열로 인코딩된 객체(Object)의 컨텐츠(content) 또는 텍스트 표현입니다. 기본적으로 `content`의 값은 HTML입니다. [mediaType](#class-mediatype) 속성을 객체에서 사용하여 다른 내용 유형을 나타낼 수 있습니다. </br> 컨텐츠는 여러 언어 태그값을 사용하여 표현될 수 있습니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:string` \| `rdf:langString`
 
 >Example 114
@@ -2098,20 +2098,20 @@ URI: | `https://www.w3.org/ns/activitystreams#content`
 >}
 >```
 
-#### [Class] name
+#### [Class] [name](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#name`
 Notes: | A simple, human-readable, plain-text name for the object. HTML markup *MUST NOT* be included. The name *MAY* be expressed using multiple language-tagged values.
-Domain: | Object \| Link
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 Range: | `xsd:string` \| `rdf:langString`
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#name`
 비고: | 간단하고 사람이 읽을수 있는 객체의 일반 텍스트 이름(name)입니다. HTML 마크업을 포함하는 것을 *절대 하지 말아야* 합니다. name은 여러 언어 태그 값을 사용하여 표현 *할 수도* 있습니다.
-도메인: | Object \| Link
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object) \| [Link](ActivityVocabularyChapter2.md#class-link)
 범위: | `xsd:string` \| `rdf:langString`
 
 >Example 117
@@ -2148,21 +2148,21 @@ URI: | `https://www.w3.org/ns/activitystreams#name`
 >}
 >```
 
-#### [Class] duration
+#### [Class] [duration](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#duration`
-Notes: | When the object describes a time-bound resource, such as an audio or video, a meeting, etc, the duration property indicates the object's approximate duration. The value *MUST* be expressed as an `xsd:duration` as defined by [ xmlschema11-2], section 3.3.6 (e.g. a period of 5 seconds is represented as "`PT5S`").
-Domain: | Object
+Notes: | When the object describes a time-bound resource, such as an audio or video, a meeting, etc, the [duration](#class-duration) property indicates the object's approximate duration. The value *MUST* be expressed as an `xsd:duration` as defined by [ [xmlschema11-2](ActivityVocabularyChapterC.md#xmlschema11-2)], section 3.3.6 (e.g. a period of 5 seconds is represented as "`PT5S`").
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:duration`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#duration`
-비고: | 객체가 오디오 또는 비디오, 회의등과 같은 시간 제한 리소스를 설명할떄 지속(duration) 속성은 객체의 대략적인 지속 시간을 나타냅니다. 값은 [ xmlschema11-2], 섹션 3.3.6에 정의된 `xsd:duration`으로 표현되어야 합니다 (예: 5초 주기는 "`PT5S`"로 표기).
-도메인: | Object
+비고: | 객체가 오디오 또는 비디오, 회의등과 같은 시간 제한 리소스를 설명할떄 [duration](#class-duration) 속성은 객체의 대략적인 지속(duration) 시간을 나타냅니다. 값은 [ [xmlschema11-2](ActivityVocabularyChapterC.md#xmlschema11-2)], 섹션 3.3.6에 정의된 `xsd:duration`으로 표현되어야 합니다 (예: 5초 주기는 "`PT5S`"로 표기).
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:duration`
 기능적: | True
 
@@ -2186,21 +2186,21 @@ URI: | `https://www.w3.org/ns/activitystreams#duration`
 >}
 >```
 
-#### [Class] height
+#### [Class] [height](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#height`
-Notes: | On a Link, specifies a hint as to the rendering height in device-independent pixels of the linked resource.
-Domain: | Link
+Notes: | On a [Link](ActivityVocabularyChapter2.md#class-link), specifies a hint as to the rendering height in device-independent pixels of the linked resource.
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link)
 Range: | `xsd:nonNegativeInteger`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#height`
-비고: | Link에서 링크된 리소스의 장치 독립적 픽셀의 렌더링 높이(height)에 대한 힌트를 지정합니다.
-도메인: | Link
+비고: | [Link](ActivityVocabularyChapter2.md#class-link)에서 링크된 리소스의 장치 독립적 픽셀의 렌더링 높이(height)에 대한 힌트를 지정합니다.
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link)
 범위: | `xsd:nonNegativeInteger`
 기능적: | True
 
@@ -2218,21 +2218,21 @@ URI: | `https://www.w3.org/ns/activitystreams#height`
 >}
 >```
 
-#### [Class] href
+#### [Class] [href](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#href`
-Notes: | The target resource pointed to by a Link.
-Domain: | Link
+Notes: | The target resource pointed to by a [Link](ActivityVocabularyChapter2.md#class-link).
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link)
 Range: | `xsd:anyURI`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#href`
-비고: | Link가 가리키는 대상 자원입니다.
-도메인: | Link
+비고: | [Link](ActivityVocabularyChapter2.md#class-link)가 가리키는 대상 자원입니다.
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link)
 범위: | `xsd:anyURI`
 기능적: | True
 
@@ -2256,22 +2256,22 @@ URI: | `https://www.w3.org/ns/activitystreams#href`
 >}
 >```
 
-#### [Class] hreflang
+#### [Class] [hreflang](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#hreflang`
-Notes: | Hints as to the language used by the target resource. Value *MUST* be a [[BCP47](https://www.w3.org/TR/activitystreams-vocabulary/#bib-BCP47)] Language-Tag.
-Domain: | Link
-Range: | [[BCP47](https://www.w3.org/TR/activitystreams-vocabulary/#bib-BCP47)] Language Tag
+Notes: | Hints as to the language used by the target resource. Value *MUST* be a [[BCP47](ActivityVocabularyChapterC.md#BCP47)] Language-Tag.
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link)
+Range: | [[BCP47](ActivityVocabularyChapterC.md#BCP47)] Language Tag
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#hreflang`
-비고: | 대상 자원이 사용하는 언어에 대한 힌트입니다. 값은 *반드시* [[BCP47](https://www.w3.org/TR/activitystreams-vocabulary/#bib-BCP47)] 언어 태그여야 합니다.
-도메인: | Link
-범위: | [[BCP47](https://www.w3.org/TR/activitystreams-vocabulary/#bib-BCP47)] 언어 태그
+비고: | 대상 자원이 사용하는 언어에 대한 힌트입니다. 값은 *반드시* [[BCP47](ActivityVocabularyChapterC.md#BCP47)] 언어 태그여야 합니다.
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link)
+범위: | [[BCP47](ActivityVocabularyChapterC.md#BCP47)] 언어 태그
 기능적: | True
 
 >Example 122
@@ -2295,22 +2295,22 @@ URI: | `https://www.w3.org/ns/activitystreams#hreflang`
 >}
 >```
 
-#### [Class] partOf
+#### [Class] [partOf](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#partOf`
-Notes: | Identifies the Collection to which a CollectionPage objects items belong.
-Domain: | CollectionPage
-Range: | Link \| Collection
+Notes: | Identifies the [Collection](ActivityVocabularyChapter2.md#class-collection) to which a [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) objects items belong.
+Domain: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage)
+Range: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Collection](ActivityVocabularyChapter2.md#class-collection)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#partOf`
-비고: | CollectionPage 객체 항목이 속하는 Collection을 식별합니다.
-도메인: | CollectionPage
-범위: | Link \| Collection
+비고: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage) 객체 항목이 속하는 [Collection](ActivityVocabularyChapter2.md#class-collection)을 식별합니다.
+도메인: | [CollectionPage](ActivityVocabularyChapter2.md#class-collectionpage)
+범위: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Collection](ActivityVocabularyChapter2.md#class-collection)
 기능적: | True
 
 >Example 123
@@ -2345,13 +2345,13 @@ URI: | `https://www.w3.org/ns/activitystreams#partOf`
 >}
 >```
 
-#### [Class] latitude
+#### [Class] [latitude](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#latitude`
 Notes: | The latitude of a place
-Domain: | Place
+Domain: | [Place](ActivityVocabularyChapter3.md#class-place)
 Range: | `xsd:float`
 Functional: | True
 
@@ -2359,7 +2359,7 @@ Functional: | True
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#latitude`
 비고: | 장소의 위도(latitude)를 표시합니다.
-도메인: | Place
+도메인: | [Place](ActivityVocabularyChapter3.md#class-place)
 범위: | `xsd:float`
 기능적: | True
 
@@ -2385,13 +2385,13 @@ URI: | `https://www.w3.org/ns/activitystreams#latitude`
 >}
 >```
 
-#### [Class] longitude
+#### [Class] [longitude](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#longitude`
 Notes: | The longitude of a place
-Domain: | Place
+Domain: | [Place](ActivityVocabularyChapter3.md#class-place)
 Range: | `xsd:float`
 Functional: | True
 
@@ -2399,7 +2399,7 @@ Functional: | True
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#longitude`
 비고: | 장소의 경도(longitude)를 표시합니다.
-도메인: | Place
+도메인: | [Place](ActivityVocabularyChapter3.md#class-place)
 범위: | `xsd:float`
 기능적: | True
 
@@ -2425,21 +2425,21 @@ URI: | `https://www.w3.org/ns/activitystreams#longitude`
 >}
 >```
 
-#### [Class] mediaType
+#### [Class] [mediaType](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#mediaType`
-Notes: | When used on a Link, identifies the MIME media type of the referenced resource. </br> When used on an Object, identifies the MIME media type of the value of the content property. If not specified, the content property is assumed to contain `text/html` content.
-Domain: | Link \| Object
+Notes: | When used on a [Link](ActivityVocabularyChapter2.md#class-link), identifies the MIME media type of the referenced resource. </br> When used on an [Object](ActivityVocabularyChapter2.md#class-object), identifies the MIME media type of the value of the [content](#class-content) property. If not specified, the [content](#class-content) property is assumed to contain `text/html` content.
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | MIME Media Type
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#mediaType`
-비고: | Link에서 사용될 떄 참조된 리소스의 MIME 미디어 타입(media type)을 식별합니다. </br> 개체에서 사용될 때 content 속성 값의 MIME 미디어 유형을 식별합니다. 지정하지 않으면 content 속성은 `text/html` 컨텐츠를 포함한다고 가정합니다.
-도메인: | Link \| Object
+비고: | [Link](ActivityVocabularyChapter2.md#class-link)에서 사용될 떄 참조된 리소스의 MIME 미디어 타입(media type)을 식별합니다. </br> [Object](ActivityVocabularyChapter2.md#class-object)에서 사용될 때 [content](#class-content) 속성 값의 MIME 미디어 유형을 식별합니다. 지정하지 않으면 [content](#class-content) 속성은 `text/html` 컨텐츠를 포함한다고 가정합니다.
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | MIME 미디어 타입
 기능적: | True
 
@@ -2464,21 +2464,21 @@ URI: | `https://www.w3.org/ns/activitystreams#mediaType`
 >}
 >```
 
-#### [Class] endTime
+#### [Class] [endTime](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#endTime`
-Notes: | The date and time describing the actual or expected ending time of the object. When used with an Activity object, for instance, the endTime property specifies the moment the activity concluded or is expected to conclude.
-Domain: | Object
+Notes: | The date and time describing the actual or expected ending time of the object. When used with an [Activity](ActivityVocabularyChapter2.md#class-activity) object, for instance, the [endTime](#class-endtime) property specifies the moment the activity concluded or is expected to conclude.
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:dateTime`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#endTime`
-비고: | 객체의 실제 또는 예상 종료 시간을 설명하는 날짜 및 시간입니다. 예를 들어, 액티비티 객체와 함께 사용되는 경우 endTime 속성은 액티비티가 종료되거나 종료 될것으로 예상되는 순간을 지정합니다.
-도메인: | Object
+비고: | 객체의 실제 또는 예상 종료 시간을 설명하는 날짜 및 시간입니다. 예를 들어, [Activity](ActivityVocabularyChapter2.md#class-activity) 객체와 함께 사용되는 경우 [endTime](#class-endtime) 속성은 액티비티가 종료되거나 종료 될것으로 예상되는 순간을 지정합니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:dateTime`
 기능적: | True
 
@@ -2502,13 +2502,13 @@ URI: | `https://www.w3.org/ns/activitystreams#endTime`
 >}
 >```
 
-#### [Class] published
+#### [Class] [published](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#published`
 Notes: | The date and time at which the object was published
-Domain: | Object
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:dateTime`
 Functional: | True
 
@@ -2516,7 +2516,7 @@ Functional: | True
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#published`
 비고: | 개체가 게시된(published) 날짜와 시간입니다.
-도메인: | Object
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:dateTime`
 기능적: | True
 
@@ -2541,21 +2541,21 @@ URI: | `https://www.w3.org/ns/activitystreams#published`
 >}
 >```
 
-#### [Class] startTime
+#### [Class] [startTime](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#startTime`
-Notes: | The date and time describing the actual or expected starting time of the object. When used with an Activity object, for instance, the startTime property specifies the moment the activity began or is scheduled to begin.
-Domain: | Object
+Notes: | The date and time describing the actual or expected starting time of the object. When used with an [Activity](ActivityVocabularyChapter2.md#class-activity) object, for instance, the [startTime](#class-starttime) property specifies the moment the activity began or is scheduled to begin.
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:dateTime`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#startTime`
-비고: | 객체의 실제 또는 예상 시작 시간(starting time)을 설명하는 날짜 및 시간입니다. 예를 들어, 액티비티 객체와 함께 사용되는 경우 startTime 속성은 액티비티가 시작되거나 예정된 순간을 지정합니다.
-도메인: | Object
+비고: | 객체의 실제 또는 예상 시작 시간(starting time)을 설명하는 날짜 및 시간입니다. 예를 들어, [Activity](ActivityVocabularyChapter2.md#class-activity) 객체와 함께 사용되는 경우 [startTime](#class-starttime) 속성은 액티비티가 시작되거나 예정된 순간을 지정합니다.
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:dateTime`
 기능적: | True
 
@@ -2579,21 +2579,21 @@ URI: | `https://www.w3.org/ns/activitystreams#startTime`
 >}
 >```
 
-#### [Class] radius
+#### [Class] [radius](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#radius`
-Notes: | The radius from the given latitude and longitude for a Place. The units is expressed by the units property. If units is not specified, the default is assumed to be "`m`" indicating "meters".
-Domain: | Place
+Notes: | The radius from the given latitude and longitude for a Place. The units is expressed by the [units](#class-units) property. If [units](#class-units) is not specified, the default is assumed to be "`m`" indicating "meters".
+Domain: | [Place](ActivityVocabularyChapter3.md#class-place)
 Range: | `xsd:float` [>= 0.0f]
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#radius`
-비고: | 장소에 대해 주어진 위도와 경도의 반경(radius)입니다. 단위는 units 속성으로 표시됩니다. 단위가 지정되지 않은 경우 기본값은 "meters"를 나타내는 "`m`"으로 가정됩니다.
-도메인: | Place
+비고: | 장소에 대해 주어진 위도와 경도의 반경(radius)입니다. 단위(units)는 [units](#class-units) 속성으로 표시됩니다. [units](#class-units)가 지정되지 않은 경우 기본값은 "meters"를 나타내는 "`m`"으로 가정됩니다.
+도메인: | [Place](ActivityVocabularyChapter3.md#class-place)
 범위: | `xsd:float` [>= 0.0f]
 기능적: | True
 
@@ -2619,21 +2619,21 @@ URI: | `https://www.w3.org/ns/activitystreams#radius`
 >}
 >```
 
-#### [Class] rel
+#### [Class] [rel](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#rel`
-Notes: | A link relation associated with a Link. The value *MUST* conform to both the [HTML5] and [RFC5988] "link relation" definitions. </br> In the [HTML5], any string not containing the "space" U+0020, "tab" (U+0009), "LF" (U+000A), "FF" (U+000C), "CR" (U+000D) or "," (U+002C) characters can be used as a valid link relation.
-Domain: | Link
-Range: | [RFC5988] or [HTML5] Link Relation
+Notes: | A link relation associated with a [Link](ActivityVocabularyChapter2.md#class-link). The value *MUST* conform to both the [HTML5](ActivityVocabularyChapterC.md#HTML5) and [RFC5988](ActivityVocabularyChapterC.md#RFC5988) "link relation" definitions. </br> In the [HTML5](ActivityVocabularyChapterC.md#HTML5), any string not containing the "space" U+0020, "tab" (U+0009), "LF" (U+000A), "FF" (U+000C), "CR" (U+000D) or "," (U+002C) characters can be used as a valid link relation.
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link)
+Range: | [RFC5988](ActivityVocabularyChapterC.md#RFC5988) or [HTML5](ActivityVocabularyChapterC.md#HTML5) Link Relation
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#rel`
-비고: | Link와 관련된 링크 관계(relation). [HTML5]와 [RFC5988] "링크 관계" 정의를 *반드시* 둘 다 준수해야합니다. </br> [HTML5]에서 "space" U+0020, "tab" (U+0009), "LF" (U+000A), "FF" (U+000C), "CR" (U+000D) 또는 "," (U+002C) 문자를 포함하고 있지 않은 문자열은 유효한 링크 관계로 사용할 수 있습니다.
-도메인: | Link
-범위: | [RFC5988] 또는 [HTML5] Link 관계
+비고: | Link와 관련된 링크 관계(relation). [HTML5](ActivityVocabularyChapterC.md#HTML5)와 [RFC5988](ActivityVocabularyChapterC.md#RFC5988) "링크 관계" 정의를 *반드시* 둘 다 준수해야합니다. </br> [HTML5](ActivityVocabularyChapterC.md#HTML5)에서 "space" U+0020, "tab" (U+0009), "LF" (U+000A), "FF" (U+000C), "CR" (U+000D) 또는 "," (U+002C) 문자를 포함하고 있지 않은 문자열은 유효한 링크 관계로 사용할 수 있습니다.
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link)
+범위: | [RFC5988](ActivityVocabularyChapterC.md#RFC5988) 또는 [HTML5](ActivityVocabularyChapterC.md#HTML5) Link 관계
 
 >Example 131
 >
@@ -2657,13 +2657,13 @@ URI: | `https://www.w3.org/ns/activitystreams#rel`
 >}
 >```
 
-#### [Class] startIndex
+#### [Class] [startIndex](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#startIndex`
 Notes: | A non-negative integer value identifying the relative position within the logical view of a strictly ordered collection.
-Domain: | OrderedCollectionPage
+Domain: | [OrderedCollectionPage](ActivityVocabularyChapter2.md#class-orderedcollectionpage)
 Range: | `xsd:nonNegativeInteger`
 Functional: | True
 
@@ -2671,7 +2671,7 @@ Functional: | True
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#startIndex`
 비고: | 엄격하게 정렬된 컬렉션의 논리적 뷰 내에서 상대 위치를 식별하는, 음이 아닌 정수의 값입니다.
-도메인: | OrderedCollectionPage
+도메인: | [OrderedCollectionPage](ActivityVocabularyChapter2.md#class-orderedcollectionpage)
 범위: | `xsd:nonNegativeInteger`
 기능적: | True
 
@@ -2706,20 +2706,20 @@ URI: | `https://www.w3.org/ns/activitystreams#startIndex`
 >}
 >```
 
-#### [Class] summary
+#### [Class] [summary](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#summary`
 Notes: | A natural language summarization of the object encoded as HTML. Multiple language tagged summaries *MAY* be provided.
-Domain: | Object
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:string` \| `rdf:langString`
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#summary`
 비고: | HTML로 인코딩 된 객체의 자연어 요약(summary)입니다. 여러 언어 태그 요약이 제공 *될 수도* 있습니다.
-도메인: | Object
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:string` \| `rdf:langString`
 
 >Example 133
@@ -2765,21 +2765,21 @@ URI: | `https://www.w3.org/ns/activitystreams#summary`
 >}
 >```
 
-#### [Class] totalItems
+#### [Class] [totalItems](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#totalItems`
-Notes: | A non-negative integer specifying the total number of objects contained by the logical view of the collection. This number might not reflect the actual number of items serialized within the Collection object instance.
-Domain: | Collection
+Notes: | A non-negative integer specifying the total number of objects contained by the logical view of the collection. This number might not reflect the actual number of items serialized within the [Collection](ActivityVocabularyChapter2.md#class-collection) object instance.
+Domain: | [Collection](ActivityVocabularyChapter2.md#class-collection)
 Range: | `xsd:nonNegativeInteger`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#totalItems`
-비고: | 컬렉션의 논리적 뷰에 포함된 총 개체수를 지정하는, 음이 아닌 정수입니다. 이 숫자는 Collection 개체 인스턴스 내에서 직렬화된 실제 항목수를 반영하지 않을 수 있습니다.
-도메인: | Collection
+비고: | 컬렉션의 논리적 뷰에 포함된 총 개체수를 지정하는, 음이 아닌 정수입니다. 이 숫자는 [Collection](ActivityVocabularyChapter2.md#class-collection) 개체 인스턴스 내에서 직렬화된 실제 항목수를 반영하지 않을 수 있습니다.
+도메인: | [Collection](ActivityVocabularyChapter2.md#class-collection)
 범위: | `xsd:nonNegativeInteger`
 기능적: | True
 
@@ -2814,21 +2814,21 @@ URI: | `https://www.w3.org/ns/activitystreams#totalItems`
 >}
 >```
 
-#### [Class] units
+#### [Class] [units](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#units`
-Notes: | Specifies the measurement units for the radius and altitude properties on a Place object. If not specified, the default is assumed to be "m" for "meters".
-Domain: | Place
+Notes: | Specifies the measurement units for the [radius](#class-radius) and [altitude](#class-altitude) properties on a [Place](ActivityVocabularyChapter3.md#class-place) object. If not specified, the default is assumed to be "`m`" for "meters".
+Domain: | [Place](ActivityVocabularyChapter3.md#class-place)
 Range: | "`cm`" \| " `feet`" \| " `inches`" \| " `km`" \| " `m`" \| " `miles`" \| `xsd:anyURI`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#units`
-비고: | 장소 객체의 반경 및 고도 속성에 대한 측정 단위(units)를 지정합니다. 지정하지 않으면 기본값으로는 "미터"를 나타내는 "m"으로 간주됩니다.
-도메인: | Place
+비고: | [Place](ActivityVocabularyChapter3.md#class-place) 객체의 [radius](#class-radius) 및 [altitude](#class-altitude) 속성에 대한 측정 단위(units)를 지정합니다. 지정하지 않으면 기본값으로는 "미터"를 나타내는 "m"으로 간주됩니다.
+도메인: | [Place](ActivityVocabularyChapter3.md#class-place)
 범위: | "`cm`" \| " `feet`" \| " `inches`" \| " `km`" \| " `m`" \| " `miles`" \| `xsd:anyURI`
 기능적: | True
 
@@ -2854,13 +2854,13 @@ URI: | `https://www.w3.org/ns/activitystreams#units`
 >}
 >```
 
-#### [Class] updated
+#### [Class] [updated](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#updated`
 Notes: | The date and time at which the object was updated
-Domain: | Object
+Domain: | [Object](ActivityVocabularyChapter2.md#class-object)
 Range: | `xsd:dateTime`
 Functional: | True
 
@@ -2868,7 +2868,7 @@ Functional: | True
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#updated`
 비고: | 객체가 업데이트된(updated) 날짜 및 시간입니다.
-도메인: | Object
+도메인: | [Object](ActivityVocabularyChapter2.md#class-object)
 범위: | `xsd:dateTime`
 기능적: | True
 
@@ -2893,21 +2893,21 @@ URI: | `https://www.w3.org/ns/activitystreams#updated`
 >}
 >```
 
-#### [Class] width
+#### [Class] [width](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#width`
-Notes: | On a Link, specifies a hint as to the rendering width in device-independent pixels of the linked resource.
-Domain: | Link
+Notes: | On a [Link](ActivityVocabularyChapter2.md#class-link), specifies a hint as to the rendering width in device-independent pixels of the linked resource.
+Domain: | [Link](ActivityVocabularyChapter2.md#class-link)
 Range: | `xsd:nonNegativeInteger`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#width`
-비고: | Link에서 링크된 리소스의 장치 독립적인 픽셀의 렌더링 너비(width)에 대한 힌트를 지정합니다.
-도메인: | Link
+비고: | [Link](ActivityVocabularyChapter2.md#class-link)에서 링크된 리소스의 장치 독립적인 픽셀의 렌더링 너비(width)에 대한 힌트를 지정합니다.
+도메인: | [Link](ActivityVocabularyChapter2.md#class-link)
 범위: | `xsd:nonNegativeInteger`
 기능적: | True
 
@@ -2925,22 +2925,22 @@ URI: | `https://www.w3.org/ns/activitystreams#width`
 >}
 >```
 
-#### [Class] subject
+#### [Class] [subject](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#subject`
-Notes: | On a Relationship object, the `subject` property identifies one of the connected individuals. For instance, for a Relationship object describing "John is related to Sally", `subject` would refer to John.
-Domain: | Relationship
-Range: | Link \| Object
+Notes: | On a [Relationship](#class-relationship) object, the `subject` property identifies one of the connected individuals. For instance, for a Relationship object describing "John is related to Sally", `subject` would refer to John.
+Domain: | [Relationship](#class-relationship)
+Range: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#subject`
-비고: | 관계 객체에서 `subject` 속성은 연결된 개개인중 한명을 식별합니다. 예를 들어, "John은 Sally와 관련이 있습니다"라는 관계 객체의 경우, `subject`는 John을 나타냅니다.
-도메인: | Relationship
-범위: | Link \| Object
+비고: | [Relationship](#class-relationship) 객체에서 `subject` 속성은 연결된 개개인중 한명을 식별합니다. 예를 들어, "John은 Sally와 관련이 있습니다"라는 관계 객체의 경우, `subject`는 John을 나타냅니다.
+도메인: | [Relationship](#class-relationship)
+범위: | [Link](ActivityVocabularyChapter2.md#class-link) \| [Object](ActivityVocabularyChapter2.md#class-object)
 기능적: | True
 
 >Example 139
@@ -2970,20 +2970,20 @@ URI: | `https://www.w3.org/ns/activitystreams#subject`
 >}
 >```
 
-#### [Class] relationship
+#### [Class] [relationship](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#relationship`
-Notes: | On a Relationship object, the `relationship` property identifies the kind of relationship that exists between subject and object.
-Domain: | Relationship
-Range: | Object
+Notes: | On a [Relationship](#class-relationship) object, the `relationship` property identifies the kind of relationship that exists between [subject](#class-subject) and [object](ActivityVocabularyChapter2.md#class-object).
+Domain: | [Relationship](#class-relationship)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#relationship`
-비고: | 관계(relationship) 객체에서 `relationship` 속성은 주제와 객체 사이에 존재하는 관계의 종류를 식별합니다.
-도메인: | Relationship
+비고: | [Relationship](#class-relationship) 객체에서 `relationship` 속성은 [subject](#class-subject)와 [object](ActivityVocabularyChapter2.md#class-object) 사이에 존재하는 관계의 종류를 식별합니다.
+도메인: | [Relationship](#class-relationship)
 범위: | Object
 
 >Example 140
@@ -3013,22 +3013,22 @@ URI: | `https://www.w3.org/ns/activitystreams#relationship`
 >}
 >```
 
-#### [Class] describes
+#### [Class] [describes](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#describes`
-Notes: | On a Profile object, the `describes` property identifies the object described by the Profile.
-Domain: | Profile
-Range: | Object
+Notes: | On a [Profile](#class-profile) object, the `describes` property identifies the object described by the Profile.
+Domain: | [Profile](#class-profile)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object)
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#describes`
 비고: | Profile 객체에서 `describes` 속성은 Profile이 설명(describes)하는 객체를 식별합니다.
-도메인: | Profile
-범위: | Object
+도메인: | [Profile](#class-profile)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object)
 기능적: | True
 
 >Example 141
@@ -3054,22 +3054,22 @@ URI: | `https://www.w3.org/ns/activitystreams#describes`
 >}
 >```
 
-#### [Class] formerType
+#### [Class] [formerType](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#formerType`
-Notes: | On a Tombstone object, the `formerType` property identifies the type of the object that was deleted.
-Domain: | Tombstone
-Range: | Object
+Notes: | On a [Tombstone](ActivityVocabularyChapter3.md#class-tombstone) object, the `formerType` property identifies the type of the object that was deleted.
+Domain: | [Tombstone](ActivityVocabularyChapter3.md#class-tombstone)
+Range: | [Object](ActivityVocabularyChapter2.md#class-object)
 Functional: | False
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#formerType`
-비고: | Tombstone 객체에서 `formerType` 속성은 삭제된 객체의 타입을 식별합니다.
-도메인: | Tombstone
-범위: | Object
+비고: | [Tombstone](ActivityVocabularyChapter3.md#class-tombstone) 객체에서 `formerType` 속성은 삭제된 객체의 타입을 식별합니다.
+도메인: | [Tombstone](ActivityVocabularyChapter3.md#class-tombstone)
+범위: | [Object](ActivityVocabularyChapter2.md#class-object)
 기능적: | False
 
 >Example 142
@@ -3081,6 +3081,7 @@ URI: | `https://www.w3.org/ns/activitystreams#formerType`
 >```
 
 >예시 142
+>
 >```json
 >{
 >"@context": "https://www.w3.org/ns/activitystreams",
@@ -3091,21 +3092,21 @@ URI: | `https://www.w3.org/ns/activitystreams#formerType`
 >}
 >```
 
-#### [Class] deleted
+#### [Class] [deleted](#4-속성-properties)
 
 Description| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#deleted`
-Notes: | On a Tombstone object, the `deleted` property is a timestamp for when the object was deleted.
-Domain: | Tombstone
+Notes: | On a [Tombstone](ActivityVocabularyChapter3.md#class-tombstone) object, the `deleted` property is a timestamp for when the object was deleted.
+Domain: | [Tombstone](ActivityVocabularyChapter3.md#class-tombstone)
 Range: | `xsd:dateTime`
 Functional: | True
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#deleted`
-비고: | Tombstone 객체에서 `deleted` 속성은 객체가 삭제(deleted)된 타임스탬프를 나타냅니다.
-도메인: | Tombstone
+비고: | [Tombstone](ActivityVocabularyChapter3.md#class-tombstone) 객체에서 `deleted` 속성은 객체가 삭제(deleted)된 타임스탬프를 나타냅니다.
+도메인: | [Tombstone](ActivityVocabularyChapter3.md#class-tombstone)
 범위: | `xsd:dateTime`
 기능적: | True
 
@@ -3127,3 +3128,5 @@ URI: | `https://www.w3.org/ns/activitystreams#deleted`
 >"deleted": "2016-05-03T00:00:00Z"
 >}
 >```
+
+[맨 위로](#4-속성-properties)

@@ -48,7 +48,7 @@
 - [Commits](https://github.com/w3c/activitystreams/commits/master)
 
 **저장소**
-- [깃헙](https://github.com/w3c/activitystreams)
+- [Github](https://github.com/w3c/activitystreams)
 - [이슈들](https://github.com/w3c/activitystreams/issues)
 - [커밋들](https://github.com/w3c/activitystreams/commits/master)
 

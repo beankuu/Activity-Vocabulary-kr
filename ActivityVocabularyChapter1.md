@@ -1,6 +1,6 @@
 [목차로 돌아가기](ActivityVocabularyContents.md)
 
-## 1. 서문 (Introduction)
+## 1. [서문 (Introduction)](ActivityVocabularyContents.md)
 
 [The Activity Streams 2.0 Core Syntax](https://www.w3.org/TR/activitystreams-core/) defines the JSON syntax for Activity Streams. This document defines the vocabulary properties.
 
@@ -22,13 +22,13 @@ While not all Activity Streams 2.0 implementations are expected to implement sup
 
 모든 Activity Streams 2.0 구현체들이 확장된 속성들에 대한 지원을 구현할 것으로 예상하지는 않지만, 모든 구현체는 [Activity Streams 2.0 핵심 구문](https://www.w3.org/TR/activitystreams-core/)에 따라 *반드시* 확장된 속성을 직렬화(serializing) 및 역 직렬화를 할 수 있어야 합니다.
 
-The key words "*MUST*", "*MUST NOT*", "*REQUIRED*", "*SHALL*", "*SHALL NOT*", " *SHOULD*", "*SHOULD NOT*", "*RECOMMENDED*", "*MAY*", and "*OPTIONAL*" in this document are to be interpreted as described in [[RFC2119](https://www.w3.org/TR/activitystreams-vocabulary/#bib-RFC2119)].
+The key words "*MUST*", "*MUST NOT*", "*REQUIRED*", "*SHALL*", "*SHALL NOT*", " *SHOULD*", "*SHOULD NOT*", "*RECOMMENDED*", "*MAY*", and "*OPTIONAL*" in this document are to be interpreted as described in [[RFC2119](ActivityVocabularyChapterC.md#rfc2119)].
 
-이 문서에 있는 "*반드시 (MUST)*", "*절대 하지 말아야 (MUST NOT)*", "*요구한다 (REQUIRED)*", "*할 것이다 (SHALL)*", "*해서는 안될 것이다 (SHALL NOT)*", "*해야 한다 (SHOULD)*", "*해서는 안된다 (SHOULD NOT)*", "*권장한다 (RECOMMENDED)*", "*할 수도 있다 (MAY)*", 그리고 "*선택적으로 (OPTIONAL)*" 의 키워드들의 해석은  [[RFC2119](https://www.w3.org/TR/activitypub/#bib-RFC2119)] 를 따릅니다.
+이 문서에 있는 "*반드시 (MUST)*", "*절대 하지 말아야 (MUST NOT)*", "*요구한다 (REQUIRED)*", "*할 것이다 (SHALL)*", "*해서는 안될 것이다 (SHALL NOT)*", "*해야 한다 (SHOULD)*", "*해서는 안된다 (SHOULD NOT)*", "*권장한다 (RECOMMENDED)*", "*할 수도 있다 (MAY)*", 그리고 "*선택적으로 (OPTIONAL)*" 의 키워드들의 해석은  [[RFC2119](ActivityVocabularyChapterC.md#rfc2119)] 를 따릅니다.
 
 [//Comment]: # "REQUIRED, SHALL, SHALL NOT, RECOMMENDED, OPTIONAL은 문서 어디에서도 사용되지 않는 것을 확인하였습니다."
 
-### 1.1 관례 (Conventions)
+### 1.1 [관례 (Conventions)](#1-서문-introduction)
 
 Unless otherwise specified, all properties defined as `xsd:dateTime` values *MUST* conform to the rules defined in Activity Streams 2.0 Core, [Section 2.3](https://www.w3.org/TR/activitystreams-core/#dates).
 
@@ -37,3 +37,5 @@ Unless otherwise specified, all properties defined as `xsd:dateTime` values *MUS
 The examples included in this document use the normative JSON serialization defined by this specification.
 
 이 문서에 포함된 예시는 이 사양에서 정의한 표준 JSON 직렬화를 사용합니다.
+
+[맨 위로](#1-서문-introduction)

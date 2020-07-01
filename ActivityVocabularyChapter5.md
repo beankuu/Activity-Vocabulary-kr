@@ -1,8 +1,8 @@
 [목차로 돌아가기](ActivityVocabularyContents.md)
 
-## 5. 구현 비고 (Implementation Notes)
+## 5. [구현 비고 (Implementation Notes)](ActivityVocabularyContents.md)
 
-### 5.1 청중 타게팅 (Audience Targeting)
+### 5.1 [청중 타게팅 (Audience Targeting)](#5-구현-비고-implementation-notes)
 
 Conceptually, every Object has both a Primary and Secondary audience. The Primary audience consists of those entities directly involved or owning the object. The Secondary audience consists of the collection of entities sharing an interest in the object but who might not be directly involved (e.g."followers").
 
@@ -16,9 +16,9 @@ In this example, Jane and Joe are each directly involved in the file sharing act
 
 이 예시에서 Jane과 Joe는 각각 파일 공유 액티비티에 직접 참여하며, 두명 다 그 이벤트에 대한 1차 청중으로 구성됩니다. Jane과 관련된 액티비티에 관심이 있는 Bob은 2차 청중입니다. 이를 이용하여 액티비티를 생산하거나 소비하는 시스템은 각 사람에게 이벤트를 효율적으로 알릴수 있습니다.
 
-While there are means (based on the action type, actor, object and target of the activity) to infer the primary audience for many types of activities, heuristics do not work in every case and do not provide a means of identifying the secondary audience. The [to](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-to), [cc](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-cc), [bto](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bto) and [bcc](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bcc) properties *MAY* be used within an Object to explicitly identify the Primary and Secondary audiences.
+While there are means (based on the action type, actor, object and target of the activity) to infer the primary audience for many types of activities, heuristics do not work in every case and do not provide a means of identifying the secondary audience. The [to](ActivityVocabularyChapter4.md#class-to), [cc](ActivityVocabularyChapter4.md#class-cc), [bto](ActivityVocabularyChapter4.md#class-bto) and [bcc](ActivityVocabularyChapter4.md#class-bcc) properties *MAY* be used within an Object to explicitly identify the Primary and Secondary audiences.
 
-많은 유형의 액티비티에 대해 1차 청중들을 추론할 수 있는 수단(액티비티의 액션 타입, 액터, 객체와 대상)이 있지만, 휴리스틱은 언제나 작동하지 않기에 2차 청중을 판별하는 수단을 제공하지 않습니다. [to](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-to), [cc](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-cc), [bto](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bto) 와 [bcc](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bcc) 속성은 1차 및 2차 청중을 명시적으로 식별하기 위해 객체 내에서 사용 *할 수도* 있습니다.
+많은 유형의 액티비티에 대해 1차 청중들을 추론할 수 있는 수단(액티비티의 액션 타입, 액터, 객체와 대상)이 있지만, 휴리스틱은 언제나 작동하지 않기에 2차 청중을 판별하는 수단을 제공하지 않습니다. [to](ActivityVocabularyChapter4.md#class-to), [cc](ActivityVocabularyChapter4.md#class-cc), [bto](ActivityVocabularyChapter4.md#class-bto) 와 [bcc](ActivityVocabularyChapter4.md#class-bcc) 속성은 1차 및 2차 청중을 명시적으로 식별하기 위해 객체 내에서 사용 *할 수도* 있습니다.
 
 The prototypical use case for an Object containing these properties is the publication and redistribution of objects through an intermediary. That is, an event source generates the object and publishes it to the intermediary which determines a subset of items to display to specific individual users or groups. Such a determination can be made, in part, by identifying the Primary and Secondary Audiences for each object.
 
@@ -43,9 +43,9 @@ _This section is non-normative._
 
 _이 항목은 비표준입니다._
 
-Activities are rarely isolated events. Often, multiple individual activities will be performed around a similar context or audience. For instance, a collaborators working on a shared project might perform multiple related activities in the process of achieving some goal. Such activities can be logically grouped together using the [context](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) property, and scoped to a particular audience using the [audience](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-audience) property.
+Activities are rarely isolated events. Often, multiple individual activities will be performed around a similar context or audience. For instance, a collaborators working on a shared project might perform multiple related activities in the process of achieving some goal. Such activities can be logically grouped together using the [context](ActivityVocabularyChapter4.md#class-context) property, and scoped to a particular audience using the [audience](ActivityVocabularyChapter4.md#class-audience) property.
 
-액티비티는 대부분 격리되지 않은 이벤트입니다. 대부분의 경우, 유사한 컨텍스트나 청중을 중심으로 여러 개별적인 액티비티들이 수행되는 경우가 종종 있습니다. 예를들어 공유 프로젝트에서 작업하는 공동작업자는 일부 목표를 달성하는 과정에서 여러 관련된 액티비티들을 수행할 수 있습니다. 이러한 활동은 [콘텍스트(context)] 속성을 사용하여 논리적으로 그룹화할 수 있으며, [청중(audience)] 속성을 사용하여 특정 청중을 대상으로 범위를 좁힐 수 있습니다.
+액티비티는 대부분 격리되지 않은 이벤트입니다. 대부분의 경우, 유사한 컨텍스트나 청중을 중심으로 여러 개별적인 액티비티들이 수행되는 경우가 종종 있습니다. 예를들어 공유 프로젝트에서 작업하는 공동작업자는 일부 목표를 달성하는 과정에서 여러 관련된 액티비티들을 수행할 수 있습니다. 이러한 활동은 [context](ActivityVocabularyChapter4.md#class-context) 속성을 사용하여 논리적으로 그룹화할 수 있으며, [audience](ActivityVocabularyChapter4.md#class-audience) 속성을 사용하여 특정 청중을 대상으로 범위를 좁힐 수 있습니다.
 
 For instance, the following shows two related activities that share a common `context` and `audience`:
 
@@ -116,19 +116,19 @@ For instance, the following shows two related activities that share a common `co
 >}
 >```
 
-### 5.2 개체간의 관계 표현 (Representing Relationships Between Entities)
+### 5.2 [개체간의 관계 표현 (Representing Relationships Between Entities)](#5-구현-비고-implementation-notes)
 
-The [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) object is used to represent relationships between individuals. It can be used, for instance, to describe that one person is a friend of another, or that one person is a member of a particular organization. The intent of modeling Relationship in this way is to allow descriptions of activities that operate on the relationships in general, and to allow representation of Collections of relationships.
+The [Relationship](ActivityVocabularyChapter3.md#class-relationship) object is used to represent relationships between individuals. It can be used, for instance, to describe that one person is a friend of another, or that one person is a member of a particular organization. The intent of modeling Relationship in this way is to allow descriptions of activities that operate on the relationships in general, and to allow representation of Collections of relationships.
 
-[관계(Relationship)] 개체는 개인 간의 관계를 나타내는데 사용됩니다. 예를 들어, 한 사람이 다른 사람의 친구라고 하거나, 한 사람이 특정 조직의 일원이라고 표현하는데 사용할 수 있습니다. 이러한 방식으로 관계를 모델링하는 이유는 관계 전반에 작용하는 액티비티들에 대한 설명을 허용하고 관계 컬렉션의 표현을 허용하기 위함입니다.
+[Relationship](ActivityVocabularyChapter3.md#class-relationship) 개체는 개인 간의 관계를 나타내는데 사용됩니다. 예를 들어, 한 사람이 다른 사람의 친구라고 하거나, 한 사람이 특정 조직의 일원이라고 표현하는데 사용할 수 있습니다. 이러한 방식으로 관계를 모델링하는 이유는 관계 전반에 작용하는 액티비티들에 대한 설명을 허용하고 관계 컬렉션의 표현을 허용하기 위함입니다.
 
 For instance, many social systems have a notion of a "friends list". These are the collection of individuals that are directly connected within a person's social graph. Suppose we have a user, Sally, with direct relationships to users Joe and Jane. Sally follows Joe's updates while Sally and Jane have a mutual relationship.
 
 예를 들어, 많은 소셜 시스템들은 "친구 목록"이라는 개념을 가지고 있습니다. 이것은 한 개인의 사회적 그래프 안에서 직접 연결된 개인의 모음입니다. Sally라는 사용자가 Joe와 Jane과 직접적인 관계를 맺고 있다고 가정합시다. Sally는 Joe의 업데이트 내용을 따르는 반면 Sally와 Jane은 상호 관계를 맺고 있습니다.
 
-Using the [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) object, we can model these relationships as:
+Using the [Relationship](ActivityVocabularyChapter3.md#class-relationship) object, we can model these relationships as:
 
-[Relationship] 객체를 이용하여 이러한 관계를 다음과 같이 모델링할 수 있습니다:
+[Relationship](ActivityVocabularyChapter3.md#class-relationship) 객체를 이용하여 이러한 관계를 다음과 같이 모델링할 수 있습니다:
 
 >Example 145
 >
@@ -140,7 +140,7 @@ Using the [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-r
 >}
 >```
 
->Example 145
+>예시 145
 >
 >```json
 >{
@@ -178,13 +178,13 @@ Using the [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-r
 >}
 >```
 
-The [relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) property specifies the kind of relationship that exists between the two individuals identified by the [subject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-subject) and [object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) properties. Used together, these three properties form what is commonly known as a " [reified statement](http://patterns.dataincubator.org/book/reified-statement.html)" where [subject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-subject) identifies the subject, [relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) identifies the predicate, and [object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) identifies the object.
+The [relationship](ActivityVocabularyChapter3.md#class-relationship) property specifies the kind of relationship that exists between the two individuals identified by the [subject](ActivityVocabularyChapter4.md#class-subject) and [object](#class-object) properties. Used together, these three properties form what is commonly known as a " [reified statement](http://patterns.dataincubator.org/book/reified-statement.html)" where [subject](ActivityVocabularyChapter4.md#class-subject) identifies the subject, [relationship](ActivityVocabularyChapter3.md#class-relationship) identifies the predicate, and [object](ActivityVocabularyChapter2.md#class-object) identifies the object.
 
-[관계](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) 속성은 [주체](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-subject)와 [객체](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) 속성으로 식별된 두 개인 사이에 존재하는 관계의 종류를 지정합니다. 이 세 가지 속성은 함께 사용되며, [주체](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-subject)가 대상을 식별하고, [관계](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship)가 술어를 식별하며, 사물이 대상을 식별하는 "[수정된 문장](http://patterns.dataincubator.org/book/reified-statement.html)"이라고 흔히 알려진 것을 형성합니다.
+[relationship](ActivityVocabularyChapter3.md#class-relationship) 속성은 [subject](ActivityVocabularyChapter4.md#class-subject)와 [object](ActivityVocabularyChapter2.md#class-object) 속성으로 식별된 두 개인 사이에 존재하는 관계의 종류를 지정합니다. 이 세 가지 속성은 함께 사용되며, [subject](ActivityVocabularyChapter4.md#class-subject)가 대상을 식별하고, [relationship](ActivityVocabularyChapter3.md#class-relationship)가 술어를 식별하며, [object](ActivityVocabularyChapter2.md#class-object)가 대상을 식별하는 "[구체화한 문장](http://patterns.dataincubator.org/book/reified-statement.html)"이라고 흔히 알려진 것을 형성합니다.
 
-While use of reified statements can be problematic and confusing in certain situations, their use within the Activity Streams vocabulary to describe relationships provides a straightforward mechanism of describing changes to an individual's social graph. For instance, to indicate that Sally has created a new relationship to user Matt, an implementer can use the [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) object together with the [Create](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create) activity:
+While use of reified statements can be problematic and confusing in certain situations, their use within the Activity Streams vocabulary to describe relationships provides a straightforward mechanism of describing changes to an individual's social graph. For instance, to indicate that Sally has created a new relationship to user Matt, an implementer can use the [Relationship](ActivityVocabularyChapter3.md#class-relationship) object together with the [Create](ActivityVocabularyChapter3.md#class-create) activity:
 
-수정된 문장의 사용은 특정 상황에서 문제가 있을수도 있고 혼란스러울수도 있지만, 관계를 기술하기 위한 Activity Streams 어휘 내에서 그들의 사용은 개인의 사회적 그래프에 변화를 기술하는 간단한 메커니즘을 제공합니다. 예를 들어, Sally가 사용자 Matt와 새로운 [관계](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship)를 만들었음을 나타내기 위해, 실행자는 [생성](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create) 액티비티과 함께 Relationship 객체를 사용할 수 있습니다.
+수정된 문장의 사용은 특정 상황에서 문제가 있을수도 있고 혼란스러울수도 있지만, 관계를 기술하기 위한 Activity Streams 어휘 내에서 그들의 사용은 개인의 사회적 그래프에 변화를 기술하는 간단한 메커니즘을 제공합니다. 예를 들어, Sally가 사용자 Matt와 새로운 [Relationship](ActivityVocabularyChapter3.md#class-relationship)를 만들었음을 나타내기 위해, 실행자는 [Create](ActivityVocabularyChapter3.md#class-create) 액티비티과 함께 Relationship 객체를 사용할 수 있습니다.
 
 >Example 146
 >
@@ -230,9 +230,9 @@ One common use case for many social platforms is the establishment of symmetrica
 
 많은 소셜 플랫폼의 일반적인 사용 사례는 대칭적인 "친구" 관계의 확립으로, 한 사용자가 처음에 다른 사용자에게 새로운 연결을 설정하도록 요청을 확장하는 것입니다. 일단 연결이 되면, 두 사용자 모두 자동으로 상대방의 활동에 대한 알림을 받기 시작하고, 확립된 관계는 두 사용자의 "친구 목록" 모두에서 볼 수 있게 됩니다.
 
-The initial "friend request" can be modeled by composing the [Offer](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-offer) and [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) object types as in the following example:
+The initial "friend request" can be modeled by composing the [Offer](ActivityVocabularyChapter3.md#class-offer) and [Relationship](ActivityVocabularyChapter3.md#class-relationship) object types as in the following example:
 
-초기 "친구 요청"은 다음 예시와 같이 [제안](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-offer) 및 [관계](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship) 객체 타입을 구성하여 모델링할 수 있습니다:
+초기 "친구 요청"은 다음 예시와 같이 [Offer](ActivityVocabularyChapter3.md#class-offer) 및 [Relationship](ActivityVocabularyChapter3.md#class-relationship) 객체 타입을 구성하여 모델링할 수 있습니다:
 
 >Example 147
 >
@@ -358,23 +358,25 @@ In this example,
 
 이 예시에서는,
 
-1\. The optional [result](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result) property is used within the `Accept` activity to identify the additional activities that occurred as a result of the accept.
+1. The optional [result](ActivityVocabularyChapter4.md#class-result) property is used within the `Accept` activity to identify the additional activities that occurred as a result of the accept.
 
-2\. The optional [context](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) property is used to relate the various activities back to a common reference point, which in this example is the relationship being established. The `context` allows an implementation to efficiently group related activities together for display or analytic purposes.
+2. The optional [context](ActivityVocabularyChapter4.md#class-context) property is used to relate the various activities back to a common reference point, which in this example is the relationship being established. The `context` allows an implementation to efficiently group related activities together for display or analytic purposes.
 
-1. 선택적 결과 속성은 `Accept` 액티비티 내에서 수락의 결과로 발생한 추가 액티비티을 식별하기 위해 사용됩니다.
+[//Comment]: # "BLANK"
 
-2. 선택적 컨텍스트 속성은 다양한 액티비티을 공통의 기준점과 다시 연관시키기 위해 사용되는데, 이 예에서는 설정되고 있는 관계가 그것입니다. 이러한 맥락에서 `context`는 표시 또는 분석 목적을 위해 관련 액티비티을 효율적으로 그룹화할 수 있습니다.
+1. 선택적 [result](ActivityVocabularyChapter4.md#class-result) 속성은 `Accept` 액티비티 내에서 수락의 결과로 발생한 추가 액티비티을 식별하기 위해 사용됩니다.
 
-### 5.3 장소 표현 (Representing Places)
+2. 선택적 [context](ActivityVocabularyChapter4.md#class-context) 속성은 다양한 액티비티을 공통의 기준점과 다시 연관시키기 위해 사용되는데, 이 예에서는 설정되고 있는 관계가 그것입니다. 이러한 맥락에서 `context`는 표시 또는 분석 목적을 위해 관련 액티비티을 효율적으로 그룹화할 수 있습니다.
+
+### 5.3 [장소 표현 (Representing Places)](#5-구현-비고-implementation-notes)
 
 _This section is non-normative._
 
 _이 항목은 비표준입니다._
 
-The [Place](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place) object is used to represent both physical and logical locations. While numerous existing vocabularies exist for describing locations in a variety of ways, inconsistencies and incompatibilities between those vocabularies make it difficult to achieve appropriate interoperability between implementations. The `Place` object is included within the Activity vocabulary to provide a minimal, interoperable starting point for describing locations consistently across Activity Streams 2.0 implementations.
+The [Place](ActivityVocabularyChapter3.md#class-place) object is used to represent both physical and logical locations. While numerous existing vocabularies exist for describing locations in a variety of ways, inconsistencies and incompatibilities between those vocabularies make it difficult to achieve appropriate interoperability between implementations. The `Place` object is included within the Activity vocabulary to provide a minimal, interoperable starting point for describing locations consistently across Activity Streams 2.0 implementations.
 
-[장소](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place) 객체는 물리적 위치와 논리적 위치 모두를 나타내기 위해 사용됩니다. 위치를 다양한 방식으로 설명하기 위해 수많은 기존의 어휘가 존재하지만, 이러한 어휘들 간의 불일치와 비호환성은 구현간 적절한 상호운용성을 달성하는 것을 어렵게 합니다. `Place` 객체는 Activity Streams 2.0 구현에 걸쳐 일관적으로 위치를 설명하기 위한 최소의 상호운용 가능한 출발점을 제공하기 위해 Activity 어휘에 포함되어 있습니다.
+[Place](ActivityVocabularyChapter3.md#class-place) 객체는 물리적 위치와 논리적 위치 모두를 나타내기 위해 사용됩니다. 위치를 다양한 방식으로 설명하기 위해 수많은 기존의 어휘가 존재하지만, 이러한 어휘들 간의 불일치와 비호환성은 구현간 적절한 상호운용성을 달성하는 것을 어렵게 합니다. `Place` 객체는 Activity Streams 2.0 구현에 걸쳐 일관적으로 위치를 설명하기 위한 최소의 상호운용 가능한 출발점을 제공하기 위해 Activity 어휘에 포함되어 있습니다.
 
 The `Place` object is intentionally flexible. It can, for instance, be used to identify a location simply by name:
 
@@ -398,9 +400,9 @@ The `Place` object is intentionally flexible. It can, for instance, be used to i
 >}
 >```
 
-Or, by [longitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-longitude) and [latitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-latitude):
+Or, by [longitude](ActivityVocabularyChapter4.md#class-longitude) and [latitude](ActivityVocabularyChapter4.md#class-latitude):
 
-또는 경도 및 위도 기준으로는:
+또는 [longitude](ActivityVocabularyChapter4.md#class-longitude) 및 [latitude](ActivityVocabularyChapter4.md#class-latitude) 기준으로는:
 
 >Example 150
 >
@@ -422,27 +424,27 @@ Or, by [longitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-longitu
 >}
 >```
 
-The `Place` object can also describe an area around a given point using the [radius](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-radius) property, the [altitude](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-altitude) of the location, and a degree of [accuracy](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accuracy).
+The `Place` object can also describe an area around a given point using the [radius](ActivityVocabularyChapter4.md#class-radius) property, the [altitude](ActivityVocabularyChapter4.md#class-altitude) of the location, and a degree of [accuracy](ActivityVocabularyChapter4.md#class-accuracy).
 
-또한 `Place` 객체는 [반지름](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-radius) 속성, 위치 [고도](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-altitude) 및 [정확도](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accuracy)를 사용하여 주어진 지점 주변의 영역을 설명할 수 있습니다.
+또한 `Place` 객체는 [radius](ActivityVocabularyChapter4.md#class-radius) 속성, 위치 [altitude](ActivityVocabularyChapter4.md#class-altitude) 및 [accuracy](ActivityVocabularyChapter4.md#class-accuracy)를 사용하여 주어진 지점 주변의 영역을 설명할 수 있습니다.
 
-While publishers are not required to use these specific properties and *MAY* make use of other mechanisms for describing locations, consuming implementations that support the [Place](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place) object *MUST* support the use of these properties.
+While publishers are not required to use these specific properties and *MAY* make use of other mechanisms for describing locations, consuming implementations that support the [Place](ActivityVocabularyChapter3.md#class-place) object *MUST* support the use of these properties.
 
-출판사는 이러한 특정 속성을 사용할 필요가 없고 위치를 설명하는 다른 메커니즘을 사용 *할 수도* 있지만, 장소 [객체](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place) 지원하는 구현을 만들 경우에는 *반드시* 이러한 속성 사용을 지원해야 합니다.
+출판사는 이러한 특정 속성을 사용할 필요가 없고 위치를 설명하는 다른 메커니즘을 사용 *할 수도* 있지만, [Place](ActivityVocabularyChapter3.md#class-place) 객체를 지원하는 구현을 만들 경우에는 *반드시* 이러한 속성 사용을 지원해야 합니다.
 
-### 5.4 질문 표현 (Representing Questions)
+### 5.4 [질문 표현 (Representing Questions)](#5-구현-비고-implementation-notes)
 
 _This section is non-normative._
 
 _이 항목은 비표준입니다._
 
-The [Question](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question) object can be used to express various types of inquiries.
+The [Question](ActivityVocabularyChapter3.md#class-question) object can be used to express various types of inquiries.
 
-[질문](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question) 객체는 다양한 유형의 질문을 표현하는 데 사용할 수 있습니다.
+[Question](ActivityVocabularyChapter3.md#class-question) 객체는 다양한 유형의 질문을 표현하는 데 사용할 수 있습니다.
 
 For instance, simple open-ended questions similar to those posted to crowd-sourced question and answer websites:
 
-예를 들어, 크라우드소싱된 질문과 정답 웹사이트에 게시된 것과 유사한 간단한 개방형 질문이 있습니다:
+예를 들어, 크라우드소싱 된 질문과 정답 웹사이트에 게시된 것과 유사한 간단한 개방형 질문이 있습니다:
 
 >Example 151
 >
@@ -465,9 +467,9 @@ For instance, simple open-ended questions similar to those posted to crowd-sourc
 >}
 >```
 
-Multiple-choice questions or "polls" are also supported using either the [oneOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-oneof) or [anyOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-anyof) properties:
+Multiple-choice questions or "polls" are also supported using either the [oneOf](ActivityVocabularyChapter4.md#class-oneof) or [anyOf](ActivityVocabularyChapter4.md#class-anyof) properties:
 
-다중 선택 질문 또는 "투표"도 [oneOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-oneof) 또는 [anyOf](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-anyof) 속성을 사용하여 지원됩니다:
+다중 선택 질문 또는 "투표"도 [oneOf](ActivityVocabularyChapter4.md#class-oneof) 또는 [anyOf](ActivityVocabularyChapter4.md#class-anyof) 속성을 사용하여 지원됩니다:
 
 >Example 152
 >
@@ -496,9 +498,9 @@ Multiple-choice questions or "polls" are also supported using either the [oneOf]
 > }
 >```
 
-Responses to questions are expressed as [Objects](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) containing an [inReplyto](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-inreplyto) property referencing the Question.
+Responses to questions are expressed as [Objects](ActivityVocabularyChapter2.md#class-object) containing an [inReplyto](ActivityVocabularyChapter4.md#class-inreplyto) property referencing the Question.
 
-질문에 대한 응답은 질문을 참조하는 [inReplyto](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-inreplyto) 속성이 포함된 [객체](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)로 표현됩니다.
+질문에 대한 응답은 질문을 참조하는 [inReplyto](ActivityVocabularyChapter4.md#class-inreplyto) 속성이 포함된 [Objects](ActivityVocabularyChapter2.md#class-object)로 표현됩니다.
 
 >Example 153
 >
@@ -519,9 +521,9 @@ Responses to questions are expressed as [Objects](https://www.w3.org/TR/activity
 >}
 >```
 
-Because [Question](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question) objects are also instances of [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity), the [result](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result) property can be used to express the results or outcome of the Question (as appropriate):
+Because [Question](ActivityVocabularyChapter3.md#class-question) objects are also instances of [Activity](ActivityVocabularyChapter2.md#class-activity), the [result](ActivityVocabularyChapter4.md#class-result) property can be used to express the results or outcome of the Question (as appropriate):
 
-[질문](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question) 객체는 또한 [액티비티](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity)의 인스턴스이기 때문에 [결과](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result) 속성을 사용하여 질문의 결과나 결과를 (적절하게) 표시할 수 있습니다:
+[Question](ActivityVocabularyChapter3.md#class-question) 객체는 또한 [Activity](ActivityVocabularyChapter2.md#class-activity)의 인스턴스이기 때문에 [result](ActivityVocabularyChapter4.md#class-result) 속성을 사용하여 질문의 결과나 결과를 (적절하게) 표시할 수 있습니다:
 
 >Example 154
 >
@@ -579,21 +581,21 @@ Because [Question](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-questio
 > }
 > ```
 
-### 5.5 역 액티비티와 "실행 취소" (Inverse Activities and "Undo")
+### 5.5 [역 액티비티와 "실행 취소" (Inverse Activities and "Undo")](#5-구현-비고-implementation-notes)
 
 _This section is non-normative._
 
 _이 항목은 비표준입니다._
 
-Several of the core [Activity types](https://www.w3.org/TR/activitystreams-vocabulary/#activity-types) are defined as natural inversions of one another. These include:
+Several of the core [Activity types](ActivityVocabularyChapter3.md#31-액티비티-타입-activity-types) are defined as natural inversions of one another. These include:
 
-몇가지 핵심 [액티비티 타입](https://www.w3.org/TR/activitystreams-vocabulary/#activity-types)은 서로에 대한 자연 반전으로 정의됩니다. 여기에는 다음 타입들이 포함됩니다:
+몇가지 핵심 [액티비티 타입](ActivityVocabularyChapter3.md#31-액티비티-타입-activity-types)은 서로에 대한 자연 반전으로 정의됩니다. 여기에는 다음 타입들이 포함됩니다:
 
-- [Accept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accept) 와 [Reject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-reject),
-- [Arrive](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-arrive) 와 [Leave](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-leave),
-- [Join](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-join) 과 [Leave](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-leave),
-- [Create](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create) 와 [Delete](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-delete),
-- [Like](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-like) 와 [Dislike](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-dislike)
+- [Accept](#class-accept) 와 [Reject](#class-reject),
+- [Arrive](#class-arrive) 와 [Leave](#class-leave),
+- [Join](#class-join) 과 [Leave](#class-leave),
+- [Create](#class-create) 와 [Delete](#class-delete),
+- [Like](#class-like) 와 [Dislike](#class-dislike)
 
 It is important to note that these types of activities are semantically distinct from one another and have no direct relationship on the other. That is, for example, if an actor "likes" a note at one point in time then later "dislikes" it, the "dislike" activity does not "undo" or negate out the prior "like".
 
@@ -657,9 +659,9 @@ The appropriate interpretation for the following is that Sally first liked, then
 > }
 >```
 
-The [Undo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-undo) activity type is defined to provide the specific ability to undo or cancel out a prior activity. The appropriate interpretation for the following, then, is that Sally liked John's note at one point but has explicitly redacted that like later on.
+The [Undo](ActivityVocabularyChapter3.md#class-undo) activity type is defined to provide the specific ability to undo or cancel out a prior activity. The appropriate interpretation for the following, then, is that Sally liked John's note at one point but has explicitly redacted that like later on.
 
-[실행 취소](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-undo) 액티비티 타입은 이전 활동을 실행 취소하거나 취소할 수 있는 특정 기능을 제공하도록 정의됩니다. 그렇다면, 다음에 대한 적절한 해석은 Sally가 어느 순간 John의 노트를 좋아했지만 나중에 그런 식으로 명백하게 수정했다는 것입니다.
+[Undo](ActivityVocabularyChapter3.md#class-undo) 액티비티 타입은 이전 활동을 실행 취소하거나 취소할 수 있는 특정 기능을 제공하도록 정의됩니다. 그렇다면, 다음에 대한 적절한 해석은 Sally가 어느 순간 John의 노트를 좋아했지만 나중에 그런 식으로 명백하게 수정했다는 것입니다.
 
 >Example 156
 >
@@ -711,7 +713,7 @@ The end result of the former example is that Sally has indicated that she change
 
 전자의 예에 대한 최종 결과는 Sally가 John의 노트에 대한 자신의 의견을 바꾸었고 지금은 그것을 싫어한다고 지적한 반면, 후자의 예에서는 현재 그것을 좋아하지도 싫어하지도 않습니다.
 
-### 5.6 멘션, 태그 및 다른 일반적인 소셜 마이크로신택스들 (Mentions, Tags and Other Common Social Microsyntaxes)
+### 5.6 [멘션, 태그 및 다른 일반적인 소셜 마이크로신택스들 (Mentions, Tags and Other Common Social Microsyntaxes)](#5-구현-비고-implementation-notes)
 
 _This section is non-normative._
 
@@ -721,9 +723,9 @@ Many social software systems use special text-based microsyntaxes that allow use
 
 많은 소셜 소프트웨어 시스템은 사용자가 객체 내에서 알림, 링크 또는 분류에 대한 특별한 주소 지정을 정의할 수 있는 특수 텍스트 기반의 마이크로싱택을 사용합니다. 예를 들어, 객체의 내용 내에 "`@username`"과 같은 텍스트를 포함하면 객체가 특정 사용자를 위한 특별한 "멘션" 또는 "인박스" 스트림으로 라우팅되는 경우가 많습니다. 마찬가지로, 오브젝트의 내용 내에 "`#topic`"과 같은 텍스트를 포함하면 오브젝트가 "`topic`" 주제와 관련된 것으로 표시되는 경우가 많습니다. 이러한 메커니즘을 일반적으로 "멘션"과 "해시태그"라고 부릅니다.
 
-While such microsyntaxes *MAY* be used within the values of the [content](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content), [name](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name), and [summary](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary) properties on an Activity Streams [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object), implementations *SHOULD NOT* be required to parse the values of those properties in order to determine the appropriate routing of notifications, categorization or linking between objects. Instead, publishers *SHOULD* make appropriate use of the vocabulary terms provided specifically for these purposes.
+While such microsyntaxes *MAY* be used within the values of the [content](ActivityVocabularyChapter4.md#class-content), [name](ActivityVocabularyChapter4.md#class-name), and [summary](ActivityVocabularyChapter4.md#class-summary) properties on an Activity Streams [Object](ActivityVocabularyChapter2.md#class-object), implementations *SHOULD NOT* be required to parse the values of those properties in order to determine the appropriate routing of notifications, categorization or linking between objects. Instead, publishers *SHOULD* make appropriate use of the vocabulary terms provided specifically for these purposes.
 
-이러한 마이크로싱택스는 Activity Stream [객체](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)의 [컨텐츠](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content), [이름](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name) 및 [요약](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary) 속성의 값 내에서 사용 *할 수도* 있지만, 적절한 통지 라우팅, 분류 또는 객체 간 연결을 결정하기 위해 그러한 속성 값을 구문 분석할 필요가 *있어서는 안됩니다*. 대신에 출판사는 이러한 목적을 위해 특별히 제공된 어휘 용어를 적절하게 *사용해야 합니다*.
+이러한 마이크로싱택스는 Activity Stream [Object](ActivityVocabularyChapter2.md#class-object)의 [content](ActivityVocabularyChapter4.md#class-content), [name](ActivityVocabularyChapter4.md#class-name) 및 [summary](ActivityVocabularyChapter4.md#class-summary) 속성의 값 내에서 사용 *할 수도* 있지만, 적절한 통지 라우팅, 분류 또는 객체 간 연결을 결정하기 위해 그러한 속성 값을 구문 분석할 필요가 *있어서는 안됩니다*. 대신에 출판사는 이러한 목적을 위해 특별히 제공된 어휘 용어를 적절하게 *사용해야 합니다*.
 
 For example, suppose that an author wishes to send a note of thanks to another user named "@sally" with a hashtag of "#givingthanks". A typical way this message would appear within the content of a note is shown below:
 
@@ -743,15 +745,15 @@ Figure 1 A simple note with a mention an a hashtag:
 
 "@sally님의 많은 노고에 감사드립니다! #감사드립니다"
 
-[//Comment]: # "일단 국립국어원에서는 '노고'보다는 다른 단어로 대체하는게 좋다는데..."
+[//Comment]: # "일단 국립국어원에서는 '노고'보다는 다른 단어로 대체하는게 좋다고는 합니다"
 
 A typical social software implementation would typically render such a content such that "`@sally`" is replaced with a hyperlink to "@sally"'s social profile page and "`#givingthanks`" is replaced with a hyperlink to a listing of other notes that have been "tagged" with the same topic. Most implementations would also send a special notification to sally letting her know that a note mentioning her has been created.
 
 일반적인 소셜 소프트웨어 구현은 일반적으로 "@sally"가 "@sally"의 소셜 프로필 페이지에 대한 하이퍼링크로 대체되고 "#감사드립니다"가 동일한 주제를 "태그"한 다른 노트 목록에 대한 하이퍼링크로 대체되는 것과 같은 콘텐츠를 렌더링할 수 있습니다. 또한 대부분의 구현은 Sally에게 자신을 언급하는 노트가 작성되었음을 알리는 특별 통지를 보낼 것입니다.
 
-The following illustrates an equivalent Activity Streams [Note](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-note) object:
+The following illustrates an equivalent Activity Streams [Note](ActivityVocabularyChapter3.md#class-note) object:
 
-다음은 동등한 Activity Streams [노트](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-note) 객체를 보여줍니다:
+다음은 동등한 Activity Streams [Note](ActivityVocabularyChapter3.md#class-note) 객체를 보여줍니다:
 
 >Example 157
 >
@@ -788,13 +790,13 @@ The following illustrates an equivalent Activity Streams [Note](https://www.w3.o
 >}
 >```
 
-The `to` property indicates that the user "@sally" is to be considered part of the [primary audience](https://www.w3.org/TR/activitystreams-vocabulary/#audienceTargeting) of the note and should therefore receive notification. The `tag` property associates the Note with a reference to " `http://example.org/tags/givingthanks`". Note that the `content` still includes the "`@sally`" and " `#givingthanks`" microsyntaxes but that consuming implementations are not required to parse those in order to make the appropriate associations.
+The `to` property indicates that the user "@sally" is to be considered part of the [primary audience](#51-청중-타게팅-audience-targeting) of the note and should therefore receive notification. The `tag` property associates the Note with a reference to " `http://example.org/tags/givingthanks`". Note that the `content` still includes the "`@sally`" and " `#givingthanks`" microsyntaxes but that consuming implementations are not required to parse those in order to make the appropriate associations.
 
-`to` 속성은 사용자 "@sally"가 노트의 [주요 청중](https://www.w3.org/TR/activitystreams-vocabulary/#audienceTargeting)의 일부로 간주되므로 통지를 받아야 함을 나타냅니다. `tag` 속성은 노트를 "`http://example.org/tags/givingthanks`"에 대한 참조와 연결됩니다. `content`에는 여전히 "`@sally`"와 "`#감사드립니다`" 마이크로신택스가 포함되지만, 적절한 연결을 위해 이를 구문 분석하는데 소비적인 구현이 필요하지 않다는 점에 유의하시길 바랍니다.
+`to` 속성은 사용자 "@sally"가 노트의 [주요 청중](#51-청중-타게팅-audience-targeting)의 일부로 간주되므로 통지를 받아야 함을 나타냅니다. `tag` 속성은 노트를 "`http://example.org/tags/givingthanks`"에 대한 참조와 연결됩니다. `content`에는 여전히 "`@sally`"와 "`#감사드립니다`" 마이크로신택스가 포함되지만, 적절한 연결을 위해 이를 구문 분석하는데 소비적인 구현이 필요하지 않다는 점에 유의하시길 바랍니다.
 
-In the case a publisher wishes to indicate a mention without an associated notification, the publisher can use the [Mention](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mention) object type as a value of the [tag](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) property.
+In the case a publisher wishes to indicate a mention without an associated notification, the publisher can use the [Mention](ActivityVocabularyChapter3.md#class-mention) object type as a value of the [tag](ActivityVocabularyChapter4.md#class-tag) property.
 
-게시자가 관련 통지 없이 언급을 표시하려는 경우, 게시자는 [멘션](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mention) 객체 타입을 [태그](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) 속성의 값으로 사용할 수 있습니다.
+게시자가 관련 통지 없이 언급을 표시하려는 경우, 게시자는 [Mention](ActivityVocabularyChapter3.md#class-mention) 객체 타입을 [tag](ActivityVocabularyChapter4.md#class-tag) 속성의 값으로 사용할 수 있습니다.
 
 >Example 158
 >
@@ -829,11 +831,11 @@ In the case a publisher wishes to indicate a mention without an associated notif
 >}
 >```
 
-### 5.7 출발지 및 목표 (Origin and Target)
+### 5.7 [출발지 및 목표 (Origin and Target)](#5-구현-비고-implementation-notes)
 
-The [origin](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) and [target](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) properties of an Activity respectively identify the entities from which and to which the action is directed. For instance, in the English statement, "Sally moved the file from Folder A to Folder B", the `origin` is "Folder A" and the `target` is "Folder B". This activity is illustrated in the example below:
+The [origin](ActivityVocabularyChapter4.md#class-origin) and [target](ActivityVocabularyChapter4.md#class-target) properties of an Activity respectively identify the entities from which and to which the action is directed. For instance, in the English statement, "Sally moved the file from Folder A to Folder B", the `origin` is "Folder A" and the `target` is "Folder B". This activity is illustrated in the example below:
 
-액티비티의 [출발지](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin)와 [목표](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) 속성은 각각 조치가 지시되는 대상과 대상을 식별합니다. 예를 들어 영어 문장 "A폴더에서 B폴더로 파일을 옮겼습니다"에서 `origin`은 "Folder A"이고 `target`은 "Folder B"입니다. 이 액티비티은 아래 예에 설명되어 있습니다:
+액티비티의 [origin](ActivityVocabularyChapter4.md#class-origin)와 [target](ActivityVocabularyChapter4.md#class-target) 속성은 각각 조치가 지시되는 대상과 대상을 식별합니다. 예를 들어 영어 문장 "A폴더에서 B폴더로 파일을 옮겼습니다"에서 `origin`은 "Folder A"이고 `target`은 "Folder B"입니다. 이 액티비티은 아래 예에 설명되어 있습니다:
 
 >Example 159
 >
@@ -877,17 +879,17 @@ The `target` property is applicable to any type of activity for which the Englis
 
 `target` 특성은 액티비티 `object`의 간접 대상 또는 목적지를 식별한다는 의미에서 영어 전치사 "to"가 적용 가능하다고 간주할수 있는 모든 타입의 액티비티에 적용할 수 있습니다.
 
-### 5.8 액티비티 타입의 사용 사례 (Activity Type Motivating Use Cases)
+### 5.8 [액티비티 타입의 사용 사례 (Activity Type Motivating Use Cases)](#5-구현-비고-implementation-notes)
 
 _This section is non-normative._
 
 _이 항목은 비표준입니다._
 
-The [Activity types](https://www.w3.org/TR/activitystreams-vocabulary/#activity-types) defined in this vocabulary have been primarily selected to address the commonly implemented social use cases described below.
+The [Activity types](ActivityVocabularyChapter3.md#31-액티비티-타입-activity-types) defined in this vocabulary have been primarily selected to address the commonly implemented social use cases described below.
 
-이 어휘에서 정의한 액티비티 타입은 아래에 기술된 공통적으로 구현된 사회적 사용 사례를 다루기 위해 주로 선택되었습니다.
+이 어휘에서 정의한 [액티비티 타입](ActivityVocabularyChapter3.md#31-액티비티-타입-activity-types)은 아래에 기술된 공통적으로 구현된 사회적 사용 사례를 다루기 위해 주로 선택되었습니다.
 
-#### 5.8.1 컨텐츠 관리 (Content Management)
+#### 5.8.1 [컨텐츠 관리 (Content Management)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Content Management use case primarily deals with activities that involve the creation, modification or deletion of content. This includes, for instance, activities such as "John created a new note", "Sally updated an article", and "Joe deleted the photo".
 
@@ -897,11 +899,11 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Create](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create)
-- [Delete](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-delete)
-- [Update](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-update)
+- [Create](ActivityVocabularyChapter3.md#class-create)
+- [Delete](ActivityVocabularyChapter3.md#class-delete)
+- [Update](ActivityVocabularyChapter3.md#class-update)
 
-#### 5.8.2 컬렉션 관리 (Collection Management)
+#### 5.8.2 [컬렉션 관리 (Collection Management)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Collection Management use case primarily deals with activities involving the management of content within collections. Examples of collections include things like folders, albums, friend lists, etc. This includes, for instance, activities such as "Sally added a file to Folder A", "John moved the file from Folder A to Folder B", etc.
 
@@ -911,11 +913,11 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Add](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-add)
-- [Move](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-move)
-- [Remove](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-remove)
+- [Add](ActivityVocabularyChapter3.md#class-add)
+- [Move](ActivityVocabularyChapter3.md#class-move)
+- [Remove](ActivityVocabularyChapter3.md#class-remove)
 
-#### 5.8.3 리액션 (Reactions)
+#### 5.8.3 [리액션 (Reactions)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Reactions use case primarily deals with reactions to content. This can include activities such as liking or disliking content, ignoring updates, flagging content as being inappropriate, accepting or rejecting objects, etc.
 
@@ -925,17 +927,17 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Accept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accept)
-- [Block](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-block)
-- [Dislike](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-dislike)
-- [Flag](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-flag)
-- [Ignore](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-ignore)
-- [Like](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-like)
-- [Reject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-reject)
-- [TentativeAccept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tentativeaccept)
-- [TentativeReject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tentativereject)
+- [Accept](ActivityVocabularyChapter3.md#class-accept)
+- [Block](ActivityVocabularyChapter3.md#class-block)
+- [Dislike](ActivityVocabularyChapter3.md#class-dislike)
+- [Flag](ActivityVocabularyChapter3.md#class-flag)
+- [Ignore](ActivityVocabularyChapter3.md#class-ignore)
+- [Like](ActivityVocabularyChapter3.md#class-like)
+- [Reject](ActivityVocabularyChapter3.md#class-reject)
+- [TentativeAccept](ActivityVocabularyChapter3.md#class-tentativeaccept)
+- [TentativeReject](ActivityVocabularyChapter3.md#class-tentativereject)
 
-#### 5.8.4 이벤트 RSVP (Event RSVP)
+#### 5.8.4 [이벤트 RSVP (Event RSVP)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Event RSVP use case primarily deals with invitations to events and RSVP type responses.
 
@@ -945,14 +947,14 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Accept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accept)
-- [Ignore](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-ignore)
-- [Invite](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-invite)
-- [Reject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-reject)
-- [TentativeAccept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tentativeaccept)
-- [TentativeReject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tentativereject)
+- [Accept](ActivityVocabularyChapter3.md#class-accept)
+- [Ignore](ActivityVocabularyChapter3.md#class-ignore)
+- [Invite](ActivityVocabularyChapter3.md#class-invite)
+- [Reject](ActivityVocabularyChapter3.md#class-reject)
+- [TentativeAccept](ActivityVocabularyChapter3.md#class-tentativeaccept)
+- [TentativeReject](ActivityVocabularyChapter3.md#class-tentativereject)
 
-#### 5.8.5 그룹 관리 (Group Management)
+#### 5.8.5 [그룹 관리 (Group Management)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Group Management use case primarily deals with management of groups. It can include, for instance, activities such as "John added Sally to Group A", "Sally joined Group A", "Joe left Group A", etc.
 
@@ -962,12 +964,12 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Add](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-add)
-- [Join](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-join)
-- [Leave](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-leave)
-- [Remove](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-remove)
+- [Add](ActivityVocabularyChapter3.md#class-add)
+- [Join](ActivityVocabularyChapter3.md#class-join)
+- [Leave](ActivityVocabularyChapter3.md#class-leave)
+- [Remove](ActivityVocabularyChapter3.md#class-remove)
 
-#### 5.8.6 컨텐츠 경험 (Content Experience)
+#### 5.8.6 [컨텐츠 경험 (Content Experience)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Content Experience use case primarily deals with describing activities involving listening to, reading, or viewing content. For instance, "Sally read the article", "Joe listened to the song".
 
@@ -977,11 +979,11 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Listen](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-listen)
-- [Read](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-read)
-- [View](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-view)
+- [Listen](ActivityVocabularyChapter3.md#class-listen)
+- [Read](ActivityVocabularyChapter3.md#class-read)
+- [View](ActivityVocabularyChapter3.md#class-view)
 
-#### 5.8.7 지구-사회적 행사 (Geo-Social Events)
+#### 5.8.7 [지구-사회적 행사 (Geo-Social Events)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Geo-Social Events use case primarily deals with activities involving geo-tagging type activities. For instance, it can include activities such as "Joe arrived at work", "Sally left work", and "John is travel from home to work".
 
@@ -991,11 +993,11 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Arrive](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-arrive)
-- [Leave](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-leave)
-- [Travel](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-travel)
+- [Arrive](ActivityVocabularyChapter3.md#class-arrive)
+- [Leave](ActivityVocabularyChapter3.md#class-leave)
+- [Travel](ActivityVocabularyChapter3.md#class-travel)
 
-#### 5.8.8 알림 (Notification)
+#### 5.8.8 [알림 (Notification)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Notification use case primarily deals with calling attention to particular objects or notifications.
 
@@ -1005,53 +1007,53 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Announce](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-announce)
+- [Announce](ActivityVocabularyChapter3.md#class-announce)
 
-#### 5.8.9 질문 (Questions)
+#### 5.8.9 [질문 (Questions)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
-the Questions use case primarily deals with representing inquiries of any type. See [5.4 Representing Questions](https://www.w3.org/TR/activitystreams-vocabulary/#questions) for more information.
+the Questions use case primarily deals with representing inquiries of any type. See [5.4 Representing Questions](#54-질문-표현-Representing-Questions) for more information.
 
-질문 활용 사례는 주로 모든 타입의 대표 질문을 다룹니다. 자세한 내용은 [5.4 질문 표현하기](https://www.w3.org/TR/activitystreams-vocabulary/#questions)를 참조하시길 바랍니다.
-
-Relevant Activities:
-
-관련 액티비티:
-
-- [Question](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question)
-
-#### 5.8.10 관계 관리 (Relationship Management)
-
-The Relationship Management use case primarily deals with representing activities involving the management of interpersonal and social relationships (e.g. friend requests, management of social network, etc). See [5.2 Representing Relationships Between Entities](https://www.w3.org/TR/activitystreams-vocabulary/#connections) for more information.
-
-관계 관리 활용 사례는 주로 대인관계 및 사회적 관계의 관리와 관련된 대표 액티비티(예: 친구 요청, 소셜 네트워크 관리 등)을 다룬다. 자세한 내용은 [5.2 기업 간의 관계 표현](https://www.w3.org/TR/activitystreams-vocabulary/#connections)을 참조하시길 바랍니다.
+질문 활용 사례는 주로 모든 타입의 대표 질문을 다룹니다. 자세한 내용은 [5.4 질문 표현하기](#54-질문-표현-Representing-Questions)를 참조하시길 바랍니다.
 
 Relevant Activities:
 
 관련 액티비티:
 
-- [Accept](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accept)
-- [Add](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-add)
-- [Block](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-block)
-- [Create](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create)
-- [Delete](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-delete)
-- [Follow](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-follow)
-- [Ignore](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-ignore)
-- [Invite](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-invite)
-- [Reject](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-reject)
+- [Question](ActivityVocabularyChapter3.md#class-question)
 
-#### 5.8.11 액티비티 부정 (Negating Activity)
+#### 5.8.10 [관계 관리 (Relationship Management)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
-The Negating Activity use case primarily deals with the ability to redact previously completed activities. See [5.5 Inverse Activities and "Undo"](https://www.w3.org/TR/activitystreams-vocabulary/#inverse) for more information.
+The Relationship Management use case primarily deals with representing activities involving the management of interpersonal and social relationships (e.g. friend requests, management of social network, etc). See [5.2 Representing Relationships Between Entities](#52-개체간의-관계-표현-Representing-Relationships-Between-Entities) for more information.
 
-부정 액티비티 사용 사례는 주로 이전에 완료된 액티비티을 수정하는 기능을 다룹니다. 자세한 내용은 [5.5 역방향 액티비티 및 "실행 취소"](https://www.w3.org/TR/activitystreams-vocabulary/#inverse)를 참조하시기 바랍니다.
+관계 관리 활용 사례는 주로 대인관계 및 사회적 관계의 관리와 관련된 대표 액티비티(예: 친구 요청, 소셜 네트워크 관리 등)을 다룬다. 자세한 내용은 [5.2 기업 간의 관계 표현](#52-개체간의-관계-표현-Representing-Relationships-Between-Entities)을 참조하시길 바랍니다.
 
 Relevant Activities:
 
 관련 액티비티:
 
-- [Undo](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-undo)
+- [Accept](ActivityVocabularyChapter3.md#class-accept)
+- [Add](ActivityVocabularyChapter3.md#class-add)
+- [Block](ActivityVocabularyChapter3.md#class-block)
+- [Create](ActivityVocabularyChapter3.md#class-create)
+- [Delete](ActivityVocabularyChapter3.md#class-delete)
+- [Follow](ActivityVocabularyChapter3.md#class-follow)
+- [Ignore](ActivityVocabularyChapter3.md#class-ignore)
+- [Invite](ActivityVocabularyChapter3.md#class-invite)
+- [Reject](ActivityVocabularyChapter3.md#class-reject)
 
-#### 5.8.12 제공 (Offers)
+#### 5.8.11 [액티비티 부정 (Negating Activity)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
+
+The Negating Activity use case primarily deals with the ability to redact previously completed activities. See [5.5 Inverse Activities and "Undo"](#55-역-액티비티와-"실행-취소"-Inverse-Activities-and-"Undo") for more information.
+
+부정 액티비티 사용 사례는 주로 이전에 완료된 액티비티을 수정하는 기능을 다룹니다. 자세한 내용은 [5.5 역방향 액티비티 및 "실행 취소"](#55-역-액티비티와-"실행-취소"-Inverse-Activities-and-"Undo")를 참조하시기 바랍니다.
+
+Relevant Activities:
+
+관련 액티비티:
+
+- [Undo](ActivityVocabularyChapter3.md#class-undo)
+
+#### 5.8.12 [제공 (Offers)](#58-액티비티-타입의-사용-사례-activity-type-motivating-use-cases)
 
 The Offers use case deals with activities involving offering one object to another. It can include, for instance, activities such as "Company A is offering a discount on purchase of Product Z to Sally", "Sally is offering to add a File to Folder A", etc.
 
@@ -1061,4 +1063,6 @@ Relevant Activities:
 
 관련 액티비티:
 
-- [Offer](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-offer)
+- [Offer](ActivityVocabularyChapter3.md#class-offer)
+
+[맨 위로](#5-구현-비고-implementation-notes)

@@ -145,7 +145,7 @@ Activity Streams 2.0 핵심 타입은 다음과 같습니다:
 URI: | `https://www.w3.org/ns/activitystreams#Object`
 비고: | 모든 객체의 종류를 설명하는데 쓰입니다. 객체(Object) 타입은 [Activity](#class-activity), [IntransitiveActivity](#class-intransitiveactivity), [Collection](#class-collection) 그리고 [OrderedCollection](#class-orderedcollection)과 같은 다른 핵심 타입들을 포함하여 액티비티-어휘에 정의된 대부분의 객체에 대한 기본 타입으로 사용됩니다.
 서로소: | [Link](#class-link)
-속성: | [attachment](#class-attachment) \| [attributedTo](#class-attributedto) \| [audience](#class-audience) \| [content](#class-content) \| [context](#class-context) \| [name](#class-name) \| [endTime](#class-endtime) \| [generator](#class-generator) \| [icon](#class-icon) \| [image](#class-image) \| [inReplyTo](#class-inreplyto) \| [location](#class-location) \| [preview](#class-preview) \| [published](#class-published) \| [replies](#class-replies) \| [startTime](#class-starttime) \| [summary](#class-summary) \| [tag](#class-tag) \| [updated](#class-updated) \| [url](#class-url) \| [to](#class-to) \| [bto](#class-bto) \| [cc](#class-cc) \| [bcc](#class-bcc) \| [mediaType](#class-mediatype) \| [duration](#class-duration)
+속성: | [attachment](#property-attachment) \| [attributedTo](#property-attributedto) \| [audience](#property-audience) \| [content](#property-content) \| [context](#property-context) \| [name](#property-name) \| [endTime](#property-endtime) \| [generator](#property-generator) \| [icon](#property-icon) \| [image](#property-image) \| [inReplyTo](#property-inreplyto) \| [location](#property-location) \| [preview](#property-preview) \| [published](#property-published) \| [replies](#property-replies) \| [startTime](#property-starttime) \| [summary](#property-summary) \| [tag](#property-tag) \| [updated](#property-updated) \| [url](#property-url) \| [to](#property-to) \| [bto](#property-bto) \| [cc](#property-cc) \| [bcc](#property-bcc) \| [mediaType](#property-mediatype) \| [duration](#property-duration)
 
 >예시 1
 >
@@ -163,9 +163,9 @@ URI: | `https://www.w3.org/ns/activitystreams#Object`
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Link`
-비고: | 링크(Link)는 URL로 식별되는 리소스에 대한 간접적이고 정규화된 참조입니다. 링크들이 기반하는 모델은 [ [RFC5988](#rfc5988)]에 정의되어 있습니다. 액티비티-어휘에 의해 정의된 많은 속성들은 [Object](#class-object)의 인스턴스나 [Link](#class-link)의 값을 사용하는것을 허용합니다. [Link](#class-link)가 사용될 경우 (담겨 있는 객체의) 대상을 [href](#class-href)로 식별된 리소스에 연결하는 [검증된 관계](http://patterns.dataincubator.org/book/qualified-relation.html)를 만들어냅니다. [Link](#class-link)의 속성은 리소스의 속성과 달리 참조의 속성입니다.
+비고: | 링크(Link)는 URL로 식별되는 리소스에 대한 간접적이고 정규화된 참조입니다. 링크들이 기반하는 모델은 [ [RFC5988](#rfc5988)]에 정의되어 있습니다. 액티비티-어휘에 의해 정의된 많은 속성들은 [Object](#class-object)의 인스턴스나 [Link](#class-link)의 값을 사용하는것을 허용합니다. [Link](#class-link)가 사용될 경우 (담겨 있는 객체의) 대상을 [href](#property-href)로 식별된 리소스에 연결하는 [검증된 관계](http://patterns.dataincubator.org/book/qualified-relation.html)를 만들어냅니다. [Link](#class-link)의 속성은 리소스의 속성과 달리 참조의 속성입니다.
 서로소인 속성: | [Object](#class-object)
-속성: | [href](#class-href) \| [rel](#class-rel) \| [mediaType](#class-mediatype) \| [name](#class-name) \| [hreflang](#class-hreflang) \| [height](#class-height) \| [width](#class-width) \| [preview](#class-preview)
+속성: | [href](#property-href) \| [rel](#property-rel) \| [mediaType](#property-mediatype) \| [name](#property-name) \| [hreflang](#property-hreflang) \| [height](#property-height) \| [width](#property-width) \| [preview](#property-preview)
 
 >예시 2
 >
@@ -187,7 +187,7 @@ URI: | `https://www.w3.org/ns/activitystreams#Link`
 URI: | `https://www.w3.org/ns/activitystreams#Activity`
 비고: | 액티비티는 발생중인, 현재 진행중인, 또는 이미 발생한 일부 행동(action)을 설명하는데 사용되는 [Object](#class-object)의 하위 타입입니다. `Activity` 타입 자신은 모든 타입의 액티비티들에 대한 추상 기반 타입으로 사용됩니다. 중요 사항으로 `Activity` 타입은 그 자체에 가해지는 행동에 대해서는 아무런 의미도 포함하고 있지 않습니다.
 상속함: | [Object](#class-object)
-속성: | [actor](#class-actor) \| [object](#class-object) \| [target](#class-target) \| [result](#class-result) \| [origin](#class-origin) \| [instrument](#class-instrument) </br> [Object](#class-object)로부터 모든 속성을 물려받습니다.
+속성: | [actor](#property-actor) \| [object](#property-object) \| [target](#property-target) \| [result](#property-result) \| [origin](#property-origin) \| [instrument](#property-instrument) </br> [Object](#class-object)로부터 모든 속성을 물려받습니다.
 
 >예시 3
 >
@@ -212,7 +212,7 @@ URI: | `https://www.w3.org/ns/activitystreams#Activity`
 설멍| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#IntransitiveActivity`
-비고: | `IntransitiveActivity`의 인스턴스들은 비-과도적 행동들(intransitive actions)을 나타내는 `Activity`의 하위 타입입니다. 따라서 [object](#class-object) 속성은 이러한 액티비티들에게 적합하지 않습니다.
+비고: | `IntransitiveActivity`의 인스턴스들은 비-과도적 행동들(intransitive actions)을 나타내는 `Activity`의 하위 타입입니다. 따라서 [object](#property-object) 속성은 이러한 액티비티들에게 적합하지 않습니다.
 상속함: | [Activity](#class-activity)
 속성: | `object`를 제외한 모든 [Activity](#class-activity)의 속성들을 물려받습니다.
 
@@ -241,7 +241,7 @@ URI: | `https://www.w3.org/ns/activitystreams#IntransitiveActivity`
 URI: | `https://www.w3.org/ns/activitystreams#Collection`
 비고: | `Collection`은 정렬된 또는 정렬되지 않은 [`Object`](#class-object) 이거나 [`Link`](#class-link) 인스턴트들의 집합을 나타내는 [Object](#class-object)의 하위 타입입니다. </br> `Collection` 타입에 대한 자세한 설명은 [Activity Streams 2.0 핵심](https://www.w3.org/TR/activitystreams-core/#collection) 사양을 참고하시길 바랍니다.
 상속함: | [Object](#class-object)
-속성: | [totalItems](#class-totalitems) \| [current](#class-current) \| [first](#class-first) \| [last](#class-last) \| [items](#class-items) </br> [Object](#class-object)로부터 모든 속성을 물려받습니다.
+속성: | [totalItems](#property-totalitems) \| [current](#property-current) \| [first](#property-first) \| [last](#property-last) \| [items](#property-items) </br> [Object](#class-object)로부터 모든 속성을 물려받습니다.
 
 >예시 5
 >
@@ -301,7 +301,7 @@ URI: | `https://www.w3.org/ns/activitystreams#OrderedCollection`
 URI: | `https://www.w3.org/ns/activitystreams#CollectionPage`
 비고: | `Collection`이 보유하고 있는 항목들의 고유한 하위 집합들을 나타내는데 사용됩니다. `CollectionPage` 객체에 대한 자세한 설명은 [Activity Streams 2.0 핵심](https://www.w3.org/TR/activitystreams-core/#dfn-collectionpage) 문서를 참고하시길 바랍니다.
 상속함: | [Collection](#class-collection)
-속성: | [partOf](#class-partof) \| [next](#class-next) \| [prev](#class-prev) </br> [Collection](#class-collection)으로부터 모든 속성을 물려받습니다.
+속성: | [partOf](#property-partof) \| [next](#property-next) \| [prev](#property-prev) </br> [Collection](#class-collection)으로부터 모든 속성을 물려받습니다.
 
 >예시 7
 >
@@ -332,7 +332,7 @@ URI: | `https://www.w3.org/ns/activitystreams#CollectionPage`
 URI: | `https://www.w3.org/ns/activitystreams#OrderedCollectionPage`
 비고: | `OrderedCollection`이 보유하고 있는 항목들의 정렬된 하위 집합들을 나타내는데 사용됩니다. `OrderedCollectionPage` 객체에 대한 자세한 설명은 [Activity Streams 2.0 핵심](https://www.w3.org/TR/activitystreams-core/#dfn-orderedcollectionpage) 문서를 참고하시길 바랍니다.
 상속함: | [OrderedCollection](#class-orderedcollection) \| [CollectionPage](#class-collectionpage)
-속성: | [startIndex](#class-startindex) </br> [OrderedCollection](#class-orderedcollection)과 [CollectionPage](#class-collectionpage)로부터 모든 속성을 물려받습니다.
+속성: | [startIndex](#property-startindex) </br> [OrderedCollection](#class-orderedcollection)과 [CollectionPage](#class-collectionpage)로부터 모든 속성을 물려받습니다.
 
 >예시 8
 >
@@ -1247,9 +1247,9 @@ URI: | `https://www.w3.org/ns/activitystreams#Dislike`
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Question`
-비고: | 묻는 질문(question)을 나타냅니다. Question 객체들은 [IntransitiveActivity](#class-intransitiveactivity)의 확장입니다. 즉 Question 객체는 Activity지만 직접적인 객체(direct object)는 질문 그 자체이므로 [object](#class-object) 속성을 포함하지 않습니다. </br> [anyOf](#class-anyof) 또는 [oneOf](#class-oneof) 속성중 하나를 사용하여 가능한 답변을 표현 *할 수도* 있지만, Question 객체에는 두 객체 모두 보유하는것을 *절대로 하지 말아야* 합니다.
+비고: | 묻는 질문(question)을 나타냅니다. Question 객체들은 [IntransitiveActivity](#class-intransitiveactivity)의 확장입니다. 즉 Question 객체는 Activity지만 직접적인 객체(direct object)는 질문 그 자체이므로 [object](#property-object) 속성을 포함하지 않습니다. </br> [anyOf](#property-anyof) 또는 [oneOf](#property-oneof) 속성중 하나를 사용하여 가능한 답변을 표현 *할 수도* 있지만, Question 객체에는 두 객체 모두 보유하는것을 *절대로 하지 말아야* 합니다.
 상속함: | [IntransitiveActivity](#class-intransitiveactivity)
-속성: | [oneOf](#class-oneof) \| [anyOf](#class-anyof) \| [closed](#class-closed) </br> [IntransitiveActivity](#class-intransitiveactivity)로부터 모든 속성을 상속받습니다.
+속성: | [oneOf](#property-oneof) \| [anyOf](#property-anyof) \| [closed](#property-closed) </br> [IntransitiveActivity](#class-intransitiveactivity)로부터 모든 속성을 상속받습니다.
 
 >예시 40
 >
@@ -1417,9 +1417,9 @@ URI: | `https://www.w3.org/ns/activitystreams#Service`
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Relationship`
-비고: | 두 개개인 사이의 관계(relationship)을 나타냅니다. [subject](#class-subject) 및 [object](#class-object) 속성은 연결된 개인을 식별하는데 사용됩니다. </br> 추가적인 정보는 [5.2 개체 간의 관계 표현](#52-개체간의-관계-표현-representing-relationships-between-entities) 을 참고하시길 바랍니다.
+비고: | 두 개개인 사이의 관계(relationship)을 나타냅니다. [subject](#property-subject) 및 [object](#property-object) 속성은 연결된 개인을 식별하는데 사용됩니다. </br> 추가적인 정보는 [5.2 개체 간의 관계 표현](#52-개체간의-관계-표현-representing-relationships-between-entities) 을 참고하시길 바랍니다.
 상속함: | [Object](#class-object)
-속성: | [subject](#class-subject) \| [object](#class-object) \| [relationship](#class-relationship) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
+속성: | [subject](#property-subject) \| [object](#property-object) \| [relationship](#property-relationship) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
 
 >예시 47
 >
@@ -1625,7 +1625,7 @@ URI: | `https://www.w3.org/ns/activitystreams#Event`
 URI: | `https://www.w3.org/ns/activitystreams#Place`
 비고: | 논리적 또는 물리적 위치를 나타냅니다. 추가적인 정보는 [5.3 장소 표시](#53-장소-표현-representing-places) 를 참고하시길 바랍니다.
 상속함: | [Object](#class-object)
-속성: | [accuracy](#class-accuracy) \| [altitude](#class-altitude) \| [latitude](#class-latitude) \| [longitude](#class-longitude) \| [radius](#class-radius) \| [units](#class-units) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
+속성: | [accuracy](#property-accuracy) \| [altitude](#property-altitude) \| [latitude](#property-latitude) \| [longitude](#property-longitude) \| [radius](#property-radius) \| [units](#property-units) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
 
 >예시 56
 >
@@ -1685,9 +1685,9 @@ URI: | `https://www.w3.org/ns/activitystreams#Mention`
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#Profile`
-비고: | 프로필(Profile)은 일반적으로 [액터 타입](#32-액터-타입-actor-types) 객체를 설명하는데 사용되는, 다른 객체를 설명하는 컨텐츠 객체입니다. [describes](#class-describes) 속성은 프로필에서 설명하는 객체를 참조하는데 사용됩니다.
+비고: | 프로필(Profile)은 일반적으로 [액터 타입](#32-액터-타입-actor-types) 객체를 설명하는데 사용되는, 다른 객체를 설명하는 컨텐츠 객체입니다. [describes](#property-describes) 속성은 프로필에서 설명하는 객체를 참조하는데 사용됩니다.
 상속함: | [Object](#class-object)
-속성: | [describes](#class-describes) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
+속성: | [describes](#property-describes) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
 
 >Example 59
 >
@@ -1718,7 +1718,7 @@ URI: | `https://www.w3.org/ns/activitystreams#Profile`
 URI: | `https://www.w3.org/ns/activitystreams#Tombstone`
 비고: | 묘지(Tombstone)는 삭제된 컨텐츠 객체를 나타냅니다. [Collection](#class-collection)에서 이 위치에 객체가 있었지만, 지금은 삭제된 것을 나타내기 위해 사용할 수 있습니다.
 상속함: | [Object](#class-object)
-속성: | [formerType](#class-formertype) \| [deleted](#class-deleted) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
+속성: | [formerType](#property-formertype) \| [deleted](#property-deleted) </br> [Object](#class-object)로부터 모든 속성을 상속받습니다.
 
 >예시 60
 >
@@ -1752,72 +1752,72 @@ URI: | `https://www.w3.org/ns/activitystreams#Tombstone`
 
 일반적인 속성들은 다음과 같습니다:
 
- [actor](#class-actor) \|
- [attachment](#class-attachment) \|
- [attributedTo](#class-attributedto) \|
- [audience](#class-audience) \|
- [bcc](#class-bcc) \|
- [bto](#class-bto) \|
- [cc](#class-cc) \|
- [context](#class-context) \|
- [current](#class-current) \|
- [first](#class-first) \|
- [generator](#class-generator) \|
- [icon](#class-icon) \|
- [id](#class-id) \|
- [image](#class-image) \|
- [inReplyTo](#class-inreplyto) \|
- [instrument](#class-instrument) \|
- [last](#class-last) \|
- [location](#class-location) \|
- [items](#class-items) \|
- [oneOf](#class-oneof) \|
- [anyOf](#class-anyof) \|
- [closed](#class-closed) \|
- [origin](#class-origin) \|
- [next](#class-next) \|
- [object](#class-object) \|
- [prev](#class-prev) \|
- [preview](#class-preview) \|
- [result](#class-result) \|
- [replies](#class-replies) \|
- [tag](#class-tag) \|
- [target](#class-target) \|
- [to](#class-to) \|
- [type](#class-type) \|
- [url](#class-url) \|
- [accuracy](#class-accuracy) \|
- [altitude](#class-altitude) \|
- [content](#class-content) \|
- [name](#class-name) \|
- [duration](#class-duration) \|
- [height](#class-height) \|
- [href](#class-href) \|
- [hreflang](#class-hreflang) \|
- [partOf](#class-partof) \|
- [latitude](#class-latitude) \|
- [longitude](#class-longitude) \|
- [mediaType](#class-mediatype) \|
- [endTime](#class-endtime) \|
- [published](#class-published) \|
- [startTime](#class-starttime) \|
- [radius](#class-radius) \|
- [rel](#class-rel) \|
- [startIndex](#class-startindex) \|
- [summary](#class-summary) \|
- [totalItems](#class-totalitems) \|
- [units](#class-units) \|
- [updated](#class-updated) \|
- [width](#class-width) \|
- [subject](#class-subject) \|
- [relationship](#class-relationship) \|
- [describes](#class-describes) \|
- [formerType](#class-formertype) \|
- [deleted](#class-deleted)
+ [actor](#property-actor) \|
+ [attachment](#property-attachment) \|
+ [attributedTo](#property-attributedto) \|
+ [audience](#property-audience) \|
+ [bcc](#property-bcc) \|
+ [bto](#property-bto) \|
+ [cc](#property-cc) \|
+ [context](#property-context) \|
+ [current](#property-current) \|
+ [first](#property-first) \|
+ [generator](#property-generator) \|
+ [icon](#property-icon) \|
+ [id](#property-id) \|
+ [image](#property-image) \|
+ [inReplyTo](#property-inreplyto) \|
+ [instrument](#property-instrument) \|
+ [last](#property-last) \|
+ [location](#property-location) \|
+ [items](#property-items) \|
+ [oneOf](#property-oneof) \|
+ [anyOf](#property-anyof) \|
+ [closed](#property-closed) \|
+ [origin](#property-origin) \|
+ [next](#property-next) \|
+ [object](#property-object) \|
+ [prev](#property-prev) \|
+ [preview](#property-preview) \|
+ [result](#property-result) \|
+ [replies](#property-replies) \|
+ [tag](#property-tag) \|
+ [target](#property-target) \|
+ [to](#property-to) \|
+ [type](#property-type) \|
+ [url](#property-url) \|
+ [accuracy](#property-accuracy) \|
+ [altitude](#property-altitude) \|
+ [content](#property-content) \|
+ [name](#property-name) \|
+ [duration](#property-duration) \|
+ [height](#property-height) \|
+ [href](#property-href) \|
+ [hreflang](#property-hreflang) \|
+ [partOf](#property-partof) \|
+ [latitude](#property-latitude) \|
+ [longitude](#property-longitude) \|
+ [mediaType](#property-mediatype) \|
+ [endTime](#property-endtime) \|
+ [published](#property-published) \|
+ [startTime](#property-starttime) \|
+ [radius](#property-radius) \|
+ [rel](#property-rel) \|
+ [startIndex](#property-startindex) \|
+ [summary](#property-summary) \|
+ [totalItems](#property-totalitems) \|
+ [units](#property-units) \|
+ [updated](#property-updated) \|
+ [width](#property-width) \|
+ [subject](#property-subject) \|
+ [relationship](#property-relationship) \|
+ [describes](#property-describes) \|
+ [formerType](#property-formertype) \|
+ [deleted](#property-deleted)
 
-"도메인(Domain)"은 속성 용어가 적용되는 객체의 타입을 나타냅니다. "범위(Range)"는 속성 용어가 가질수 있는 값의 타입을 나타냅니다. 특정 속성은 다른 용어의 "하위속성(Subproperty)"으로 표시됩니다. 즉, 해당 용어는 참조된 용어의 특수화된 경우입니다. 예를 들어 [actor](#class-actor)는 [attributedTo](#class-attributedto)의 하위 속성입니다. "기능적(Functional)"으로 표시되어 있는 속성은 하나의 값만 가질수도 있습니다. "기능적(Functional)"으로 표시되지 않은 항목은 여러개의 값을 가질 수 있습니다.
+"도메인(Domain)"은 속성 용어가 적용되는 객체의 타입을 나타냅니다. "범위(Range)"는 속성 용어가 가질수 있는 값의 타입을 나타냅니다. 특정 속성은 다른 용어의 "하위속성(Subproperty)"으로 표시됩니다. 즉, 해당 용어는 참조된 용어의 특수화된 경우입니다. 예를 들어 [actor](#property-actor)는 [attributedTo](#property-attributedto)의 하위 속성입니다. "기능적(Functional)"으로 표시되어 있는 속성은 하나의 값만 가질수도 있습니다. "기능적(Functional)"으로 표시되지 않은 항목은 여러개의 값을 가질 수 있습니다.
 
-#### [Class] [id](#4-속성-properties)
+#### [Property] [id](#4-속성-properties)
 
 설명| |
 --|--
@@ -1837,7 +1837,7 @@ URI: | `@id`
 >}
 >```
 
-#### [Class] [type](#4-속성-properties)
+#### [Property] [type](#4-속성-properties)
 
 설명| |
 --|--
@@ -1856,7 +1856,7 @@ URI: | `@type`
 >}
 >```
 
-#### [Class] [actor](#4-속성-properties)
+#### [Property] [actor](#4-속성-properties)
 
 설명| |
 --|--
@@ -1864,7 +1864,7 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 비고: | 액티비티를 수행했거나 수행할 것으로 예상되는 하나 이상의 개체들을 표현합니다. 단일 액티비티에는 여러 `actor`가 있을 수 있습니다. `actor`는 간접 [Link](#class-link)를 사용하여 지정 *할 수도* 있습니다.
 도메인: | [Activity](#class-activity)
 범위: | [Object](#class-object) \| [Link](#class-link)
-하위속성: | [attributedTo](#class-attributedto)
+하위속성: | [attributedTo](#property-attributedto)
 
 >예시 63
 >
@@ -1913,7 +1913,7 @@ URI: | `https://www.w3.org/ns/activitystreams#actor`
 >}
 >```
 
-#### [Class] [attachment](#4-속성-properties)
+#### [Property] [attachment](#4-속성-properties)
 
 설명| |
 --|--
@@ -1939,7 +1939,7 @@ URI: | `https://www.w3.org/ns/activitystreams#attachment`
 >}
 >```
 
-#### [Class] [attributedTo](#4-속성-properties)
+#### [Property] [attributedTo](#4-속성-properties)
 
 설명| |
 --|--
@@ -1983,7 +1983,7 @@ URI: | `https://www.w3.org/ns/activitystreams#attributedTo`
 >}
 >```
 
-#### [Class] [audience](#4-속성-properties)
+#### [Property] [audience](#4-속성-properties)
 
 설명| |
 --|--
@@ -2007,7 +2007,7 @@ URI: | `https://www.w3.org/ns/activitystreams#audience`
 >}
 >```
 
-#### [Class] [bcc](#4-속성-properties)
+#### [Property] [bcc](#4-속성-properties)
 
 설명| |
 --|--
@@ -2030,7 +2030,7 @@ URI: | `https://www.w3.org/ns/activitystreams#bcc`
 >}
 >```
 
-#### [Class] [bto](#4-속성-properties)
+#### [Property] [bto](#4-속성-properties)
 
 설명| |
 --|--
@@ -2053,7 +2053,7 @@ URI: | `https://www.w3.org/ns/activitystreams#bto`
 >}
 >```
 
-#### [Class] [cc](#4-속성-properties)
+#### [Property] [cc](#4-속성-properties)
 
 설명| |
 --|--
@@ -2076,7 +2076,7 @@ URI: | `https://www.w3.org/ns/activitystreams#cc`
 >}
 >```
 
-#### [Class] [context](#4-속성-properties)
+#### [Property] [context](#4-속성-properties)
 
 설명| |
 --|--
@@ -2110,7 +2110,7 @@ URI: | `https://www.w3.org/ns/activitystreams#context`
 >}
 >```
 
-#### [Class] [current](#4-속성-properties)
+#### [Property] [current](#4-속성-properties)
 
 설명| |
 --|--
@@ -2158,7 +2158,7 @@ URI: | `https://www.w3.org/ns/activitystreams#current`
 >}
 >```
 
-#### [Class] [first](#4-속성-properties)
+#### [Property] [first](#4-속성-properties)
 
 설명| |
 --|--
@@ -2196,7 +2196,7 @@ URI: | `https://www.w3.org/ns/activitystreams#first`
 >}
 >```
 
-#### [Class] [generator](#4-속성-properties)
+#### [Property] [generator](#4-속성-properties)
 
 설명| |
 --|--
@@ -2220,7 +2220,7 @@ URI: | `https://www.w3.org/ns/activitystreams#generator`
 >}
 >```
 
-#### [Class] [icon](#4-속성-properties)
+#### [Property] [icon](#4-속성-properties)
 
 설명| |
 --|--
@@ -2274,7 +2274,7 @@ URI: | `https://www.w3.org/ns/activitystreams#icon`
 >}
 >```
 
-#### [Class] [image](#4-속성-properties)
+#### [Property] [image](#4-속성-properties)
 
 설명| |
 --|--
@@ -2322,7 +2322,7 @@ URI: | `https://www.w3.org/ns/activitystreams#image`
 >}
 >```
 
-#### [Class] [inReplyTo](#4-속성-properties)
+#### [Property] [inReplyTo](#4-속성-properties)
 
 설명| |
 --|--
@@ -2359,7 +2359,7 @@ URI: | `https://www.w3.org/ns/activitystreams#inReplyTo`
 >}
 >```
 
-#### [Class] [instrument](#4-속성-properties)
+#### [Property] [instrument](#4-속성-properties)
 
 설명| |
 --|--
@@ -2387,7 +2387,7 @@ URI: | `https://www.w3.org/ns/activitystreams#instrument`
 >}
 >```
 
-#### [Class] [last](#4-속성-properties)
+#### [Property] [last](#4-속성-properties)
 
 설명| |
 --|--
@@ -2425,7 +2425,7 @@ URI: | `https://www.w3.org/ns/activitystreams#last`
 >}
 >```
 
-#### [Class] [location](#4-속성-properties)
+#### [Property] [location](#4-속성-properties)
 
 설명| |
 --|--
@@ -2452,7 +2452,7 @@ URI: | `https://www.w3.org/ns/activitystreams#location`
 >}
 >```
 
-#### [Class] [items](#4-속성-properties)
+#### [Property] [items](#4-속성-properties)
 
 설명| |
 --|--
@@ -2503,12 +2503,12 @@ URI: | `https://www.w3.org/ns/activitystreams#items`
 >}
 >```
 
-#### [Class] [oneOf](#4-속성-properties)
+#### [Property] [oneOf](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#oneOf`
-비고: | 질문(Question)에 대한 독점적인 선택지를 식별합니다. `oneOf`를 사용하는 Question에 대해서는 하나의 답변만 할수 있음을 의미합니다. Question에 여러개의 답변이 있을수 있음을 나타내려면 [anyOf](#class-anyof)를 사용하시길 바랍니다.
+비고: | 질문(Question)에 대한 독점적인 선택지를 식별합니다. `oneOf`를 사용하는 Question에 대해서는 하나의 답변만 할수 있음을 의미합니다. Question에 여러개의 답변이 있을수 있음을 나타내려면 [anyOf](#property-anyof)를 사용하시길 바랍니다.
 도메인: | [Question](#class-question)
 범위: | [Object](#class-object) \| [Link](#class-link)
 
@@ -2532,12 +2532,12 @@ URI: | `https://www.w3.org/ns/activitystreams#oneOf`
 >}
 >```
 
-#### [Class] [anyOf](#4-속성-properties)
+#### [Property] [anyOf](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#anyOf`
-비고: | 질문(Question)에 대한 포괄적인 선택지를 식별합니다. `anyOf`를 사용하는 Question에 대해서는 여러개의 답변이 있을수 있음을 나타냅니다. Question에 대해 답변이 단 하나만 존재할수 있음을 나타내려면 [oneOf](#class-oneof)를 사용하시길 바랍니다.
+비고: | 질문(Question)에 대한 포괄적인 선택지를 식별합니다. `anyOf`를 사용하는 Question에 대해서는 여러개의 답변이 있을수 있음을 나타냅니다. Question에 대해 답변이 단 하나만 존재할수 있음을 나타내려면 [oneOf](#property-oneof)를 사용하시길 바랍니다.
 도메인: | [Question](#class-question)
 범위: | [Object](#class-object) \| [Link](#class-link)
 
@@ -2561,7 +2561,7 @@ URI: | `https://www.w3.org/ns/activitystreams#anyOf`
 >}
 >```
 
-#### [Class] [closed](#4-속성-properties)
+#### [Property] [closed](#4-속성-properties)
 
 설명| |
 --|--
@@ -2581,7 +2581,7 @@ URI: | `https://www.w3.org/ns/activitystreams#closed`
 >}
 >```
 
-#### [Class] [origin](#4-속성-properties)
+#### [Property] [origin](#4-속성-properties)
 
 설명| |
 --|--
@@ -2610,7 +2610,7 @@ URI: | `https://www.w3.org/ns/activitystreams#origin`
 >}
 >```
 
-#### [Class] [next](#4-속성-properties)
+#### [Property] [next](#4-속성-properties)
 
 설명| |
 --|--
@@ -2656,12 +2656,12 @@ URI: | `https://www.w3.org/ns/activitystreams#next`
 >}
 >```
 
-#### [Class] [object](#4-속성-properties)
+#### [Property] [object](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#object`
-비고: | [Activity](#class-activity) 내에서 사용될 경우, 액티비티의 직접적인 대상인 객체(object)를 설명합니다. 예를 들어 "John이 자신의 위시리스트에 영화를 추가했습니다" 액티비티에서 액티비티의 객체는 추가된 영화입니다. </br> [Relationship](#class-relationship) 내에서 사용될 경우 [subject](#class-subject)와 관련된 개체를 설명합니다.
+비고: | [Activity](#class-activity) 내에서 사용될 경우, 액티비티의 직접적인 대상인 객체(object)를 설명합니다. 예를 들어 "John이 자신의 위시리스트에 영화를 추가했습니다" 액티비티에서 액티비티의 객체는 추가된 영화입니다. </br> [Relationship](#class-relationship) 내에서 사용될 경우 [subject](#property-subject)와 관련된 개체를 설명합니다.
 도메인: | [Activity](#class-activity) \| [Relationship](#class-relationship)
 범위: | [Object](#class-object) \| [Link](#class-link)
 
@@ -2710,7 +2710,7 @@ URI: | `https://www.w3.org/ns/activitystreams#object`
 >}
 >```
 
-#### [Class] [prev](#4-속성-properties)
+#### [Property] [prev](#4-속성-properties)
 
 설명| |
 --|--
@@ -2756,7 +2756,7 @@ URI: | `https://www.w3.org/ns/activitystreams#prev`
 >}
 >```
 
-#### [Class] [preview](#4-속성-properties)
+#### [Property] [preview](#4-속성-properties)
 
 설명| |
 --|--
@@ -2785,7 +2785,7 @@ URI: | `https://www.w3.org/ns/activitystreams#preview`
 >}
 >```
 
-#### [Class] [result](#4-속성-properties)
+#### [Property] [result](#4-속성-properties)
 
 설명| |
 --|--
@@ -2810,7 +2810,7 @@ URI: | `https://www.w3.org/ns/activitystreams#result`
 >}
 >```
 
-#### [Class] [replies](#4-속성-properties)
+#### [Property] [replies](#4-속성-properties)
 
 설명| |
 --|--
@@ -2844,7 +2844,7 @@ URI: | `https://www.w3.org/ns/activitystreams#replies`
 >}
 >```
 
-#### [Class] [tag](#4-속성-properties)
+#### [Property] [tag](#4-속성-properties)
 
 설명| |
 --|--
@@ -2871,7 +2871,7 @@ URI: | `https://www.w3.org/ns/activitystreams#tag`
 >}
 >```
 
-#### [Class] [target](#4-속성-properties)
+#### [Property] [target](#4-속성-properties)
 
 설명| |
 --|--
@@ -2909,7 +2909,7 @@ URI: | `https://www.w3.org/ns/activitystreams#target`
 >}
 >```
 
-#### [Class] [to](#4-속성-properties)
+#### [Property] [to](#4-속성-properties)
 
 설명| |
 --|--
@@ -2932,7 +2932,7 @@ URI: | `https://www.w3.org/ns/activitystreams#to`
 >}
 >```
 
-#### [Class] [url](#4-속성-properties)
+#### [Property] [url](#4-속성-properties)
 
 설명| |
 --|--
@@ -2988,7 +2988,7 @@ URI: | `https://www.w3.org/ns/activitystreams#url`
 >}
 >```
 
-#### [Class] [accuracy](#4-속성-properties)
+#### [Property] [accuracy](#4-속성-properties)
 
 설명| |
 --|--
@@ -3011,12 +3011,12 @@ URI: | `https://www.w3.org/ns/activitystreams#accuracy`
 >}
 >```
 
-#### [Class] [altitude](#4-속성-properties)
+#### [Property] [altitude](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#altitude`
-비고: | 장소의 고도(altitude)를 나타냅니다. 측정 단위(units)는 [units](#class-units) 속성을 사용하여 표시됩니다. [units](#class-units)가 지정되지 않은 경우, 기본값은 미터를 나타내는 "`m`"으로 가정됩니다.
+비고: | 장소의 고도(altitude)를 나타냅니다. 측정 단위(units)는 [units](#property-units) 속성을 사용하여 표시됩니다. [units](#property-units)가 지정되지 않은 경우, 기본값은 미터를 나타내는 "`m`"으로 가정됩니다.
 도메인: | [Object](#class-object)
 범위: | `xsd:float`
 기능적: | True
@@ -3035,12 +3035,12 @@ URI: | `https://www.w3.org/ns/activitystreams#altitude`
 >}
 >```
 
-#### [Class] [content](#4-속성-properties)
+#### [Property] [content](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#content`
-비고: | JSON 문자열로 인코딩된 객체(Object)의 컨텐츠(content) 또는 텍스트 표현입니다. 기본적으로 `content`의 값은 HTML입니다. [mediaType](#class-mediatype) 속성을 객체에서 사용하여 다른 내용 유형을 나타낼 수 있습니다. </br> 컨텐츠는 여러 언어 태그값을 사용하여 표현될 수 있습니다.
+비고: | JSON 문자열로 인코딩된 객체(Object)의 컨텐츠(content) 또는 텍스트 표현입니다. 기본적으로 `content`의 값은 HTML입니다. [mediaType](#property-mediatype) 속성을 객체에서 사용하여 다른 내용 유형을 나타낼 수 있습니다. </br> 컨텐츠는 여러 언어 태그값을 사용하여 표현될 수 있습니다.
 도메인: | [Object](#class-object)
 범위: | `xsd:string` \| `rdf:langString`
 
@@ -3082,7 +3082,7 @@ URI: | `https://www.w3.org/ns/activitystreams#content`
 >}
 >```
 
-#### [Class] [name](#4-속성-properties)
+#### [Property] [name](#4-속성-properties)
 
 설명| |
 --|--
@@ -3115,12 +3115,12 @@ URI: | `https://www.w3.org/ns/activitystreams#name`
 >}
 >```
 
-#### [Class] [duration](#4-속성-properties)
+#### [Property] [duration](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#duration`
-비고: | 객체가 오디오 또는 비디오, 회의등과 같은 시간 제한 리소스를 설명할떄 [duration](#class-duration) 속성은 객체의 대략적인 지속(duration) 시간을 나타냅니다. 값은 [ [xmlschema11-2](#xmlschema11-2)], 섹션 3.3.6에 정의된 `xsd:duration`으로 표현되어야 합니다 (예: 5초 주기는 "`PT5S`"로 표기).
+비고: | 객체가 오디오 또는 비디오, 회의등과 같은 시간 제한 리소스를 설명할떄 [duration](#property-duration) 속성은 객체의 대략적인 지속(duration) 시간을 나타냅니다. 값은 [ [xmlschema11-2](#xmlschema11-2)], 섹션 3.3.6에 정의된 `xsd:duration`으로 표현되어야 합니다 (예: 5초 주기는 "`PT5S`"로 표기).
 도메인: | [Object](#class-object)
 범위: | `xsd:duration`
 기능적: | True
@@ -3137,7 +3137,7 @@ URI: | `https://www.w3.org/ns/activitystreams#duration`
 >}
 >```
 
-#### [Class] [height](#4-속성-properties)
+#### [Property] [height](#4-속성-properties)
 
 설명| |
 --|--
@@ -3159,7 +3159,7 @@ URI: | `https://www.w3.org/ns/activitystreams#height`
 >}
 >```
 
-#### [Class] [href](#4-속성-properties)
+#### [Property] [href](#4-속성-properties)
 
 설명| |
 --|--
@@ -3181,7 +3181,7 @@ URI: | `https://www.w3.org/ns/activitystreams#href`
 >}
 >```
 
-#### [Class] [hreflang](#4-속성-properties)
+#### [Property] [hreflang](#4-속성-properties)
 
 설명| |
 --|--
@@ -3204,7 +3204,7 @@ URI: | `https://www.w3.org/ns/activitystreams#hreflang`
 >}
 >```
 
-#### [Class] [partOf](#4-속성-properties)
+#### [Property] [partOf](#4-속성-properties)
 
 설명| |
 --|--
@@ -3236,7 +3236,7 @@ URI: | `https://www.w3.org/ns/activitystreams#partOf`
 >}
 >```
 
-#### [Class] [latitude](#4-속성-properties)
+#### [Property] [latitude](#4-속성-properties)
 
 설명| |
 --|--
@@ -3260,7 +3260,7 @@ URI: | `https://www.w3.org/ns/activitystreams#latitude`
 >}
 >```
 
-#### [Class] [longitude](#4-속성-properties)
+#### [Property] [longitude](#4-속성-properties)
 
 설명| |
 --|--
@@ -3284,12 +3284,12 @@ URI: | `https://www.w3.org/ns/activitystreams#longitude`
 >}
 >```
 
-#### [Class] [mediaType](#4-속성-properties)
+#### [Property] [mediaType](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#mediaType`
-비고: | [Link](#class-link)에서 사용될 떄 참조된 리소스의 MIME 미디어 타입(media type)을 식별합니다. </br> [Object](#class-object)에서 사용될 때 [content](#class-content) 속성 값의 MIME 미디어 유형을 식별합니다. 지정하지 않으면 [content](#class-content) 속성은 `text/html` 컨텐츠를 포함한다고 가정합니다.
+비고: | [Link](#class-link)에서 사용될 떄 참조된 리소스의 MIME 미디어 타입(media type)을 식별합니다. </br> [Object](#class-object)에서 사용될 때 [content](#property-content) 속성 값의 MIME 미디어 유형을 식별합니다. 지정하지 않으면 [content](#property-content) 속성은 `text/html` 컨텐츠를 포함한다고 가정합니다.
 도메인: | [Link](#class-link) \| [Object](#class-object)
 범위: | MIME 미디어 타입
 기능적: | True
@@ -3307,12 +3307,12 @@ URI: | `https://www.w3.org/ns/activitystreams#mediaType`
 >}
 >```
 
-#### [Class] [endTime](#4-속성-properties)
+#### [Property] [endTime](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#endTime`
-비고: | 객체의 실제 또는 예상 종료 시간을 설명하는 날짜 및 시간입니다. 예를 들어, [Activity](#class-activity) 객체와 함께 사용되는 경우 [endTime](#class-endtime) 속성은 액티비티가 종료되거나 종료 될것으로 예상되는 순간을 지정합니다.
+비고: | 객체의 실제 또는 예상 종료 시간을 설명하는 날짜 및 시간입니다. 예를 들어, [Activity](#class-activity) 객체와 함께 사용되는 경우 [endTime](#property-endtime) 속성은 액티비티가 종료되거나 종료 될것으로 예상되는 순간을 지정합니다.
 도메인: | [Object](#class-object)
 범위: | `xsd:dateTime`
 기능적: | True
@@ -3329,7 +3329,7 @@ URI: | `https://www.w3.org/ns/activitystreams#endTime`
 >}
 >```
 
-#### [Class] [published](#4-속성-properties)
+#### [Property] [published](#4-속성-properties)
 
 설명| |
 --|--
@@ -3351,12 +3351,12 @@ URI: | `https://www.w3.org/ns/activitystreams#published`
 >}
 >```
 
-#### [Class] [startTime](#4-속성-properties)
+#### [Property] [startTime](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#startTime`
-비고: | 객체의 실제 또는 예상 시작 시간(starting time)을 설명하는 날짜 및 시간입니다. 예를 들어, [Activity](#class-activity) 객체와 함께 사용되는 경우 [startTime](#class-starttime) 속성은 액티비티가 시작되거나 예정된 순간을 지정합니다.
+비고: | 객체의 실제 또는 예상 시작 시간(starting time)을 설명하는 날짜 및 시간입니다. 예를 들어, [Activity](#class-activity) 객체와 함께 사용되는 경우 [startTime](#property-starttime) 속성은 액티비티가 시작되거나 예정된 순간을 지정합니다.
 도메인: | [Object](#class-object)
 범위: | `xsd:dateTime`
 기능적: | True
@@ -3373,12 +3373,12 @@ URI: | `https://www.w3.org/ns/activitystreams#startTime`
 >}
 >```
 
-#### [Class] [radius](#4-속성-properties)
+#### [Property] [radius](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#radius`
-비고: | 장소에 대해 주어진 위도와 경도의 반경(radius)입니다. 단위(units)는 [units](#class-units) 속성으로 표시됩니다. [units](#class-units)가 지정되지 않은 경우 기본값은 "meters"를 나타내는 "`m`"으로 가정됩니다.
+비고: | 장소에 대해 주어진 위도와 경도의 반경(radius)입니다. 단위(units)는 [units](#property-units) 속성으로 표시됩니다. [units](#property-units)가 지정되지 않은 경우 기본값은 "meters"를 나타내는 "`m`"으로 가정됩니다.
 도메인: | [Place](#class-place)
 범위: | `xsd:float` [>= 0.0f]
 기능적: | True
@@ -3397,7 +3397,7 @@ URI: | `https://www.w3.org/ns/activitystreams#radius`
 >}
 >```
 
-#### [Class] [rel](#4-속성-properties)
+#### [Property] [rel](#4-속성-properties)
 
 설명| |
 --|--
@@ -3420,7 +3420,7 @@ URI: | `https://www.w3.org/ns/activitystreams#rel`
 >}
 >```
 
-#### [Class] [startIndex](#4-속성-properties)
+#### [Property] [startIndex](#4-속성-properties)
 
 설명| |
 --|--
@@ -3451,7 +3451,7 @@ URI: | `https://www.w3.org/ns/activitystreams#startIndex`
 >}
 >```
 
-#### [Class] [summary](#4-속성-properties)
+#### [Property] [summary](#4-속성-properties)
 
 설명| |
 --|--
@@ -3486,7 +3486,7 @@ URI: | `https://www.w3.org/ns/activitystreams#summary`
 >}
 >```
 
-#### [Class] [totalItems](#4-속성-properties)
+#### [Property] [totalItems](#4-속성-properties)
 
 설명| |
 --|--
@@ -3517,12 +3517,12 @@ URI: | `https://www.w3.org/ns/activitystreams#totalItems`
 >}
 >```
 
-#### [Class] [units](#4-속성-properties)
+#### [Property] [units](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#units`
-비고: | [Place](#class-place) 객체의 [radius](#class-radius) 및 [altitude](#class-altitude) 속성에 대한 측정 단위(units)를 지정합니다. 지정하지 않으면 기본값으로는 "미터"를 나타내는 "m"으로 간주됩니다.
+비고: | [Place](#class-place) 객체의 [radius](#property-radius) 및 [altitude](#property-altitude) 속성에 대한 측정 단위(units)를 지정합니다. 지정하지 않으면 기본값으로는 "미터"를 나타내는 "m"으로 간주됩니다.
 도메인: | [Place](#class-place)
 범위: | "`cm`" \| " `feet`" \| " `inches`" \| " `km`" \| " `m`" \| " `miles`" \| `xsd:anyURI`
 기능적: | True
@@ -3541,7 +3541,7 @@ URI: | `https://www.w3.org/ns/activitystreams#units`
 >}
 >```
 
-#### [Class] [updated](#4-속성-properties)
+#### [Property] [updated](#4-속성-properties)
 
 설명| |
 --|--
@@ -3563,7 +3563,7 @@ URI: | `https://www.w3.org/ns/activitystreams#updated`
 >}
 >```
 
-#### [Class] [width](#4-속성-properties)
+#### [Property] [width](#4-속성-properties)
 
 설명| |
 --|--
@@ -3585,7 +3585,7 @@ URI: | `https://www.w3.org/ns/activitystreams#width`
 >}
 >```
 
-#### [Class] [subject](#4-속성-properties)
+#### [Property] [subject](#4-속성-properties)
 
 설명| |
 --|--
@@ -3614,12 +3614,12 @@ URI: | `https://www.w3.org/ns/activitystreams#subject`
 >}
 >```
 
-#### [Class] [relationship](#4-속성-properties)
+#### [Property] [relationship](#4-속성-properties)
 
 설명| |
 --|--
 URI: | `https://www.w3.org/ns/activitystreams#relationship`
-비고: | [Relationship](#class-relationship) 객체에서 `relationship` 속성은 [subject](#class-subject)와 [object](#class-object) 사이에 존재하는 관계의 종류를 식별합니다.
+비고: | [Relationship](#class-relationship) 객체에서 `relationship` 속성은 [subject](#property-subject)와 [object](#property-object) 사이에 존재하는 관계의 종류를 식별합니다.
 도메인: | [Relationship](#class-relationship)
 범위: | Object
 
@@ -3642,7 +3642,7 @@ URI: | `https://www.w3.org/ns/activitystreams#relationship`
 >}
 >```
 
-#### [Class] [describes](#4-속성-properties)
+#### [Property] [describes](#4-속성-properties)
 
 설명| |
 --|--
@@ -3667,7 +3667,7 @@ URI: | `https://www.w3.org/ns/activitystreams#describes`
 >}
 >```
 
-#### [Class] [formerType](#4-속성-properties)
+#### [Property] [formerType](#4-속성-properties)
 
 설명| |
 --|--
@@ -3689,7 +3689,7 @@ URI: | `https://www.w3.org/ns/activitystreams#formerType`
 >}
 >```
 
-#### [Class] [deleted](#4-속성-properties)
+#### [Property] [deleted](#4-속성-properties)
 
 설명| |
 --|--
@@ -3720,7 +3720,7 @@ URI: | `https://www.w3.org/ns/activitystreams#deleted`
 
 이 예시에서 Jane과 Joe는 각각 파일 공유 액티비티에 직접 참여하며, 두명 다 그 이벤트에 대한 1차 청중으로 구성됩니다. Jane과 관련된 액티비티에 관심이 있는 Bob은 2차 청중입니다. 이를 이용하여 액티비티를 생산하거나 소비하는 시스템은 각 사람에게 이벤트를 효율적으로 알릴수 있습니다.
 
-많은 유형의 액티비티에 대해 1차 청중들을 추론할 수 있는 수단(액티비티의 액션 타입, 액터, 객체와 대상)이 있지만, 휴리스틱은 언제나 작동하지 않기에 2차 청중을 판별하는 수단을 제공하지 않습니다. [to](#class-to), [cc](#class-cc), [bto](#class-bto) 와 [bcc](#class-bcc) 속성은 1차 및 2차 청중을 명시적으로 식별하기 위해 객체 내에서 사용 *할 수도* 있습니다.
+많은 유형의 액티비티에 대해 1차 청중들을 추론할 수 있는 수단(액티비티의 액션 타입, 액터, 객체와 대상)이 있지만, 휴리스틱은 언제나 작동하지 않기에 2차 청중을 판별하는 수단을 제공하지 않습니다. [to](#property-to), [cc](#property-cc), [bto](#property-bto) 와 [bcc](#property-bcc) 속성은 1차 및 2차 청중을 명시적으로 식별하기 위해 객체 내에서 사용 *할 수도* 있습니다.
 
 이러한 속성을 포함하는 객체의 원형적인 사용 사례는 중개인을 통한 객체의 게시와 재배포입니다. 즉, 이벤트 소스는 객체를 생성하여 이를 중개자에게 공개하고, 중개자는 특정 개별 사용자나 그룹에 표시할 항목의 하위 집합을 결정합니다. 이러한 결정은 부분적으로 각 객체에 대한 1차 및 2차 청중의 식별에 의해 이루어질수 있습니다.
 
@@ -3735,7 +3735,7 @@ URI: | `https://www.w3.org/ns/activitystreams#deleted`
 
 _이 항목은 비표준입니다._
 
-액티비티는 대부분 격리되지 않은 이벤트입니다. 대부분의 경우, 유사한 컨텍스트나 청중을 중심으로 여러 개별적인 액티비티들이 수행되는 경우가 종종 있습니다. 예를들어 공유 프로젝트에서 작업하는 공동작업자는 일부 목표를 달성하는 과정에서 여러 관련된 액티비티들을 수행할 수 있습니다. 이러한 활동은 [context](#class-context) 속성을 사용하여 논리적으로 그룹화할 수 있으며, [audience](#class-audience) 속성을 사용하여 특정 청중을 대상으로 범위를 좁힐 수 있습니다.
+액티비티는 대부분 격리되지 않은 이벤트입니다. 대부분의 경우, 유사한 컨텍스트나 청중을 중심으로 여러 개별적인 액티비티들이 수행되는 경우가 종종 있습니다. 예를들어 공유 프로젝트에서 작업하는 공동작업자는 일부 목표를 달성하는 과정에서 여러 관련된 액티비티들을 수행할 수 있습니다. 이러한 활동은 [context](#property-context) 속성을 사용하여 논리적으로 그룹화할 수 있으며, [audience](#property-audience) 속성을 사용하여 특정 청중을 대상으로 범위를 좁힐 수 있습니다.
 
 예를 들어, 다음은 공통적인 `context`와 `audience`을 공유하는 두 가지의 관련 액티비티들을 보여줍니다:
 
@@ -3834,7 +3834,7 @@ _이 항목은 비표준입니다._
 >}
 >```
 
-[relationship](#class-relationship) 속성은 [subject](#class-subject)와 [object](#class-object) 속성으로 식별된 두 개인 사이에 존재하는 관계의 종류를 지정합니다. 이 세 가지 속성은 함께 사용되며, [subject](#class-subject)가 대상을 식별하고, [relationship](#class-relationship)가 술어를 식별하며, [object](#class-object)가 대상을 식별하는 "[구체화한 문장](http://patterns.dataincubator.org/book/reified-statement.html)"이라고 흔히 알려진 것을 형성합니다.
+[relationship](#property-relationship) 속성은 [subject](#property-subject)와 [object](#property-object) 속성으로 식별된 두 개인 사이에 존재하는 관계의 종류를 지정합니다. 이 세 가지 속성은 함께 사용되며, [subject](#property-subject)가 대상을 식별하고, [relationship](#property-relationship)가 술어를 식별하며, [object](#property-object)가 대상을 식별하는 "[구체화한 문장](http://patterns.dataincubator.org/book/reified-statement.html)"이라고 흔히 알려진 것을 형성합니다.
 
 수정된 문장의 사용은 특정 상황에서 문제가 있을수도 있고 혼란스러울수도 있지만, 관계를 기술하기 위한 Activity Streams 어휘 내에서 그들의 사용은 개인의 사회적 그래프에 변화를 기술하는 간단한 메커니즘을 제공합니다. 예를 들어, Sally가 사용자 Matt와 새로운 [Relationship](#class-relationship)를 만들었음을 나타내기 위해, 실행자는 [Create](#class-create) 액티비티과 함께 Relationship 객체를 사용할 수 있습니다.
 
@@ -3962,9 +3962,9 @@ _이 항목은 비표준입니다._
 
 이 예시에서는,
 
-1. 선택적 [result](#class-result) 속성은 `Accept` 액티비티 내에서 수락의 결과로 발생한 추가 액티비티을 식별하기 위해 사용됩니다.
+1. 선택적 [result](#property-result) 속성은 `Accept` 액티비티 내에서 수락의 결과로 발생한 추가 액티비티을 식별하기 위해 사용됩니다.
 
-2. 선택적 [context](#class-context) 속성은 다양한 액티비티을 공통의 기준점과 다시 연관시키기 위해 사용되는데, 이 예에서는 설정되고 있는 관계가 그것입니다. 이러한 맥락에서 `context`는 표시 또는 분석 목적을 위해 관련 액티비티을 효율적으로 그룹화할 수 있습니다.
+2. 선택적 [context](#property-context) 속성은 다양한 액티비티을 공통의 기준점과 다시 연관시키기 위해 사용되는데, 이 예에서는 설정되고 있는 관계가 그것입니다. 이러한 맥락에서 `context`는 표시 또는 분석 목적을 위해 관련 액티비티을 효율적으로 그룹화할 수 있습니다.
 
 ### 5.3 [장소 표현 (Representing Places)](#목차-table-of-contents)
 
@@ -3984,7 +3984,7 @@ _이 항목은 비표준입니다._
 >}
 >```
 
-또는 [longitude](#class-longitude) 및 [latitude](#class-latitude) 기준으로는:
+또는 [longitude](#property-longitude) 및 [latitude](#property-latitude) 기준으로는:
 
 >예시 150
 >
@@ -3998,7 +3998,7 @@ _이 항목은 비표준입니다._
 >}
 >```
 
-또한 `Place` 객체는 [radius](#class-radius) 속성, 위치 [altitude](#class-altitude) 및 [accuracy](#class-accuracy)를 사용하여 주어진 지점 주변의 영역을 설명할 수 있습니다.
+또한 `Place` 객체는 [radius](#property-radius) 속성, 위치 [altitude](#property-altitude) 및 [accuracy](#property-accuracy)를 사용하여 주어진 지점 주변의 영역을 설명할 수 있습니다.
 
 출판사는 이러한 특정 속성을 사용할 필요가 없고 위치를 설명하는 다른 메커니즘을 사용 *할 수도* 있지만, [Place](#class-place) 객체를 지원하는 구현을 만들 경우에는 *반드시* 이러한 속성 사용을 지원해야 합니다.
 
@@ -4022,7 +4022,7 @@ _이 항목은 비표준입니다._
 >}
 >```
 
-다중 선택 질문 또는 "투표"도 [oneOf](#class-oneof) 또는 [anyOf](#class-anyof) 속성을 사용하여 지원됩니다:
+다중 선택 질문 또는 "투표"도 [oneOf](#property-oneof) 또는 [anyOf](#property-anyof) 속성을 사용하여 지원됩니다:
 
 >예시 152
 >
@@ -4040,7 +4040,7 @@ _이 항목은 비표준입니다._
 > }
 >```
 
-질문에 대한 응답은 질문을 참조하는 [inReplyto](#class-inreplyto) 속성이 포함된 [Objects](#class-object)로 표현됩니다.
+질문에 대한 응답은 질문을 참조하는 [inReplyto](#property-inreplyto) 속성이 포함된 [Objects](#class-object)로 표현됩니다.
 
 >예시 153
 >
@@ -4053,7 +4053,7 @@ _이 항목은 비표준입니다._
 >}
 >```
 
-[Question](#class-question) 객체는 또한 [Activity](#class-activity)의 인스턴스이기 때문에 [result](#class-result) 속성을 사용하여 질문의 결과나 결과를 (적절하게) 표시할 수 있습니다:
+[Question](#class-question) 객체는 또한 [Activity](#class-activity)의 인스턴스이기 때문에 [result](#property-result) 속성을 사용하여 질문의 결과나 결과를 (적절하게) 표시할 수 있습니다:
 
 >예시 154
 >
@@ -4196,7 +4196,7 @@ _이 항목은 비표준입니다._
 
 많은 소셜 소프트웨어 시스템은 사용자가 객체 내에서 알림, 링크 또는 분류에 대한 특별한 주소 지정을 정의할 수 있는 특수 텍스트 기반의 마이크로싱택을 사용합니다. 예를 들어, 객체의 내용 내에 "`@username`"과 같은 텍스트를 포함하면 객체가 특정 사용자를 위한 특별한 "멘션" 또는 "인박스" 스트림으로 라우팅되는 경우가 많습니다. 마찬가지로, 오브젝트의 내용 내에 "`#topic`"과 같은 텍스트를 포함하면 오브젝트가 "`topic`" 주제와 관련된 것으로 표시되는 경우가 많습니다. 이러한 메커니즘을 일반적으로 "멘션"과 "해시태그"라고 부릅니다.
 
-이러한 마이크로싱택스는 Activity Stream [Object](#class-object)의 [content](#class-content), [name](#class-name) 및 [summary](#class-summary) 속성의 값 내에서 사용 *할 수도* 있지만, 적절한 통지 라우팅, 분류 또는 객체 간 연결을 결정하기 위해 그러한 속성 값을 구문 분석할 필요가 *있어서는 안됩니다*. 대신에 출판사는 이러한 목적을 위해 특별히 제공된 어휘 용어를 적절하게 *사용해야 합니다*.
+이러한 마이크로싱택스는 Activity Stream [Object](#class-object)의 [content](#property-content), [name](#property-name) 및 [summary](#property-summary) 속성의 값 내에서 사용 *할 수도* 있지만, 적절한 통지 라우팅, 분류 또는 객체 간 연결을 결정하기 위해 그러한 속성 값을 구문 분석할 필요가 *있어서는 안됩니다*. 대신에 출판사는 이러한 목적을 위해 특별히 제공된 어휘 용어를 적절하게 *사용해야 합니다*.
 
 예를 들어, 저자가 "@sally"라는 이름의 다른 사용자에게 "#감사드립니다"라는 해시태그와 함께 "@sally"라는 감사 메모를 보내고 싶다고 가정해 봅시다. 이 메시지가 노트의 내용 내에 나타나는 일반적인 방법은 다음과 같습니다.
 
@@ -4234,7 +4234,7 @@ _이 항목은 비표준입니다._
 
 `to` 속성은 사용자 "@sally"가 노트의 [주요 청중](#51-청중-타게팅-audience-targeting)의 일부로 간주되므로 통지를 받아야 함을 나타냅니다. `tag` 속성은 노트를 "`http://example.org/tags/givingthanks`"에 대한 참조와 연결됩니다. `content`에는 여전히 "`@sally`"와 "`#감사드립니다`" 마이크로신택스가 포함되지만, 적절한 연결을 위해 이를 구문 분석하는데 소비적인 구현이 필요하지 않다는 점에 유의하시길 바랍니다.
 
-게시자가 관련 통지 없이 언급을 표시하려는 경우, 게시자는 [Mention](#class-mention) 객체 타입을 [tag](#class-tag) 속성의 값으로 사용할 수 있습니다.
+게시자가 관련 통지 없이 언급을 표시하려는 경우, 게시자는 [Mention](#class-mention) 객체 타입을 [tag](#property-tag) 속성의 값으로 사용할 수 있습니다.
 
 >예시 158
 >
@@ -4260,7 +4260,7 @@ _이 항목은 비표준입니다._
 
 ### 5.7 [출발지 및 목표 (Origin and Target)](#목차-table-of-contents)
 
-액티비티의 [origin](#class-origin)와 [target](#class-target) 속성은 각각 조치가 지시되는 대상과 대상을 식별합니다. 예를 들어 영어 문장 "A폴더에서 B폴더로 파일을 옮겼습니다"에서 `origin`은 "Folder A"이고 `target`은 "Folder B"입니다. 이 액티비티은 아래 예에 설명되어 있습니다:
+액티비티의 [origin](#property-origin)와 [target](#property-target) 속성은 각각 조치가 지시되는 대상과 대상을 식별합니다. 예를 들어 영어 문장 "A폴더에서 B폴더로 파일을 옮겼습니다"에서 `origin`은 "Folder A"이고 `target`은 "Folder B"입니다. 이 액티비티은 아래 예에 설명되어 있습니다:
 
 >예시 159
 >
@@ -4435,11 +4435,11 @@ _이 항목은 비표준입니다._
 
 다음은 이전 후보 문서인 [2016-12-15](https://www.w3.org/TR/2016/CR-activitystreams-vocabulary-20161215/#changelog) 작성 이후 변경된 중요사항입니다.
 
-- 구현 부족으로 인하여 4개의 표준 [relationship](#class-relationship)값들이 제거되었습니다. 대신 [관계(Relationship)](http://vocab.org/relationship/) 어휘를 사용하도록 예시를 변경하였습니다.
+- 구현 부족으로 인하여 4개의 표준 [relationship](#property-relationship)값들이 제거되었습니다. 대신 [관계(Relationship)](http://vocab.org/relationship/) 어휘를 사용하도록 예시를 변경하였습니다.
 - 프로세스(process) 부분을, 특히 종료 기준(exit criteria) 및 위험요소를 지적한 부분이 제거되었습니다.
-- [deleted](#class-deleted) 부분의 오타를 수정하였습니다.
-- [closed](#class-closed) 속성 항목에 `datetime`과 `boolean`을 추가하였습니다.
-- [first](#class-first) 및 [current](#class-current) 속성의 도메인을 [Collection](#class-collection)으로 설정하였습니다.
+- [deleted](#property-deleted) 부분의 오타를 수정하였습니다.
+- [closed](#property-closed) 속성 항목에 `datetime`과 `boolean`을 추가하였습니다.
+- [first](#property-first) 및 [current](#property-current) 속성의 도메인을 [Collection](#class-collection)으로 설정하였습니다.
 
 ## C. [참고 문헌 (References)](#목차-table-of-contents)
 
